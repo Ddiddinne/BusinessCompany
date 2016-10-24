@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CA = new System.Windows.Forms.TextBox();
             this.companyName = new System.Windows.Forms.Label();
+
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,6 +39,8 @@
             // 
             // CA
             // 
+            this.CA = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             this.CA.Location = new System.Drawing.Point(17, 16);
             this.CA.Margin = new System.Windows.Forms.Padding(4);
             this.CA.Name = "CA";
@@ -46,6 +48,11 @@
             this.CA.TabIndex = 0;
             this.CA.Text = "3000";
             // 
+
+            
+            
+            // 
+
             // companyName
             // 
             this.companyName.AutoSize = true;
@@ -56,6 +63,7 @@
             this.companyName.TabIndex = 1;
             this.companyName.Text = "label1";
             // 
+
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::BusinessCompany.Properties.Resources.room_b;
@@ -96,11 +104,22 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
+
+            // CA
+            // 
+            this.CA.AutoSize = true;
+            this.CA.Location = new System.Drawing.Point(30, 22);
+            this.CA.Name = "CA";
+            this.CA.Size = new System.Drawing.Size(35, 13);
+            this.CA.TabIndex = 2;
+            this.CA.Text = "label1";
+
             // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.BackgroundImage = global::BusinessCompany.Properties.Resources.building;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1116, 545);
@@ -111,6 +130,11 @@
             this.Controls.Add(this.companyName);
             this.Controls.Add(this.CA);
             this.Margin = new System.Windows.Forms.Padding(4);
+
+            this.ClientSize = new System.Drawing.Size(837, 443);
+            this.Controls.Add(this.CA);
+            this.Controls.Add(this.companyName);
+
             this.Name = "Game";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -120,13 +144,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox CA;
         private System.Windows.Forms.Label companyName;
+
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+
+        private System.Windows.Forms.Label CA;
+
     }
 }
 

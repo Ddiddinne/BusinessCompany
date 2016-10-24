@@ -29,20 +29,37 @@ namespace BusinessCompany
         }
 
         //we decide to choose the time as a flaot of mounth
-        private float time; 
+        private double time; 
 
-        public float Time
+        public double Time
         {
             get { return time; }
             set { time = value; }
         }
 
-        private float timeCompetition;
+        private double timeCompetition;
 
-        public float TimeCompetition
+        public double TimeCompetition
         {
             get { return timeCompetition; }
             set { timeCompetition = value; }
+        }
+
+        private double delay;
+
+        public double Delay
+        {
+            get { return delay; }
+            set { delay = value; }
+        }
+
+
+        private double delayCompetition;
+
+        public double DelayCompetition
+        {
+            get { return delayCompetition; }
+            set { delayCompetition = value; }
         }
 
         private Image picture;
