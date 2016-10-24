@@ -49,6 +49,8 @@ namespace BusinessCompany
             set { level = value; }
         }
 
+
+        //image de fond
         private Image picture;
 
         public Image Picture
