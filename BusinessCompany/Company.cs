@@ -58,10 +58,11 @@ namespace BusinessCompany
         }
 
         //constructor company
-        public Company()
+        public Company(String name, int level)
         {
-            this.Name = "";
-            this.money = 3000;
+            this.levelGame = level;
+            this.Name = name;
+            this.money = 5000 - (level-1)*1000;
             this.levelCompany = 1;
             this.listEmployee = new List<Employee>();
             this.listProjects = new List<Project>();
