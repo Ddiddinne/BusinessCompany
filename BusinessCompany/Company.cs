@@ -58,6 +58,11 @@ namespace BusinessCompany
         }
 
         //constructor company
+
+        public Company()
+        {
+
+        }
         public Company(String name, int level)
         {
             this.levelGame = level;
