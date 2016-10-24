@@ -9,6 +9,7 @@ namespace BusinessCompany
 {
     class Employee
     {
+        //test comment
         private String lastName;
 
         public String LastName
