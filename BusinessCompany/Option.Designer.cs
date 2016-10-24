@@ -50,18 +50,20 @@
             // 
             // nameCompany
             // 
-            this.nameCompany.Location = new System.Drawing.Point(334, 155);
+            this.nameCompany.Location = new System.Drawing.Point(445, 191);
+            this.nameCompany.Margin = new System.Windows.Forms.Padding(4);
             this.nameCompany.Name = "nameCompany";
-            this.nameCompany.Size = new System.Drawing.Size(100, 20);
+            this.nameCompany.Size = new System.Drawing.Size(132, 22);
             this.nameCompany.TabIndex = 1;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 19);
+            this.radioButton1.Location = new System.Drawing.Point(20, 23);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(31, 17);
+            this.radioButton1.Size = new System.Drawing.Size(37, 21);
             this.radioButton1.TabIndex = 4;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1";
@@ -70,9 +72,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(64, 19);
+            this.radioButton2.Location = new System.Drawing.Point(85, 23);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(31, 17);
+            this.radioButton2.Size = new System.Drawing.Size(37, 21);
             this.radioButton2.TabIndex = 5;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "2";
@@ -81,9 +84,10 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(106, 19);
+            this.radioButton3.Location = new System.Drawing.Point(141, 23);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(31, 17);
+            this.radioButton3.Size = new System.Drawing.Size(37, 21);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "3";
@@ -92,26 +96,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(344, 107);
+            this.label1.Location = new System.Drawing.Point(459, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(108, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "nom compagnie";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(372, 206);
+            this.label2.Location = new System.Drawing.Point(496, 254);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "level";
             // 
             // valid
             // 
-            this.valid.Location = new System.Drawing.Point(359, 344);
+            this.valid.Location = new System.Drawing.Point(479, 423);
+            this.valid.Margin = new System.Windows.Forms.Padding(4);
             this.valid.Name = "valid";
-            this.valid.Size = new System.Drawing.Size(75, 23);
+            this.valid.Size = new System.Drawing.Size(100, 28);
             this.valid.TabIndex = 10;
             this.valid.Text = "valider";
             this.valid.UseVisualStyleBackColor = true;
@@ -122,34 +129,40 @@
             this.levelchecked.Controls.Add(this.radioButton3);
             this.levelchecked.Controls.Add(this.radioButton2);
             this.levelchecked.Controls.Add(this.radioButton1);
-            this.levelchecked.Location = new System.Drawing.Point(289, 238);
+            this.levelchecked.Location = new System.Drawing.Point(385, 293);
+            this.levelchecked.Margin = new System.Windows.Forms.Padding(4);
             this.levelchecked.Name = "levelchecked";
-            this.levelchecked.Size = new System.Drawing.Size(200, 65);
+            this.levelchecked.Padding = new System.Windows.Forms.Padding(4);
+            this.levelchecked.Size = new System.Drawing.Size(267, 80);
             this.levelchecked.TabIndex = 11;
             this.levelchecked.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(365, 432);
+            this.label3.Location = new System.Drawing.Point(487, 532);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(46, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
             // 
             // Option
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 538);
+            this.BackgroundImage = global::BusinessCompany.Properties.Resources.building;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(959, 662);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.levelchecked);
             this.Controls.Add(this.valid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameCompany);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Option";
-            this.Text = "Form2";
+            this.Text = "Option";
             this.levelchecked.ResumeLayout(false);
             this.levelchecked.PerformLayout();
             this.ResumeLayout(false);
