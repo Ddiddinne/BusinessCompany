@@ -59,6 +59,15 @@ namespace BusinessCompany
             set { picture = value; }
         }
 
+        //constructor company
+        public Company()
+        {
+            this.Name = "";
+            this.money = 3000;
+            this.level = 1;
+            this.listEmployee = new List<Employee>();
+            this.listProjects = new List<Project>();
+        }
 
 
     }
