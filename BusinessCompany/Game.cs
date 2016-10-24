@@ -41,6 +41,17 @@ namespace BusinessCompany
             company.Money -= expense;
             CA.Text = (company.Money).ToString();
 
+            double unitWork = (double)0.2 * 30 / 100;
+            unitWork = Math.Round(unitWork, 2);
+
+            foreach (Project project in company.ListProjects)
+            {
+                foreach(Employee employee in project.EmployeeAssigned)
+                {
+                    project.Time +=  unitWork/ employee.ProjectAssigned.Count;
+                }
+            }
+
         }
     }
 }
