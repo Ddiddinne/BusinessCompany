@@ -41,12 +41,30 @@ namespace BusinessCompany
             set { listProjects = value; }
         }
 
-        private int level;
+        private int levelGame;
 
-        public int Level
+        public int LevelGame
         {
-            get { return level; }
-            set { level = value; }
+            get { return levelGame; }
+            set { levelGame = value; }
+        }
+
+        private int levelCompany;
+
+        public int LevelCompany
+        {
+            get { return levelCompany; }
+            set { levelCompany = value; }
+        }
+
+        //constructor company
+        public Company()
+        {
+            this.Name = "";
+            this.money = 3000;
+            this.levelCompany = 1;
+            this.listEmployee = new List<Employee>();
+            this.listProjects = new List<Project>();
         }
 
 
@@ -59,15 +77,7 @@ namespace BusinessCompany
             set { picture = value; }
         }
 
-        //constructor company
-        public Company()
-        {
-            this.Name = "";
-            this.money = 3000;
-            this.level = 1;
-            this.listEmployee = new List<Employee>();
-            this.listProjects = new List<Project>();
-        }
+        
 
         public void addEmployee(Employee employee){
             this.listEmployee.Add(employee);
