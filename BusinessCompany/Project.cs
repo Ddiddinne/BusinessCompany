@@ -7,10 +7,10 @@ using System.Drawing;
 
 namespace BusinessCompany
 {
-    class Project
+    public class Project
     {
         public Project() {
-
+            this.employeeAssigned = new List<Employee>();
         }
         private String name;
 
@@ -85,7 +85,10 @@ namespace BusinessCompany
             set { employeeAssigned = value; }
         }
 
-
+        public void addEmployee(Employee employee)
+        {
+            this.employeeAssigned.Add(employee);
+        }
         
 
 

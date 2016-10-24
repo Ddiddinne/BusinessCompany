@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace BusinessCompany
 {
-    class Company
+    public class Company
     {
         private String name;
 
@@ -67,6 +67,15 @@ namespace BusinessCompany
             this.level = 1;
             this.listEmployee = new List<Employee>();
             this.listProjects = new List<Project>();
+        }
+
+        public void addEmployee(Employee employee){
+            this.listEmployee.Add(employee);
+        }
+
+        public void addProjet(Project project)
+        {
+            this.listProjects.Add(project);
         }
 
 

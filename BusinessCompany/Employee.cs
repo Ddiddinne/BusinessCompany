@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace BusinessCompany
 {
-    class Employee
+    public class Employee
     {
         //test comment2
         private String lastName;
@@ -85,6 +85,11 @@ namespace BusinessCompany
         {
             get { return projectAssigned; }
             set { projectAssigned = value; }
+        }
+
+        public void addProject(Project project)
+        {
+            this.projectAssigned.Add(project);
         }
 
 
