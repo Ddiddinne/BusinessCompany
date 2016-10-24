@@ -38,7 +38,12 @@ namespace BusinessCompany
             {
                 Company company = new Company(nameCompany.Text, levelgame);
                 label3.Text=company.Name;
+                this.Hide();
+                Game game = new Game(company);
+                game.Show();
             }
+
+
 
 
         }

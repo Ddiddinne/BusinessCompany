@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace BusinessCompany
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
         static Timer timer1 = new Timer();
-        public Form1()
+        public Game()
         {
             InitializeComponent();
+        }
+
+        public Game(Company company)
+        {
+            InitializeComponent();
+            companyName.Text = company.Name;
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; //(1 second)
             timer1.Start();

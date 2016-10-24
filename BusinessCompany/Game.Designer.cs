@@ -1,6 +1,6 @@
 ﻿namespace BusinessCompany
 {
-    partial class Form1
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.CA = new System.Windows.Forms.TextBox();
+            this.companyName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CA
@@ -39,13 +40,23 @@
             this.CA.TabIndex = 0;
             this.CA.Text = "3000";
             // 
-            // Form1
+            // companyName
+            // 
+            this.companyName.AutoSize = true;
+            this.companyName.Location = new System.Drawing.Point(389, 63);
+            this.companyName.Name = "companyName";
+            this.companyName.Size = new System.Drawing.Size(35, 13);
+            this.companyName.TabIndex = 1;
+            this.companyName.Text = "label1";
+            // 
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(837, 443);
+            this.Controls.Add(this.companyName);
             this.Controls.Add(this.CA);
-            this.Name = "Form1";
+            this.Name = "Game";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -55,6 +66,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox CA;
+        private System.Windows.Forms.Label companyName;
     }
 }
 
