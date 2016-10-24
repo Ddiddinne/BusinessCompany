@@ -9,6 +9,9 @@ namespace BusinessCompany
 {
     class Project
     {
+        public Project() {
+
+        }
         private String name;
 
         public String Name
@@ -83,6 +86,7 @@ namespace BusinessCompany
         }
 
 
+        
 
 
     }
