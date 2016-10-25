@@ -9,21 +9,45 @@ namespace BusinessCompany
 {
     public class Employee
     {
-        //test comment2
-        private String lastName;
-
-        public String LastName
+        
+        public Employee()
         {
-            get { return lastName; }
-            set { lastName = value; }
+            Level = 1;
+            Random random = new Random();
+            Salary = random.Next(3, 9) * 10;
+            Motivation = random.Next(1, 100);
+            Specialisation = (Speciality)num;
+            firstName = (FirstNames)numName;
+            lastName = (LastNames)numName;
+            numName = (numName + 1) % 14;
+            num = (num + 1) % 2;
         }
 
-        private String firstName;
+        private static int num = 0;
+        private static int numName = 0;
 
-        public String FirstName
+        public enum FirstNames
+        {
+            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Anne, Thomas, Raphaël, Gaspar, Sandrine, Marion, Sébastien
+        }
+
+        public enum LastNames
+        {
+            Onette, Puce, Touille, Luation, Covert, Jambon, Dufour, Tameire, Durand, Lannister, Delrue, Balleuil, Belfort, Toto 
+        }
+
+        private LastNames lastName;
+
+        public LastNames LastName
+        {
+            get { return lastName; }
+        }
+
+        private FirstNames firstName;
+
+        public FirstNames FirstName
         {
             get { return firstName; }
-            set { firstName = value; }
         }
 
         private int motivation;
@@ -50,14 +74,14 @@ namespace BusinessCompany
             set { salary = value; }
         }
 
-        public enum Specialty
+        public enum Speciality
             {
                 designer, developper
             };
 
-        private Specialty specialisation;
+        private Speciality specialisation;
 
-        public Specialty Specialisation
+        public Speciality Specialisation
         {
             get { return specialisation; }
             set { specialisation = value; }
@@ -79,7 +103,7 @@ namespace BusinessCompany
             set { level = value; }
         }
 
-        private List<Project> projectAssigned;
+        private List<Project> projectAssigned = new List<Project>();
 
         public List<Project> ProjectAssigned
         {

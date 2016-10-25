@@ -32,6 +32,8 @@
             this.name = new System.Windows.Forms.Label();
             this.addEmployee = new System.Windows.Forms.Button();
             this.salary = new System.Windows.Forms.Label();
+            this.specialisation = new System.Windows.Forms.Label();
+            this.level = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +74,24 @@
             this.salary.TabIndex = 3;
             this.salary.Text = "salary";
             // 
+            // specialisation
+            // 
+            this.specialisation.AutoSize = true;
+            this.specialisation.Location = new System.Drawing.Point(73, 33);
+            this.specialisation.Name = "specialisation";
+            this.specialisation.Size = new System.Drawing.Size(70, 13);
+            this.specialisation.TabIndex = 4;
+            this.specialisation.Text = "specialisation";
+            // 
+            // level
+            // 
+            this.level.AutoSize = true;
+            this.level.Location = new System.Drawing.Point(60, 9);
+            this.level.Name = "level";
+            this.level.Size = new System.Drawing.Size(29, 13);
+            this.level.TabIndex = 5;
+            this.level.Text = "level";
+            // 
             // AfficheEmployee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -79,6 +99,8 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
+            this.Controls.Add(this.level);
+            this.Controls.Add(this.specialisation);
             this.Controls.Add(this.salary);
             this.Controls.Add(this.addEmployee);
             this.Controls.Add(this.name);
@@ -103,5 +125,7 @@
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Button addEmployee;
         private System.Windows.Forms.Label salary;
+        private System.Windows.Forms.Label specialisation;
+        private System.Windows.Forms.Label level;
     }
 }

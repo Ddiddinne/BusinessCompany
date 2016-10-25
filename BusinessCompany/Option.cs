@@ -39,23 +39,15 @@ namespace BusinessCompany
                 Company company = new Company(nameCompany.Text, levelgame);
                 label3.Text=company.Name;
                 Employee employee = new Employee();
-                employee.FirstName="toto";
-                employee.LastName = "bibi";
                 company.addEmployee(employee);
 
                 Employee employee2 = new Employee();
-                employee2.FirstName = "lulu";
-                employee2.LastName = "lili";
                 company.addEmployee(employee2);
 
                 Employee employee3 = new Employee();
-                employee3.FirstName = "lulu";
-                employee3.LastName = "lili";
                 company.addEmployee(employee3);
 
                 Employee employee4 = new Employee();
-                employee4.FirstName = "lulu";
-                employee4.LastName = "lili";
                 company.addEmployee(employee4);
                 this.Hide();
                 Game game = new Game(company);

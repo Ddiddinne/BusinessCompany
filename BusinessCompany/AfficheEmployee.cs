@@ -15,8 +15,10 @@ namespace BusinessCompany
         public AfficheEmployee(Boolean show,Employee employee)
         {
             InitializeComponent();
-            name.Text = (String)employee.FirstName + " " +(String)employee.LastName;
+            name.Text = employee.FirstName.ToString() + " " +employee.LastName.ToString();
             salary.Text = employee.Salary.ToString() + "$";
+            specialisation.Text = employee.Specialisation.ToString();
+            level.Text = employee.Level.ToString();
             if (!show) { addEmployee.Hide(); }
         }
     }

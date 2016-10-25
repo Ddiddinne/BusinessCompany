@@ -12,7 +12,17 @@ namespace BusinessCompany
 {
     public partial class ListEmployees : Form
     {
+        
         Game game = new Game();
+
+        private List<Employee> listPerson = new List<Employee>();
+
+        public List<Employee> ListPerson
+        {
+            get { return listPerson; }
+            set { listPerson = value; }
+        }
+
         public ListEmployees(Game game)
         {
             this.game = game;
@@ -22,7 +32,7 @@ namespace BusinessCompany
             {
                 
                 AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee);
-                afficheEmployee.Name = (String)employee.FirstName + (String)employee.LastName;
+                afficheEmployee.Name = employee.FirstName.ToString() + " " + employee.LastName.ToString();
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
@@ -39,6 +49,17 @@ namespace BusinessCompany
             game.Show();
             this.Close();
             
+        }
+
+        private void addEmployee_Click(object sender, EventArgs e)
+        {
+            while (listPerson.Count != game.company.LevelCompany * 2)
+            {
+                listPerson.Add(new Employee());
+            }
+            ListAddEmployee listAddEmployee = new ListAddEmployee(this);
+            this.Hide();
+            listAddEmployee.Show();
         }
     }
 }
