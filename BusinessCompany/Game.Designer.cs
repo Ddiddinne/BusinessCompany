@@ -29,115 +29,78 @@
         private void InitializeComponent()
         {
             this.companyName = new System.Windows.Forms.Label();
-
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // CA
-            // 
+            this.employees = new System.Windows.Forms.Button();
+            this.projects = new System.Windows.Forms.Button();
+            this.bourse = new System.Windows.Forms.Button();
             this.CA = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            this.CA.Location = new System.Drawing.Point(17, 16);
-            this.CA.Margin = new System.Windows.Forms.Padding(4);
-            this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(132, 22);
-            this.CA.TabIndex = 0;
-            this.CA.Text = "3000";
             // 
-
-            
-            
-            // 
-
             // companyName
             // 
             this.companyName.AutoSize = true;
-            this.companyName.Location = new System.Drawing.Point(42, 55);
+            this.companyName.Location = new System.Drawing.Point(398, 72);
             this.companyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.companyName.Name = "companyName";
-            this.companyName.Size = new System.Drawing.Size(46, 17);
+            this.companyName.Size = new System.Drawing.Size(78, 13);
             this.companyName.TabIndex = 1;
-            this.companyName.Text = "label1";
+            this.companyName.Text = "companyName";
             // 
-
-            // pictureBox1
+            // employees
             // 
-            this.pictureBox1.BackgroundImage = global::BusinessCompany.Properties.Resources.room_b;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(366, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(752, 156);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.employees.BackColor = System.Drawing.Color.Transparent;
+            this.employees.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.employees.FlatAppearance.BorderSize = 0;
+            this.employees.Location = new System.Drawing.Point(349, 168);
+            this.employees.Margin = new System.Windows.Forms.Padding(0);
+            this.employees.Name = "employees";
+            this.employees.Size = new System.Drawing.Size(184, 42);
+            this.employees.TabIndex = 3;
+            this.employees.Text = "Employees";
+            this.employees.UseVisualStyleBackColor = false;
+            this.employees.Click += new System.EventHandler(this.employees_Click);
             // 
-            // button1
+            // projects
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(445, 180);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 42);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Employees";
-            this.button1.UseVisualStyleBackColor = false;
+            this.projects.Location = new System.Drawing.Point(349, 240);
+            this.projects.Name = "projects";
+            this.projects.Size = new System.Drawing.Size(184, 42);
+            this.projects.TabIndex = 4;
+            this.projects.Text = "Projects";
+            this.projects.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bourse
             // 
-            this.button2.Location = new System.Drawing.Point(445, 246);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 42);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bourse.Location = new System.Drawing.Point(349, 304);
+            this.bourse.Name = "bourse";
+            this.bourse.Size = new System.Drawing.Size(184, 42);
+            this.bourse.TabIndex = 5;
+            this.bourse.Text = "Bourse";
+            this.bourse.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(445, 314);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 42);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-
             // CA
             // 
             this.CA.AutoSize = true;
-            this.CA.Location = new System.Drawing.Point(30, 22);
+            this.CA.Location = new System.Drawing.Point(95, 183);
+            this.CA.Margin = new System.Windows.Forms.Padding(4);
             this.CA.Name = "CA";
             this.CA.Size = new System.Drawing.Size(35, 13);
             this.CA.TabIndex = 2;
             this.CA.Text = "label1";
-
             // 
             // Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
-            this.BackgroundImage = global::BusinessCompany.Properties.Resources.building;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1116, 545);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.companyName);
-            this.Controls.Add(this.CA);
-            this.Margin = new System.Windows.Forms.Padding(4);
-
             this.ClientSize = new System.Drawing.Size(837, 443);
+            this.Controls.Add(this.bourse);
+            this.Controls.Add(this.projects);
+            this.Controls.Add(this.employees);
             this.Controls.Add(this.CA);
             this.Controls.Add(this.companyName);
-
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,14 +108,11 @@
 
         #endregion
         private System.Windows.Forms.Label companyName;
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button employees;
+        private System.Windows.Forms.Button projects;
+        private System.Windows.Forms.Button bourse;
 
         private System.Windows.Forms.Label CA;
-
     }
 }
 

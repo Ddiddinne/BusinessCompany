@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Company.cs" />
+    <Compile Include="AfficheEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficheEmployee.Designer.cs">
+      <DependentUpon>AfficheEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListEmployees.Designer.cs">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Option.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,8 +75,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AfficheEmployee.resx">
+      <DependentUpon>AfficheEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListEmployees.resx">
+      <DependentUpon>ListEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Option.resx">
       <DependentUpon>Option.cs</DependentUpon>

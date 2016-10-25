@@ -26,9 +26,15 @@ namespace BusinessCompany
             InitializeComponent();
             CA.Text = company.Money.ToString();
             companyName.Text = company.Name;
+            Affichage();
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; //(1 second)
             timer1.Start();
+        }
+
+        public void Affichage()
+        {
+            
         }
 
         public void timer1_Tick(object sender, EventArgs e)
@@ -51,6 +57,14 @@ namespace BusinessCompany
                     project.Time +=  unitWork/ employee.ProjectAssigned.Count;
                 }
             }
+
+        }
+
+        private void employees_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListEmployees listEmployee = new ListEmployees(this);
+            listEmployee.Show();
 
         }
     }
