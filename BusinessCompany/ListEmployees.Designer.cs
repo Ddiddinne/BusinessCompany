@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.back = new System.Windows.Forms.Button();
             this.addAmployee = new System.Windows.Forms.Button();
+            this.list = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(198, 74);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // back
             // 
@@ -61,24 +52,31 @@
             this.addAmployee.Text = "Add Employee";
             this.addAmployee.UseVisualStyleBackColor = true;
             // 
-            // ListEmployee
+            // list
+            // 
+            this.list.AutoScroll = true;
+            this.list.Location = new System.Drawing.Point(133, 71);
+            this.list.Name = "list";
+            this.list.Size = new System.Drawing.Size(379, 100);
+            this.list.TabIndex = 3;
+            // 
+            // ListEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 566);
+            this.Controls.Add(this.list);
             this.Controls.Add(this.addAmployee);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "ListEmployee";
+            this.Name = "ListEmployees";
             this.Text = "ListEmploye";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Button addAmployee;
+        private System.Windows.Forms.Panel list;
     }
 }

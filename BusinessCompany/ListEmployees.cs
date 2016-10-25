@@ -17,25 +17,27 @@ namespace BusinessCompany
         {
             this.game = game;
             InitializeComponent();
+            int i = 0;
             foreach (Employee employee in game.company.ListEmployee)
             {
+                
                 AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee);
-                afficheEmployee.Location = new Point(349, 168);
-
                 afficheEmployee.Name = (String)employee.FirstName + (String)employee.LastName;
                 afficheEmployee.TopLevel = false;
+                afficheEmployee.Location = new Point(0, i * 100);
+                i++;
                 afficheEmployee.Show();
-                afficheEmployee.Dock = DockStyle.Fill;
-                this.groupBox1.Controls.Add(afficheEmployee);
-
+                afficheEmployee.Dock = DockStyle.None;
+                this.list.Controls.Add(afficheEmployee);
 
             }
+            list.Size = new Size(94*(i+1), 300);
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            this.Hide();
             game.Show();
+            this.Close();
             
         }
     }

@@ -26,17 +26,11 @@ namespace BusinessCompany
             InitializeComponent();
             CA.Text = company.Money.ToString();
             companyName.Text = company.Name;
-            Affichage();
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; //(1 second)
             timer1.Start();
         }
-
-        public void Affichage()
-        {
-            
-        }
-
+        
         public void timer1_Tick(object sender, EventArgs e)
         {
             int expense = company.LevelCompany * 10;
@@ -47,7 +41,7 @@ namespace BusinessCompany
             company.Money -= expense;
             CA.Text = (company.Money).ToString();
 
-            double unitWork = (double)0.2 * 30 / 100;
+            double unitWork = 0.2 * 100 / 30;
             unitWork = Math.Round(unitWork, 2);
 
             foreach (Project project in company.ListProjects)
