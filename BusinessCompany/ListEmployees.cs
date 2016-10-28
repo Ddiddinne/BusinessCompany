@@ -13,7 +13,15 @@ namespace BusinessCompany
     public partial class ListEmployees : Form
     {
         
-        Game game = new Game();
+        Game game;
+        private Company company;
+
+        public Company Company
+        {
+            get { return company; }
+            set { company = value; }
+        }
+
 
         private List<Employee> listPerson = new List<Employee>();
 
@@ -25,14 +33,18 @@ namespace BusinessCompany
 
         public ListEmployees(Game game)
         {
+            this.company = game.company;
             this.game = game;
+            init();
+        }
+        private void init()
+        {
             InitializeComponent();
             int i = 0;
-            foreach (Employee employee in game.company.ListEmployee)
+            foreach (Employee employee in company.ListEmployee)
             {
-                
+
                 AfficheEmployee afficheEmployee = new AfficheEmployee(true, employee);
-                afficheEmployee.Name = employee.FirstName.ToString() + " " + employee.LastName.ToString();
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
@@ -41,9 +53,8 @@ namespace BusinessCompany
                 this.list.Controls.Add(afficheEmployee);
 
             }
-            list.Size = new Size(94*(i+1), 300);
+            list.Size = new Size(94 * (i + 1), 300);
         }
-
         private void back_Click(object sender, EventArgs e)
         {
             game.Show();
@@ -60,6 +71,13 @@ namespace BusinessCompany
             ListAddEmployee listAddEmployee = new ListAddEmployee(this);
             this.Hide();
             listAddEmployee.Show();
+        }
+
+        public void refresh()
+        {
+            this.Controls.Clear();
+            this.init();
+
         }
     }
 }

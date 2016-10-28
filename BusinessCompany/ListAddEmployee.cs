@@ -23,8 +23,7 @@ namespace BusinessCompany
             foreach (Employee employee in listEmployees.ListPerson)
             {
 
-                AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee);
-                afficheEmployee.Name = employee.FirstName.ToString() + " " + employee.LastName.ToString();
+                AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee, this);
                 afficheEmployee.MdiParent = this;
                 afficheEmployee.Location = new Point(200, i * 100);
                 i++;
@@ -41,9 +40,13 @@ namespace BusinessCompany
             this.Close();
         }
 
-        private void ListAddEmployee_Load(object sender, EventArgs e)
+        public void add(Employee employee)
         {
-
+            listEmployees.Company.addEmployee(employee);
+            listEmployees.Show();
+            listEmployees.refresh();
+            this.Close();
         }
+
     }
 }

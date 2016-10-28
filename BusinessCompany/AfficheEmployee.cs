@@ -12,8 +12,12 @@ namespace BusinessCompany
 {
     public partial class AfficheEmployee : Form
     {
-        public AfficheEmployee(Boolean show,Employee employee)
+        ListAddEmployee parent;
+        Employee employee;
+        public AfficheEmployee(Boolean show,Employee employee, ListAddEmployee parent = null)
         {
+            this.parent = parent;
+            this.employee = employee;
             InitializeComponent();
             name.Text = employee.FirstName.ToString() + " " +employee.LastName.ToString();
             salary.Text = employee.Salary.ToString() + "$";
@@ -24,12 +28,13 @@ namespace BusinessCompany
 
         private void addEmployee_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("In Affiche");
+            Button toto = (Button)sender;
+            AfficheEmployee affiche = (AfficheEmployee)toto.Parent;
+            Employee employee = affiche.employee;
+
+            MessageBox.Show(this.employee.LastName.ToString());
+            parent.add(employee);
         }
 
-        private void AfficheEmployee_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Click Affiche");
-        }
     }
 }
