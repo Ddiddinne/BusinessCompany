@@ -87,6 +87,7 @@
             // level
             // 
             this.level.AutoSize = true;
+            this.level.BackColor = System.Drawing.SystemColors.Window;
             this.level.Location = new System.Drawing.Point(60, 9);
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(29, 13);

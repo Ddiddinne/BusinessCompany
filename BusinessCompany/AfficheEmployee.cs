@@ -19,6 +19,7 @@ namespace BusinessCompany
             this.parent = parent;
             this.employee = employee;
             InitializeComponent();
+            this.BackColor = System.Drawing.Color.BlueViolet;
             name.Text = employee.FirstName.ToString() + " " +employee.LastName.ToString();
             salary.Text = employee.Salary.ToString() + "$";
             specialisation.Text = employee.Specialisation.ToString();
