@@ -17,29 +17,46 @@ namespace BusinessCompany
         {
             this.listEmployees = listEmployees;
             InitializeComponent();
-
-            int i=0;
+            this.IsMdiContainer = true;
+            int i = 0;
 
             foreach (Employee employee in listEmployees.ListPerson)
             {
 
                 AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee);
                 afficheEmployee.Name = employee.FirstName.ToString() + " " + employee.LastName.ToString();
-                afficheEmployee.TopLevel = false;
-                afficheEmployee.Location = new Point(0, i * 100);
+                afficheEmployee.MdiParent = this;
+                afficheEmployee.Location = new Point(200, i * 100);
                 i++;
+
                 afficheEmployee.Show();
                 afficheEmployee.Dock = DockStyle.None;
-                this.list.Controls.Add(afficheEmployee);
 
             }
-            list.Size = new Size(94 * (i + 1), 300);
+            foreach(Control c in this.Controls)
+            {
+                if (c is MdiClient)
+
+                {
+
+                    MdiClient mdiclient = (MdiClient)c;
+                    mdiclient.Click += new EventHandler(affiche_Click);
+
+                }
+
+
+            }
         }
 
         private void annuler_Click(object sender, EventArgs e)
         {
             listEmployees.Show();
             this.Close();
+        }
+
+        private void affiche_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In");
         }
     }
 }

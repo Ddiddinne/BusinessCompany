@@ -63,6 +63,7 @@
             this.addEmployee.TabIndex = 2;
             this.addEmployee.Text = "Add Employee";
             this.addEmployee.UseVisualStyleBackColor = true;
+            this.addEmployee.Click += new System.EventHandler(this.addEmployee_Click);
             // 
             // salary
             // 
@@ -113,6 +114,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.AfficheEmployee_Click);
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -19,7 +19,17 @@ namespace BusinessCompany
             salary.Text = employee.Salary.ToString() + "$";
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
-            if (!show) { addEmployee.Hide(); }
+            if (show) { addEmployee.Hide(); }
+        }
+
+        private void addEmployee_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("In Affiche");
+        }
+
+        private void AfficheEmployee_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Click Affiche");
         }
     }
 }

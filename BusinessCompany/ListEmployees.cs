@@ -31,7 +31,7 @@ namespace BusinessCompany
             foreach (Employee employee in game.company.ListEmployee)
             {
                 
-                AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee);
+                AfficheEmployee afficheEmployee = new AfficheEmployee(true, employee);
                 afficheEmployee.Name = employee.FirstName.ToString() + " " + employee.LastName.ToString();
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
