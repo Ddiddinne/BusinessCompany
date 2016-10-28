@@ -9,11 +9,12 @@ namespace BusinessCompany
 {
     public class Employee
     {
-        
+
+        private static Random random = new Random();
         public Employee()
         {
             Level = 1;
-            Random random = new Random();
+            //Random random = new Random();
             Salary = random.Next(3, 9) * 10;
             Motivation = random.Next(1, 100);
             Specialisation = (Speciality)num;
