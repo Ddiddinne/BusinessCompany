@@ -53,7 +53,8 @@ namespace BusinessCompany
                 this.list.Controls.Add(afficheEmployee);
 
             }
-            list.Size = new Size(94 * (i + 1), 300);
+            list.Size = new Size(300,300);
+            //list.Size = new Size(94 * (i + 1), 300);
         }
         private void back_Click(object sender, EventArgs e)
         {
@@ -77,6 +78,11 @@ namespace BusinessCompany
         {
             this.Controls.Clear();
             this.init();
+
+        }
+
+        private void ListEmployees_Load(object sender, EventArgs e)
+        {
 
         }
     }
