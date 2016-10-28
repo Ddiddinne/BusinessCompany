@@ -28,24 +28,11 @@ namespace BusinessCompany
                 afficheEmployee.MdiParent = this;
                 afficheEmployee.Location = new Point(200, i * 100);
                 i++;
-
-                afficheEmployee.Show();
                 afficheEmployee.Dock = DockStyle.None;
-
+                afficheEmployee.Enabled = true;
+                afficheEmployee.Show();
             }
-            foreach(Control c in this.Controls)
-            {
-                if (c is MdiClient)
-
-                {
-
-                    MdiClient mdiclient = (MdiClient)c;
-                    mdiclient.Click += new EventHandler(affiche_Click);
-
-                }
-
-
-            }
+            
         }
 
         private void annuler_Click(object sender, EventArgs e)
@@ -54,9 +41,9 @@ namespace BusinessCompany
             this.Close();
         }
 
-        private void affiche_Click(object sender, EventArgs e)
+        private void ListAddEmployee_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("In");
+
         }
     }
 }

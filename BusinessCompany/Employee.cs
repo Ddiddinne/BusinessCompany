@@ -14,7 +14,6 @@ namespace BusinessCompany
         public Employee()
         {
             Level = 1;
-            //Random random = new Random();
             Salary = random.Next(3, 9) * 10;
             Motivation = random.Next(1, 100);
             Specialisation = (Speciality)num;
