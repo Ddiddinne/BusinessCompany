@@ -38,7 +38,7 @@
             // companyName
             // 
             this.companyName.AutoSize = true;
-            this.companyName.Location = new System.Drawing.Point(398, 72);
+            this.companyName.Location = new System.Drawing.Point(320, 42);
             this.companyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.companyName.Name = "companyName";
             this.companyName.Size = new System.Drawing.Size(78, 13);
@@ -50,7 +50,7 @@
             this.employees.BackColor = System.Drawing.Color.Transparent;
             this.employees.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.employees.FlatAppearance.BorderSize = 0;
-            this.employees.Location = new System.Drawing.Point(349, 168);
+            this.employees.Location = new System.Drawing.Point(254, 168);
             this.employees.Margin = new System.Windows.Forms.Padding(0);
             this.employees.Name = "employees";
             this.employees.Size = new System.Drawing.Size(184, 42);
@@ -61,7 +61,7 @@
             // 
             // projects
             // 
-            this.projects.Location = new System.Drawing.Point(349, 240);
+            this.projects.Location = new System.Drawing.Point(254, 240);
             this.projects.Name = "projects";
             this.projects.Size = new System.Drawing.Size(184, 42);
             this.projects.TabIndex = 4;
@@ -70,7 +70,7 @@
             // 
             // bourse
             // 
-            this.bourse.Location = new System.Drawing.Point(349, 304);
+            this.bourse.Location = new System.Drawing.Point(254, 304);
             this.bourse.Name = "bourse";
             this.bourse.Size = new System.Drawing.Size(184, 42);
             this.bourse.TabIndex = 5;
@@ -80,7 +80,7 @@
             // CA
             // 
             this.CA.AutoSize = true;
-            this.CA.Location = new System.Drawing.Point(95, 183);
+            this.CA.Location = new System.Drawing.Point(115, 42);
             this.CA.Margin = new System.Windows.Forms.Padding(4);
             this.CA.Name = "CA";
             this.CA.Size = new System.Drawing.Size(35, 13);
@@ -91,8 +91,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BusinessCompany.Properties.Resources.room_b;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(837, 443);
+            this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.bourse);
             this.Controls.Add(this.projects);
             this.Controls.Add(this.employees);

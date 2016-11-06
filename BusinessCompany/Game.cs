@@ -18,12 +18,14 @@ namespace BusinessCompany
         public Game()
         {
             InitializeComponent();
+            
         }
 
         public Game(Company company)
         {
             this.company = company;
             InitializeComponent();
+            this.BackgroundImage = company.Picture;
             CA.Text = company.Money.ToString();
             companyName.Text = company.Name;
             timer1.Tick += new EventHandler(timer1_Tick);

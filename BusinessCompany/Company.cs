@@ -9,6 +9,24 @@ namespace BusinessCompany
 {
     public class Company
     {
+
+        //constructor company
+
+        public Company()
+        {
+
+        }
+        public Company(String name, int level)
+        {
+            this.levelGame = level;
+            this.Name = name;
+            this.money = 5000 - (level - 1) * 1000;
+            LevelCompany = 1;
+            this.listEmployee = new List<Employee>();
+            this.listProjects = new List<Project>();
+        }
+
+
         private String name;
 
         public String Name
@@ -54,33 +72,28 @@ namespace BusinessCompany
         public int LevelCompany
         {
             get { return levelCompany; }
-            set { levelCompany = value; }
+            set { levelCompany = value;
+                switch (value){
+                    case 1:
+                        this.picture = Properties.Resources.garage;
+                        break;
+                    case 2:
+                        this.picture = Properties.Resources.maisonMoyenne2;
+                        break;
+                    case 3:
+                        this.picture = Properties.Resources.immeuble2;
+                        break;
+                }
+            }
         }
 
-        //constructor company
-
-        public Company()
-        {
-
-        }
-        public Company(String name, int level)
-        {
-            this.levelGame = level;
-            this.Name = name;
-            this.money = 5000 - (level-1)*1000;
-            this.levelCompany = 1;
-            this.listEmployee = new List<Employee>();
-            this.listProjects = new List<Project>();
-        }
-
-
+       
         //image de fond
         private Image picture;
 
         public Image Picture
         {
             get { return picture; }
-            set { picture = value; }
         }
 
         
