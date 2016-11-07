@@ -71,6 +71,7 @@ namespace BusinessCompany
 
         private void returnGame()
         {
+            this.game.BackgroundImage = this.game.Company.Picture;
             this.game.Show();
             this.Close();
         }
