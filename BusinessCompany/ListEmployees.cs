@@ -40,27 +40,32 @@ namespace BusinessCompany
         private void init()
         {
             InitializeComponent();
+            DrawListEmployee(this.company.ListEmployee);
+        }
+
+        public void DrawListEmployee(List<Employee> listEmployee)
+        {
             int i = 0;
             foreach (Employee employee in company.ListEmployee)
             {
-
                 AfficheEmployee afficheEmployee = new AfficheEmployee(true, employee);
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
                 afficheEmployee.Show();
+                afficheEmployee.Enabled = true;
+                Button btnDelete = afficheEmployee.getButtonDelete();
+                btnDelete.Click+=new EventHandler(remove);
                 afficheEmployee.Dock = DockStyle.None;
                 this.list.Controls.Add(afficheEmployee);
-
             }
-            list.Size = new Size(300,300);
-            //list.Size = new Size(94 * (i + 1), 300);
+            list.Size = new Size(300, 300);
         }
+
         private void back_Click(object sender, EventArgs e)
         {
             game.Show();
-            this.Close();
-            
+            this.Close(); 
         }
 
         private void addEmployee_Click(object sender, EventArgs e)
@@ -78,12 +83,20 @@ namespace BusinessCompany
         {
             this.Controls.Clear();
             this.init();
-
         }
 
-        private void ListEmployees_Load(object sender, EventArgs e)
+        private void remove(object sender, EventArgs e)
         {
-
+            Button btnAdd = (Button)sender;
+            AfficheEmployee affiche = (AfficheEmployee)btnAdd.Parent;
+            Employee employee = affiche.Employee;
+            MessageBox.Show(employee.LastName.ToString());
+            this.company.ListEmployee.Remove(employee);
+            affiche.Hide();
+            this.list.Controls.Remove(affiche);
+            this.refresh();
         }
+
+  
     }
 }

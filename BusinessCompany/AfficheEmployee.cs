@@ -12,8 +12,16 @@ namespace BusinessCompany
 {
     public partial class AfficheEmployee : Form
     {
+        public event EventHandler ClickButton;
         ListAddEmployee parent;
-        Employee employee;
+        private Employee employee;
+
+        public Employee Employee
+        {
+            get { return employee; }
+            set { employee = value; }
+        }
+        
         public AfficheEmployee(Boolean show,Employee employee, ListAddEmployee parent = null)
         {
             this.parent = parent;
@@ -24,13 +32,19 @@ namespace BusinessCompany
             salary.Text = employee.Salary.ToString() + "$";
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
-            if (show) { addEmployee.Hide(); }
+            Btn_delete.Hide();
+            if (show) { addEmployee.Hide(); Btn_delete.Show(); }
+        }
+
+        public Button getButtonDelete()
+        {
+            return this.Btn_delete;
         }
 
         private void addEmployee_Click(object sender, EventArgs e)
         {
-            Button toto = (Button)sender;
-            AfficheEmployee affiche = (AfficheEmployee)toto.Parent;
+            Button btnAdd = (Button)sender;
+            AfficheEmployee affiche = (AfficheEmployee)btnAdd.Parent;
             Employee employee = affiche.employee;
 
             MessageBox.Show(this.employee.LastName.ToString());
