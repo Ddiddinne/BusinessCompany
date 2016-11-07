@@ -83,6 +83,12 @@
     <Compile Include="ListProjects.Designer.cs">
       <DependentUpon>ListProjects.cs</DependentUpon>
     </Compile>
+    <Compile Include="LostGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LostGame.Designer.cs">
+      <DependentUpon>LostGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModifyLevelCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListProjects.resx">
       <DependentUpon>ListProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LostGame.resx">
+      <DependentUpon>LostGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModifyLevelCompany.resx">
       <DependentUpon>ModifyLevelCompany.cs</DependentUpon>
