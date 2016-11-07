@@ -75,5 +75,14 @@ namespace BusinessCompany
             listEmployee.Show();
 
         }
+
+        private void projects_Click(object sender, EventArgs e)
+        {
+            Project project = new Project();
+            company.addProjet(project);
+            this.Hide();
+            ListProjects listProjects = new ListProjects(this);
+            listProjects.Show();
+        }
     }
 }
