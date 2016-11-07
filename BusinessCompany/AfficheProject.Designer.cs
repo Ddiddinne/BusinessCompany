@@ -86,6 +86,7 @@
             this.add.TabIndex = 5;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // label1
             // 
@@ -116,6 +117,8 @@
             this.delete.TabIndex = 8;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = true;
+            this.delete.Visible = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // AfficheProject
             // 

@@ -12,13 +12,28 @@ namespace BusinessCompany
 {
     public partial class ListProjects : Form
     {
-        Company company;
-        Game game;
+
         public ListProjects(Game game)
         {
+            this.listProject = game.ListProjects;
             this.company = game.Company;
             this.game = game;
             init();
+        }
+
+        Company company;
+        Game game;
+        private List<Project> listProject = new List<Project>();
+        public List<Project> ListProject
+        {
+            get { return listProject; }
+            set { listProject = value; }
+        }
+
+        public Company Company
+        {
+            get { return company; }
+            set { company = value; }
         }
 
         private void init()
@@ -67,6 +82,9 @@ namespace BusinessCompany
         private void addProject_Click(object sender, EventArgs e)
         {
 
+            ListAddProject listAddEmployee = new ListAddProject(this);
+            this.Hide();
+            listAddEmployee.Show();
         }
 
         private void back_Click(object sender, EventArgs e)

@@ -14,21 +14,23 @@ namespace BusinessCompany
     {
         static Timer timer1=new Timer();
         private Company company;
+        private List<Project> listProjects;
+        static int i = 10;
 
+        public List<Project> ListProjects
+        {
+            get { return listProjects; }
+            set { listProjects = value; }
+        }
         public Company Company
         {
             get { return company; }
             set { company = value; }
         }
         
-        
-        public Game()
-        {
-            InitializeComponent();
-        }
-
         public Game(Company company)
         {
+            this.listProjects = new List<Project>();
             this.company = company;
             InitializeComponent();
             this.BackgroundImage = company.Picture;
@@ -72,6 +74,15 @@ namespace BusinessCompany
                 }
             }
 
+            if (i == 10)
+            {
+                i = 0;
+                listProjects.Add(new Project());
+            }else
+            {
+                i++;
+            }
+
         }
 
         private void employees_Click(object sender, EventArgs e)
@@ -84,8 +95,6 @@ namespace BusinessCompany
 
         private void projects_Click(object sender, EventArgs e)
         {
-            Project project = new Project();
-            company.addProjet(project);
             this.Hide();
             ListProjects listProjects = new ListProjects(this);
             listProjects.Show();
