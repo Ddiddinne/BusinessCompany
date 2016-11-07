@@ -30,11 +30,11 @@
         {
             this.picture = new System.Windows.Forms.PictureBox();
             this.name = new System.Windows.Forms.Label();
-            this.addEmployee = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.salary = new System.Windows.Forms.Label();
             this.specialisation = new System.Windows.Forms.Label();
             this.level = new System.Windows.Forms.Label();
-            this.Btn_delete = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,15 +56,15 @@
             this.name.TabIndex = 1;
             this.name.Text = "name";
             // 
-            // addEmployee
+            // add
             // 
-            this.addEmployee.Location = new System.Drawing.Point(110, 67);
-            this.addEmployee.Name = "addEmployee";
-            this.addEmployee.Size = new System.Drawing.Size(75, 23);
-            this.addEmployee.TabIndex = 2;
-            this.addEmployee.Text = "Add Employee";
-            this.addEmployee.UseVisualStyleBackColor = true;
-            this.addEmployee.Click += new System.EventHandler(this.addEmployee_Click);
+            this.add.Location = new System.Drawing.Point(110, 67);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.TabIndex = 2;
+            this.add.Text = "Add";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.addEmployee_Click);
             // 
             // salary
             // 
@@ -95,14 +95,14 @@
             this.level.TabIndex = 5;
             this.level.Text = "level";
             // 
-            // Btn_delete
+            // delete
             // 
-            this.Btn_delete.Location = new System.Drawing.Point(191, 67);
-            this.Btn_delete.Name = "Btn_delete";
-            this.Btn_delete.Size = new System.Drawing.Size(75, 23);
-            this.Btn_delete.TabIndex = 6;
-            this.Btn_delete.Text = "Delete";
-            this.Btn_delete.UseVisualStyleBackColor = true;
+            this.delete.Location = new System.Drawing.Point(191, 67);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 6;
+            this.delete.Text = "Delete";
+            this.delete.UseVisualStyleBackColor = true;
             // 
             // AfficheEmployee
             // 
@@ -111,11 +111,11 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
-            this.Controls.Add(this.Btn_delete);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.level);
             this.Controls.Add(this.specialisation);
             this.Controls.Add(this.salary);
-            this.Controls.Add(this.addEmployee);
+            this.Controls.Add(this.add);
             this.Controls.Add(this.name);
             this.Controls.Add(this.picture);
             this.Enabled = false;
@@ -136,10 +136,10 @@
 
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Button addEmployee;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.Label salary;
         private System.Windows.Forms.Label specialisation;
         private System.Windows.Forms.Label level;
-        private System.Windows.Forms.Button Btn_delete;
+        private System.Windows.Forms.Button delete;
     }
 }

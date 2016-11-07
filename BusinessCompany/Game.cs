@@ -82,6 +82,15 @@ namespace BusinessCompany
 
         }
 
+        private void projects_Click(object sender, EventArgs e)
+        {
+            Project project = new Project();
+            company.addProjet(project);
+            this.Hide();
+            ListProjects listProjects = new ListProjects(this);
+            listProjects.Show();
+        }
+
         private void btnModifyLivel_Click(object sender, EventArgs e)
         {
             this.Hide();

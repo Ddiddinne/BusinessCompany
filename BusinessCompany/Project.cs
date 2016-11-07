@@ -9,15 +9,25 @@ namespace BusinessCompany
 {
     public class Project
     {
+        private static int num = 0;
+        private static Random random = new Random();
         public Project() {
             this.employeeAssigned = new List<Employee>();
+            Delay = random.Next(10,50);
+            DelayCompetition = random.Next(10, 50);
+            this.name = (NameProject)num;
+            num = (num + 1) % 6;
         }
-        private String name;
 
-        public String Name
+        public enum NameProject
+        {
+            Catrun, CityBuiler, FarmValley, Labyrinth, Broforce, Hammerwatch
+        }
+        private NameProject name;
+
+        public NameProject Name
         {
             get { return name; }
-            set { name = value; }
         }
 
         private int price;

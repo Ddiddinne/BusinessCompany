@@ -1,6 +1,6 @@
 ﻿namespace BusinessCompany
 {
-    partial class ListEmployees
+    partial class ListProjects
     {
         /// <summary>
         /// Required designer variable.
@@ -28,56 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.back = new System.Windows.Forms.Button();
-            this.addEmployee = new System.Windows.Forms.Button();
             this.list = new System.Windows.Forms.Panel();
+            this.addProject = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // back
-            // 
-            this.back.Location = new System.Drawing.Point(340, 427);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
-            this.back.TabIndex = 1;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.back_Click);
-            // 
-            // addEmployee
-            // 
-            this.addEmployee.Location = new System.Drawing.Point(340, 379);
-            this.addEmployee.Name = "addEmployee";
-            this.addEmployee.Size = new System.Drawing.Size(75, 23);
-            this.addEmployee.TabIndex = 2;
-            this.addEmployee.Text = "Add Employee";
-            this.addEmployee.UseVisualStyleBackColor = true;
-            this.addEmployee.Click += new System.EventHandler(this.addEmployee_Click);
             // 
             // list
             // 
             this.list.AutoScroll = true;
-            this.list.Location = new System.Drawing.Point(133, 71);
+            this.list.Location = new System.Drawing.Point(170, 72);
             this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(423, 100);
-            this.list.TabIndex = 3;
+            this.list.Size = new System.Drawing.Size(379, 100);
+            this.list.TabIndex = 6;
             // 
-            // ListEmployees
+            // addProject
+            // 
+            this.addProject.Location = new System.Drawing.Point(320, 397);
+            this.addProject.Name = "addProject";
+            this.addProject.Size = new System.Drawing.Size(75, 23);
+            this.addProject.TabIndex = 5;
+            this.addProject.Text = "Add";
+            this.addProject.UseVisualStyleBackColor = true;
+            this.addProject.Click += new System.EventHandler(this.addProject_Click);
+            // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(320, 443);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 4;
+            this.back.Text = "Back";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
+            // ListProjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.list);
-            this.Controls.Add(this.addEmployee);
+            this.Controls.Add(this.addProject);
             this.Controls.Add(this.back);
-            this.Name = "ListEmployees";
-            this.Text = "ListEmploye";
+            this.Name = "ListProjects";
+            this.Text = "ListProjects";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button addEmployee;
+
         private System.Windows.Forms.Panel list;
+        private System.Windows.Forms.Button addProject;
+        private System.Windows.Forms.Button back;
     }
 }

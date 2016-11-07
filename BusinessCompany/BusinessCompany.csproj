@@ -9,10 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BusinessCompany</RootNamespace>
     <AssemblyName>BusinessCompany</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AfficheProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficheProject.Designer.cs">
+      <DependentUpon>AfficheProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company.cs" />
     <Compile Include="AfficheEmployee.cs">
       <SubType>Form</SubType>
@@ -66,6 +71,12 @@
     <Compile Include="ListEmployees.Designer.cs">
       <DependentUpon>ListEmployees.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListProjects.Designer.cs">
+      <DependentUpon>ListProjects.cs</DependentUpon>
+	</Compile>
     <Compile Include="ModifyLevelCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +102,9 @@
     <EmbeddedResource Include="AfficheEmployee.resx">
       <DependentUpon>AfficheEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AfficheProject.resx">
+      <DependentUpon>AfficheProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +114,9 @@
     <EmbeddedResource Include="ListEmployees.resx">
       <DependentUpon>ListEmployees.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListProjects.resx">
+      <DependentUpon>ListProjects.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="ModifyLevelCompany.resx">
       <DependentUpon>ModifyLevelCompany.cs</DependentUpon>
     </EmbeddedResource>

@@ -12,7 +12,6 @@ namespace BusinessCompany
 {
     public partial class AfficheEmployee : Form
     {
-        public event EventHandler ClickButton;
         ListAddEmployee parent;
         private Employee employee;
 
@@ -32,13 +31,13 @@ namespace BusinessCompany
             salary.Text = employee.Salary.ToString() + "$";
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
-            Btn_delete.Hide();
-            if (show) { addEmployee.Hide(); Btn_delete.Show(); }
+            delete.Hide();
+            if (show) { add.Hide(); delete.Show(); }
         }
 
         public Button getButtonDelete()
         {
-            return this.Btn_delete;
+            return this.delete;
         }
 
         private void addEmployee_Click(object sender, EventArgs e)

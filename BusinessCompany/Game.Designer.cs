@@ -71,6 +71,7 @@
             this.projects.TabIndex = 4;
             this.projects.Text = "Projects";
             this.projects.UseVisualStyleBackColor = true;
+            this.projects.Click += new System.EventHandler(this.projects_Click);
             // 
             // bourse
             // 
@@ -117,6 +118,7 @@
             this.Controls.Add(this.CA);
             this.Controls.Add(this.companyName);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.Text = "Form1";

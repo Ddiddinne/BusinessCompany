@@ -46,7 +46,7 @@ namespace BusinessCompany
         public void DrawListEmployee(List<Employee> listEmployee)
         {
             int i = 0;
-            foreach (Employee employee in company.ListEmployee)
+            foreach (Employee employee in listEmployee)
             {
                 AfficheEmployee afficheEmployee = new AfficheEmployee(true, employee);
                 afficheEmployee.TopLevel = false;
