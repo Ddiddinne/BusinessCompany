@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BusinessCompany</RootNamespace>
     <AssemblyName>BusinessCompany</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -76,7 +77,13 @@
     </Compile>
     <Compile Include="ListProjects.Designer.cs">
       <DependentUpon>ListProjects.cs</DependentUpon>
-	</Compile>
+    </Compile>
+    <Compile Include="LostGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LostGame.Designer.cs">
+      <DependentUpon>LostGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModifyLevelCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,7 +123,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListProjects.resx">
       <DependentUpon>ListProjects.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LostGame.resx">
+      <DependentUpon>LostGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModifyLevelCompany.resx">
       <DependentUpon>ModifyLevelCompany.cs</DependentUpon>
     </EmbeddedResource>
