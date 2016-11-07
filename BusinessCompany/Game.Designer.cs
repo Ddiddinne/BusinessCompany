@@ -38,10 +38,13 @@
             // companyName
             // 
             this.companyName.AutoSize = true;
-            this.companyName.Location = new System.Drawing.Point(320, 42);
+            this.companyName.BackColor = System.Drawing.Color.Transparent;
+            this.companyName.Font = new System.Drawing.Font("Miramonte", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.companyName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.companyName.Location = new System.Drawing.Point(248, 42);
             this.companyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.companyName.Name = "companyName";
-            this.companyName.Size = new System.Drawing.Size(78, 13);
+            this.companyName.Size = new System.Drawing.Size(201, 33);
             this.companyName.TabIndex = 1;
             this.companyName.Text = "companyName";
             // 
@@ -50,7 +53,7 @@
             this.employees.BackColor = System.Drawing.Color.Transparent;
             this.employees.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.employees.FlatAppearance.BorderSize = 0;
-            this.employees.Location = new System.Drawing.Point(254, 168);
+            this.employees.Location = new System.Drawing.Point(254, 172);
             this.employees.Margin = new System.Windows.Forms.Padding(0);
             this.employees.Name = "employees";
             this.employees.Size = new System.Drawing.Size(184, 42);
@@ -70,7 +73,7 @@
             // 
             // bourse
             // 
-            this.bourse.Location = new System.Drawing.Point(254, 304);
+            this.bourse.Location = new System.Drawing.Point(254, 315);
             this.bourse.Name = "bourse";
             this.bourse.Size = new System.Drawing.Size(184, 42);
             this.bourse.TabIndex = 5;
@@ -80,10 +83,12 @@
             // CA
             // 
             this.CA.AutoSize = true;
-            this.CA.Location = new System.Drawing.Point(115, 42);
+            this.CA.BackColor = System.Drawing.Color.Transparent;
+            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
+            this.CA.Location = new System.Drawing.Point(33, 24);
             this.CA.Margin = new System.Windows.Forms.Padding(4);
             this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(35, 13);
+            this.CA.Size = new System.Drawing.Size(68, 24);
             this.CA.TabIndex = 2;
             this.CA.Text = "label1";
             // 
@@ -99,6 +104,7 @@
             this.Controls.Add(this.employees);
             this.Controls.Add(this.CA);
             this.Controls.Add(this.companyName);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.Text = "Form1";

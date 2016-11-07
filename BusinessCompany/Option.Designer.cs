@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.valid = new System.Windows.Forms.Button();
             this.levelchecked = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.levelchecked.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,18 +49,20 @@
             // 
             // nameCompany
             // 
-            this.nameCompany.Location = new System.Drawing.Point(426, 205);
+            this.nameCompany.Font = new System.Drawing.Font("Miramonte", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameCompany.Location = new System.Drawing.Point(423, 229);
             this.nameCompany.Name = "nameCompany";
-            this.nameCompany.Size = new System.Drawing.Size(100, 20);
+            this.nameCompany.Size = new System.Drawing.Size(100, 29);
             this.nameCompany.TabIndex = 1;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
+            this.radioButton1.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(15, 19);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(31, 17);
+            this.radioButton1.Size = new System.Drawing.Size(36, 23);
             this.radioButton1.TabIndex = 4;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1";
@@ -70,9 +71,10 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(64, 19);
+            this.radioButton2.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(57, 19);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(31, 17);
+            this.radioButton2.Size = new System.Drawing.Size(36, 23);
             this.radioButton2.TabIndex = 5;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "2";
@@ -81,9 +83,10 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(106, 19);
+            this.radioButton3.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(99, 19);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(31, 17);
+            this.radioButton3.Size = new System.Drawing.Size(36, 23);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "3";
@@ -92,28 +95,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(436, 157);
+            this.label1.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(368, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.Size = new System.Drawing.Size(216, 24);
             this.label1.TabIndex = 8;
-            this.label1.Text = "nom compagnie";
+            this.label1.Text = "Name of the Compagny";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(464, 256);
+            this.label2.Font = new System.Drawing.Font("Miramonte", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(453, 277);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(44, 23);
             this.label2.TabIndex = 9;
             this.label2.Text = "level";
             // 
             // valid
             // 
-            this.valid.Location = new System.Drawing.Point(451, 394);
+            this.valid.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valid.Location = new System.Drawing.Point(437, 419);
             this.valid.Name = "valid";
-            this.valid.Size = new System.Drawing.Size(75, 23);
+            this.valid.Size = new System.Drawing.Size(86, 33);
             this.valid.TabIndex = 10;
-            this.valid.Text = "valider";
+            this.valid.Text = "validate";
             this.valid.UseVisualStyleBackColor = true;
             this.valid.Click += new System.EventHandler(this.valid_Click);
             // 
@@ -122,20 +128,11 @@
             this.levelchecked.Controls.Add(this.radioButton3);
             this.levelchecked.Controls.Add(this.radioButton2);
             this.levelchecked.Controls.Add(this.radioButton1);
-            this.levelchecked.Location = new System.Drawing.Point(381, 288);
+            this.levelchecked.Location = new System.Drawing.Point(405, 315);
             this.levelchecked.Name = "levelchecked";
-            this.levelchecked.Size = new System.Drawing.Size(200, 65);
+            this.levelchecked.Size = new System.Drawing.Size(145, 65);
             this.levelchecked.TabIndex = 11;
             this.levelchecked.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(457, 482);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
             // 
             // Option
             // 
@@ -145,7 +142,6 @@
             this.BackgroundImage = global::BusinessCompany.Properties.Resources.backgroudOption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.levelchecked);
             this.Controls.Add(this.valid);
             this.Controls.Add(this.label2);
@@ -171,6 +167,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button valid;
         private System.Windows.Forms.GroupBox levelchecked;
-        private System.Windows.Forms.Label label3;
     }
 }

@@ -37,7 +37,6 @@ namespace BusinessCompany
             if (!nameCompany.Text.Equals("") && levelgame != 0)
             {
                 Company company = new Company(nameCompany.Text, levelgame);
-                label3.Text=company.Name;
                 Employee employee = new Employee();
                 company.addEmployee(employee);
 

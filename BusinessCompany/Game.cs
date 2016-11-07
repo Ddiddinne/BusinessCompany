@@ -28,6 +28,18 @@ namespace BusinessCompany
             this.BackgroundImage = company.Picture;
             CA.Text = company.Money.ToString();
             companyName.Text = company.Name;
+            companyName.Location = new Point(
+                this.Width / 2 - companyName.Width / 2,
+                companyName.Location.Y);
+            foreach(Control c in this.Controls)
+            {
+                if(c is Button)
+                {
+                    c.Location = new Point(
+                        this.Width / 2 - c.Width / 2,
+                        c.Location.Y);
+                }
+            }
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; //(1 second)
             timer1.Start();
