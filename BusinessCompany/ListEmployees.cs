@@ -33,7 +33,7 @@ namespace BusinessCompany
 
         public ListEmployees(Game game)
         {
-            this.company = game.company;
+            this.company = game.Company;
             this.game = game;
             init();
         }
@@ -70,7 +70,7 @@ namespace BusinessCompany
 
         private void addEmployee_Click(object sender, EventArgs e)
         {
-            while (listPerson.Count + company.ListEmployee.Count < game.company.LevelCompany * 2)
+            while (listPerson.Count + company.ListEmployee.Count < game.Company.LevelCompany * 2)
             {
                 listPerson.Add(new Employee());
             }

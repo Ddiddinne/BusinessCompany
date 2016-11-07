@@ -20,7 +20,7 @@ namespace BusinessCompany
         {
             this.levelGame = level;
             this.Name = name;
-            this.money = 5000 - (level - 1) * 1000;
+            this.money = 100000 - (level - 1) * 1000;
             LevelCompany = 1;
             this.listEmployee = new List<Employee>();
             this.listProjects = new List<Project>();
