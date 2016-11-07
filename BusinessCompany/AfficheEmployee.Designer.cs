@@ -34,6 +34,7 @@
             this.salary = new System.Windows.Forms.Label();
             this.specialisation = new System.Windows.Forms.Label();
             this.level = new System.Windows.Forms.Label();
+            this.Btn_delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +95,15 @@
             this.level.TabIndex = 5;
             this.level.Text = "level";
             // 
+            // Btn_delete
+            // 
+            this.Btn_delete.Location = new System.Drawing.Point(191, 67);
+            this.Btn_delete.Name = "Btn_delete";
+            this.Btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.Btn_delete.TabIndex = 6;
+            this.Btn_delete.Text = "Delete";
+            this.Btn_delete.UseVisualStyleBackColor = true;
+            // 
             // AfficheEmployee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -101,6 +111,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
+            this.Controls.Add(this.Btn_delete);
             this.Controls.Add(this.level);
             this.Controls.Add(this.specialisation);
             this.Controls.Add(this.salary);
@@ -129,5 +140,6 @@
         private System.Windows.Forms.Label salary;
         private System.Windows.Forms.Label specialisation;
         private System.Windows.Forms.Label level;
+        private System.Windows.Forms.Button Btn_delete;
     }
 }
