@@ -12,7 +12,6 @@ namespace BusinessCompany
 {
     public partial class AfficheEmployee : Form
     {
-        public event EventHandler ClickButton;
         ListAddEmployee parent;
         private Employee employee;
 

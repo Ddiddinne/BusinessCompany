@@ -76,6 +76,12 @@
     </Compile>
     <Compile Include="ListProjects.Designer.cs">
       <DependentUpon>ListProjects.cs</DependentUpon>
+	</Compile>
+    <Compile Include="ModifyLevelCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyLevelCompany.Designer.cs">
+      <DependentUpon>ModifyLevelCompany.cs</DependentUpon>
     </Compile>
     <Compile Include="Option.cs">
       <SubType>Form</SubType>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListProjects.resx">
       <DependentUpon>ListProjects.cs</DependentUpon>
+	</EmbeddedResource>
+    <EmbeddedResource Include="ModifyLevelCompany.resx">
+      <DependentUpon>ModifyLevelCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Option.resx">
       <DependentUpon>Option.cs</DependentUpon>

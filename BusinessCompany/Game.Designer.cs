@@ -33,6 +33,7 @@
             this.projects = new System.Windows.Forms.Button();
             this.bourse = new System.Windows.Forms.Button();
             this.CA = new System.Windows.Forms.Label();
+            this.btnModifyLivel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // companyName
@@ -93,6 +94,16 @@
             this.CA.TabIndex = 2;
             this.CA.Text = "label1";
             // 
+            // btnModifyLivel
+            // 
+            this.btnModifyLivel.Location = new System.Drawing.Point(254, 411);
+            this.btnModifyLivel.Name = "btnModifyLivel";
+            this.btnModifyLivel.Size = new System.Drawing.Size(184, 35);
+            this.btnModifyLivel.TabIndex = 6;
+            this.btnModifyLivel.Text = "Upgrade Company";
+            this.btnModifyLivel.UseVisualStyleBackColor = true;
+            this.btnModifyLivel.Click += new System.EventHandler(this.btnModifyLivel_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,6 +111,7 @@
             this.BackgroundImage = global::BusinessCompany.Properties.Resources.room_b;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.Controls.Add(this.btnModifyLivel);
             this.Controls.Add(this.bourse);
             this.Controls.Add(this.projects);
             this.Controls.Add(this.employees);
@@ -122,6 +134,7 @@
         private System.Windows.Forms.Button bourse;
 
         private System.Windows.Forms.Label CA;
+        private System.Windows.Forms.Button btnModifyLivel;
     }
 }
 

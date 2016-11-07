@@ -12,13 +12,19 @@ namespace BusinessCompany
 {
     public partial class Game : Form
     {
-        static Timer timer1 = new Timer();
+        static Timer timer1=new Timer();
+        private Company company;
 
-        public Company company = new Company();
+        public Company Company
+        {
+            get { return company; }
+            set { company = value; }
+        }
+        
+        
         public Game()
         {
             InitializeComponent();
-            
         }
 
         public Game(Company company)
@@ -83,6 +89,13 @@ namespace BusinessCompany
             this.Hide();
             ListProjects listProjects = new ListProjects(this);
             listProjects.Show();
+        }
+
+        private void btnModifyLivel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ModifyLevelCompany modifyLevelCompany = new ModifyLevelCompany(this);
+            modifyLevelCompany.Show();
         }
     }
 }

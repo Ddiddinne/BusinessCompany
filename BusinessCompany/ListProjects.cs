@@ -16,7 +16,7 @@ namespace BusinessCompany
         Game game;
         public ListProjects(Game game)
         {
-            this.company = game.company;
+            this.company = game.Company;
             this.game = game;
             init();
         }
