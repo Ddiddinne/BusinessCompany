@@ -20,6 +20,7 @@ namespace BusinessCompany
             this.IsMdiContainer = true;
             int i = 0;
 
+
             foreach (Employee employee in listEmployees.ListPerson)
             {
 
@@ -42,7 +43,9 @@ namespace BusinessCompany
 
         public void add(Employee employee)
         {
+
             listEmployees.Company.addEmployee(employee);
+            listEmployees.ListPerson.Remove(employee);
             listEmployees.Show();
             listEmployees.refresh();
             this.Close();

@@ -65,7 +65,7 @@ namespace BusinessCompany
 
         private void addEmployee_Click(object sender, EventArgs e)
         {
-            while (listPerson.Count != game.company.LevelCompany * 2)
+            while (listPerson.Count + company.ListEmployee.Count < game.company.LevelCompany * 2)
             {
                 listPerson.Add(new Employee());
             }
