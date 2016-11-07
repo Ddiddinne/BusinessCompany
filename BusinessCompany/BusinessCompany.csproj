@@ -65,6 +65,12 @@
     <Compile Include="ListAddEmployee.Designer.cs">
       <DependentUpon>ListAddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListAddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAddProject.Designer.cs">
+      <DependentUpon>ListAddProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,7 +82,7 @@
     </Compile>
     <Compile Include="ListProjects.Designer.cs">
       <DependentUpon>ListProjects.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="ModifyLevelCompany.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,12 +117,15 @@
     <EmbeddedResource Include="ListAddEmployee.resx">
       <DependentUpon>ListAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListAddProject.resx">
+      <DependentUpon>ListAddProject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListEmployees.resx">
       <DependentUpon>ListEmployees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListProjects.resx">
       <DependentUpon>ListProjects.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModifyLevelCompany.resx">
       <DependentUpon>ModifyLevelCompany.cs</DependentUpon>
     </EmbeddedResource>

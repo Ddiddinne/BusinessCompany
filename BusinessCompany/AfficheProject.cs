@@ -12,7 +12,7 @@ namespace BusinessCompany
 {
     public partial class AfficheProject : Form
     {
-        //ListAddEmployee parent;
+        ListAddProject parent;
         private Project project;
 
         public Project Project
@@ -20,10 +20,11 @@ namespace BusinessCompany
             get { return project; }
             set { project = value; }
         }
-        public AfficheProject(Boolean show, Project project/*, ListAddProject parent = null*/)
+        public AfficheProject(Boolean show, Project project, ListAddProject parent = null)
         {
             InitializeComponent();
             this.project = project;
+            this.parent = parent;
             projectName.Text = project.Name.ToString();
             timeProject.Text = project.Delay.ToString();
             timeConcurent.Text = project.DelayCompetition.ToString();
@@ -35,5 +36,19 @@ namespace BusinessCompany
             return this.delete;
         }
 
+        private void add_Click(object sender, EventArgs e)
+        {
+            Button btnAdd = (Button)sender;
+            AfficheProject affiche = (AfficheProject)btnAdd.Parent;
+            Project project = affiche.project;
+
+            MessageBox.Show(this.project.Name.ToString());
+            parent.add(project);
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

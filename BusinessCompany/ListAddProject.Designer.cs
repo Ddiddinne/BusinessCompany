@@ -1,6 +1,6 @@
 ﻿namespace BusinessCompany
 {
-    partial class ListAddEmployee
+    partial class ListAddProject
     {
         /// <summary>
         /// Required designer variable.
@@ -29,43 +29,32 @@
         private void InitializeComponent()
         {
             this.annuler = new System.Windows.Forms.Button();
-            this.label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // annuler
             // 
-            this.annuler.Location = new System.Drawing.Point(327, 415);
+            this.annuler.Location = new System.Drawing.Point(322, 453);
             this.annuler.Name = "annuler";
             this.annuler.Size = new System.Drawing.Size(75, 23);
-            this.annuler.TabIndex = 6;
+            this.annuler.TabIndex = 8;
             this.annuler.Text = "Back";
             this.annuler.UseVisualStyleBackColor = true;
-            this.annuler.Click += new System.EventHandler(this.annuler_Click);
+            this.annuler.Click += new System.EventHandler(this.annuler_Click_1);
             // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(13, 264);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(0, 13);
-            this.label.TabIndex = 7;
-            // 
-            // ListAddEmployee
+            // ListAddProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 538);
-            this.Controls.Add(this.label);
             this.Controls.Add(this.annuler);
-            this.Name = "ListAddEmployee";
-            this.Text = "Form1";
+            this.Name = "ListAddProject";
+            this.Text = "ListAddProject";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+
         private System.Windows.Forms.Button annuler;
-        private System.Windows.Forms.Label label;
     }
 }
