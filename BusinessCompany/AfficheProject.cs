@@ -23,7 +23,8 @@ namespace BusinessCompany
         public AfficheProject(Boolean show, Project project/*, ListAddProject parent = null*/)
         {
             InitializeComponent();
-            Name = project.Name.ToString();
+            this.project = project;
+            projectName.Text = project.Name.ToString();
             timeProject.Text = project.Delay.ToString();
             timeConcurent.Text = project.DelayCompetition.ToString();
             if (show) { add.Hide(); delete.Show(); }

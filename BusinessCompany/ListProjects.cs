@@ -34,7 +34,7 @@ namespace BusinessCompany
             {
                 AfficheProject afficheProject = new AfficheProject(true, project);
                 afficheProject.TopLevel = false;
-                afficheProject.Location = new Point(0, i * 100);
+                afficheProject.Location = new Point(0, i * 155);
                 i++;
                 afficheProject.Show();
                 afficheProject.Enabled = true;

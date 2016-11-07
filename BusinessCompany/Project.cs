@@ -23,6 +23,7 @@ namespace BusinessCompany
         {
             Catrun, CityBuiler, FarmValley, Labyrinth, Broforce, Hammerwatch
         }
+
         private NameProject name;
 
         public NameProject Name
