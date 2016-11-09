@@ -90,7 +90,6 @@ namespace BusinessCompany
             Button btnAdd = (Button)sender;
             AfficheEmployee affiche = (AfficheEmployee)btnAdd.Parent;
             Employee employee = affiche.Employee;
-            MessageBox.Show(employee.LastName.ToString());
             this.company.ListEmployee.Remove(employee);
             affiche.Hide();
             this.list.Controls.Remove(affiche);

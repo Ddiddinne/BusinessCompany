@@ -41,14 +41,7 @@ namespace BusinessCompany
             Button btnAdd = (Button)sender;
             AfficheProject affiche = (AfficheProject)btnAdd.Parent;
             Project project = affiche.project;
-
-            MessageBox.Show(this.project.Name.ToString());
             parent.add(project);
-        }
-
-        private void delete_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

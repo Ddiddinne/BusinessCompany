@@ -66,7 +66,6 @@ namespace BusinessCompany
             Button btnAdd = (Button)sender;
             AfficheProject affiche = (AfficheProject)btnAdd.Parent;
             Project project = affiche.Project;
-            MessageBox.Show(project.Name.ToString());
             this.company.ListProjects.Remove(project);
             affiche.Hide();
             this.list.Controls.Remove(affiche);

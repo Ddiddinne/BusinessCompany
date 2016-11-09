@@ -45,8 +45,6 @@ namespace BusinessCompany
             Button btnAdd = (Button)sender;
             AfficheEmployee affiche = (AfficheEmployee)btnAdd.Parent;
             Employee employee = affiche.employee;
-
-            MessageBox.Show(this.employee.LastName.ToString());
             parent.add(employee);
         }
 
