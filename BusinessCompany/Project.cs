@@ -12,6 +12,7 @@ namespace BusinessCompany
         private static int num = 0;
         private static Random random = new Random();
         public Project() {
+            this.level = 1;
             this.employeeAssigned = new List<Employee>();
             Delay = random.Next(10,50);
             DelayCompetition = random.Next(10, 50);

@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.delete = new System.Windows.Forms.Button();
+            this.lbLevel = new System.Windows.Forms.Label();
+            this.lbLevextTxt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +121,26 @@
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Visible = false;
             // 
+            // lbLevel
+            // 
+            this.lbLevel.AutoSize = true;
+            this.lbLevel.Font = new System.Drawing.Font("Miramonte", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLevel.Location = new System.Drawing.Point(234, 66);
+            this.lbLevel.Name = "lbLevel";
+            this.lbLevel.Size = new System.Drawing.Size(37, 14);
+            this.lbLevel.TabIndex = 9;
+            this.lbLevel.Text = "label3";
+            // 
+            // lbLevextTxt
+            // 
+            this.lbLevextTxt.AutoSize = true;
+            this.lbLevextTxt.Font = new System.Drawing.Font("Miramonte", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLevextTxt.Location = new System.Drawing.Point(208, 66);
+            this.lbLevextTxt.Name = "lbLevextTxt";
+            this.lbLevextTxt.Size = new System.Drawing.Size(20, 14);
+            this.lbLevextTxt.TabIndex = 10;
+            this.lbLevextTxt.Text = "lvl:";
+            // 
             // AfficheProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,6 +148,8 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 150);
             this.ControlBox = false;
+            this.Controls.Add(this.lbLevextTxt);
+            this.Controls.Add(this.lbLevel);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -154,5 +178,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Label lbLevel;
+        private System.Windows.Forms.Label lbLevextTxt;
     }
 }

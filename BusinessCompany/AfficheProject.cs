@@ -28,6 +28,7 @@ namespace BusinessCompany
             projectName.Text = project.Name.ToString();
             timeProject.Text = project.Delay.ToString();
             timeConcurent.Text = project.DelayCompetition.ToString();
+            this.lbLevel.Text = this.project.Level.ToString(); 
             if (show) { add.Hide(); delete.Show(); }
         }
 
