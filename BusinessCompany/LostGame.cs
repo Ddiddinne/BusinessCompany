@@ -48,5 +48,10 @@ namespace BusinessCompany
             Option option = new Option();
             option.Show();
         }
+
+        private void LostGame_Load(object sender, EventArgs e)
+        {
+            Form.ActiveForm.Close();
+        }
     }
 }

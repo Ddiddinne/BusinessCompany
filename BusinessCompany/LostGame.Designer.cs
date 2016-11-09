@@ -136,7 +136,7 @@
             this.radioButton1.Text = "1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // lostGame
+            // LostGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,8 +147,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "lostGame";
+            this.Name = "LostGame";
             this.Text = "lostGame";
+            this.Load += new System.EventHandler(this.LostGame_Load);
             this.levelchecked.ResumeLayout(false);
             this.levelchecked.PerformLayout();
             this.ResumeLayout(false);
