@@ -59,6 +59,7 @@ namespace BusinessCompany
         private void TimeDelayChange(object sender, EventArgs e)
         {
             this.timeConcurent.Text = this.project.DelayCompetition.ToString();
+            this.timeProject.Text = this.project.Delay.ToString();
         }
     }
 }

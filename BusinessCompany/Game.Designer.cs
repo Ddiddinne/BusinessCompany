@@ -102,7 +102,7 @@
             this.btnModifyLivel.TabIndex = 6;
             this.btnModifyLivel.Text = "Upgrade Company";
             this.btnModifyLivel.UseVisualStyleBackColor = true;
-            this.btnModifyLivel.Click += new System.EventHandler(this.btnModifyLivel_Click);
+            this.btnModifyLivel.Click += new System.EventHandler(this.btnModifyLevel_Click);
             // 
             // Game
             // 

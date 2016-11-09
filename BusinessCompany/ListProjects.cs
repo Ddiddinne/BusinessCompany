@@ -151,10 +151,12 @@ namespace BusinessCompany
             if (checkAssigned.Checked)
             {
                 projectSelected.addEmployee(afficheEmployee.Employee);
+                afficheEmployee.Employee.addProject(projectSelected);
             }
             else
             {
                 projectSelected.removeEmployee(afficheEmployee.Employee);
+                afficheEmployee.Employee.removeProject(projectSelected);
             }
         }
     }

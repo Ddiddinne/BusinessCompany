@@ -78,10 +78,9 @@ namespace BusinessCompany
             {
                 foreach(Employee employee in project.EmployeeAssigned)
                 {
-                   project.Time +=  unitWork/ employee.ProjectAssigned.Count;
+                   project.Delay -=  unitWork/ employee.ProjectAssigned.Count;
                 }
-                double previousDelayCompetition=project.DelayCompetition;
-                project.DelayCompetition -= unitWork;
+                project.DelayCompetition -= project.Level*unitWork;
                 //lvlProjet*unitWork
             }
 
@@ -115,7 +114,7 @@ namespace BusinessCompany
             listProjects.Show();
         }
 
-        private void btnModifyLivel_Click(object sender, EventArgs e)
+        private void btnModifyLevel_Click(object sender, EventArgs e)
         {
             this.Hide();
             ModifyLevelCompany modifyLevelCompany = new ModifyLevelCompany(this);
