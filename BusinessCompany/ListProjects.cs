@@ -23,6 +23,7 @@ namespace BusinessCompany
 
         Company company;
         Game game;
+        private Project projectSelected;
         private List<Project> listProject = new List<Project>();
         public List<Project> ListProject
         {
@@ -65,6 +66,7 @@ namespace BusinessCompany
 
         private void remove(object sender, EventArgs e)
         {
+            projectSelected = null;
             Button btnAdd = (Button)sender;
             AfficheProject affiche = (AfficheProject)btnAdd.Parent;
             Project project = affiche.Project;
@@ -77,26 +79,48 @@ namespace BusinessCompany
         private void showEmployees(object sender, EventArgs e)
         {
             Button buttonClicked = (Button)sender;
+            AfficheProject afficheProjectSelected = (AfficheProject)buttonClicked.Parent;
+            Boolean isAlreadySelected=false;
+            projectSelected = null;
+
+            //To know is the project has already selected or not
+            if(afficheProjectSelected.getNameProject().BackColor == Color.Gray)
+            {
+                isAlreadySelected = true;
+            }
+            //We deselect all the project and so clear ListEmployees to visually have any project selected
             foreach(AfficheProject afficheProject in this.list.Controls)
             {
                 afficheProject.getNameProject().BackColor = Color.White;
             }
-            AfficheProject afficheProjectSelected = (AfficheProject)buttonClicked.Parent;
-            afficheProjectSelected.getNameProject().BackColor = Color.Gray;
-            int i = 0;
-            foreach (Employee employee in company.ListEmployee)
-            {
-                AfficheEmployee afficheEmployee = new AfficheEmployee(2, employee);
-                afficheEmployee.TopLevel = false;
-                afficheEmployee.Location = new Point(0, i * 100);
-                i++;
-                afficheEmployee.Show();
-                afficheEmployee.Enabled = true;
-                Button btnDelete = afficheEmployee.getButtonDelete();
-                btnDelete.Click += new EventHandler(remove);
-                afficheEmployee.Dock = DockStyle.None;
-                this.listEmployees.Controls.Add(afficheEmployee);
+            listEmployees.Controls.Clear();
+
+            //If the project has never selected, we create the employees in the ListEmployees
+            if (!isAlreadySelected) {
+                afficheProjectSelected.getNameProject().BackColor = Color.Gray;
+                projectSelected = afficheProjectSelected.Project;
+                int i = 0;
+                foreach (Employee employee in company.ListEmployee)
+                {
+                    AfficheEmployee afficheEmployee = new AfficheEmployee(2, employee);
+                    afficheEmployee.getButtonSelect().Click += new EventHandler(select);
+                    afficheEmployee.TopLevel = false;
+                    afficheEmployee.Location = new Point(0, i * 100);
+                    i++;
+                    afficheEmployee.Show();
+                    afficheEmployee.Enabled = true;
+                    Button btnDelete = afficheEmployee.getButtonDelete();
+                    btnDelete.Click += new EventHandler(remove);
+                    afficheEmployee.Dock = DockStyle.None;
+                    if (projectSelected.EmployeeAssigned.Contains(employee))
+                    {
+                        afficheEmployee.getButtonSelect().Checked = true;
+                    }
+                    this.listEmployees.Controls.Add(afficheEmployee);
+                }
+                listEmployees.Size = new Size(300, 300);
             }
+            
         }
 
         public void refresh()
@@ -117,6 +141,21 @@ namespace BusinessCompany
         {
             game.Show();
             this.Close();
+        }
+
+        private void select(object sender, EventArgs e)
+        {
+            CheckBox checkAssigned = (CheckBox)sender;
+            AfficheEmployee afficheEmployee = (AfficheEmployee)checkAssigned.Parent;
+
+            if (checkAssigned.Checked)
+            {
+                projectSelected.addEmployee(afficheEmployee.Employee);
+            }
+            else
+            {
+                projectSelected.removeEmployee(afficheEmployee.Employee);
+            }
         }
     }
 }

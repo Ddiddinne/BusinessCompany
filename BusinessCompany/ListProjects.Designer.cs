@@ -37,7 +37,7 @@
             // list
             // 
             this.list.AutoScroll = true;
-            this.list.Location = new System.Drawing.Point(134, 68);
+            this.list.Location = new System.Drawing.Point(59, 68);
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(290, 100);
             this.list.TabIndex = 6;
@@ -65,7 +65,7 @@
             // listEmployees
             // 
             this.listEmployees.AutoScroll = true;
-            this.listEmployees.Location = new System.Drawing.Point(430, 68);
+            this.listEmployees.Location = new System.Drawing.Point(390, 68);
             this.listEmployees.Name = "listEmployees";
             this.listEmployees.Size = new System.Drawing.Size(290, 100);
             this.listEmployees.TabIndex = 7;

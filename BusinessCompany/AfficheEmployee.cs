@@ -34,13 +34,13 @@ namespace BusinessCompany
             switch (show)
             {
                 case 0:
-                    add.Show(); delete.Hide(); Assigned.Hide();
+                    add.Show(); delete.Hide(); assigned.Hide();
                     break;
                 case 1:
-                    add.Hide(); delete.Show(); Assigned.Hide();
+                    add.Hide(); delete.Show(); assigned.Hide();
                     break;
                 case 2:
-                    add.Hide(); delete.Hide(); Assigned.Show();
+                    add.Hide(); delete.Hide(); assigned.Show();
                     break;
             }
         }
@@ -48,6 +48,11 @@ namespace BusinessCompany
         public Button getButtonDelete()
         {
             return this.delete;
+        }
+
+        public CheckBox getButtonSelect()
+        {
+            return this.assigned; ;
         }
 
         private void addEmployee_Click(object sender, EventArgs e)

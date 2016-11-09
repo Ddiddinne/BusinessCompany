@@ -135,7 +135,12 @@ namespace BusinessCompany
         {
             this.employeeAssigned.Add(employee);
         }
-        
+
+        public void removeEmployee(Employee employee)
+        {
+            this.employeeAssigned.Remove(employee);
+        }
+
 
 
     }
