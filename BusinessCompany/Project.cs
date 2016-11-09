@@ -11,6 +11,7 @@ namespace BusinessCompany
     {
         private static int num = 0;
         private static Random random = new Random();
+        public event EventHandler timeDelayChange;
         public Project() {
             this.level = 1;
             this.employeeAssigned = new List<Employee>();
@@ -81,7 +82,13 @@ namespace BusinessCompany
         public double DelayCompetition
         {
             get { return delayCompetition; }
-            set { delayCompetition = value; }
+            set { 
+                delayCompetition = value;
+                if (timeDelayChange != null)
+                {
+                    timeDelayChange(this, EventArgs.Empty);
+                }
+            }
         }
 
         private Image picture;

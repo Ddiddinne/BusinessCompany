@@ -14,6 +14,7 @@ namespace BusinessCompany
     {
         ListAddProject parent;
         private Project project;
+        
 
         public Project Project
         {
@@ -28,6 +29,7 @@ namespace BusinessCompany
             projectName.Text = project.Name.ToString();
             timeProject.Text = project.Delay.ToString();
             timeConcurent.Text = project.DelayCompetition.ToString();
+            this.project.timeDelayChange+=TimeDelayChange;
             this.lbLevel.Text = this.project.Level.ToString(); 
             if (show) { add.Hide(); delete.Show(); }
         }
@@ -43,6 +45,11 @@ namespace BusinessCompany
             AfficheProject affiche = (AfficheProject)btnAdd.Parent;
             Project project = affiche.project;
             parent.add(project);
+        }
+
+        private void TimeDelayChange(object sender, EventArgs e)
+        {
+            this.timeConcurent.Text = this.project.DelayCompetition.ToString();
         }
     }
 }
