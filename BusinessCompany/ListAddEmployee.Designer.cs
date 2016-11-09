@@ -30,6 +30,7 @@
         {
             this.annuler = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
+            this.list = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // annuler
@@ -50,11 +51,20 @@
             this.label.Size = new System.Drawing.Size(0, 13);
             this.label.TabIndex = 7;
             // 
+            // list
+            // 
+            this.list.AutoScroll = true;
+            this.list.Location = new System.Drawing.Point(147, 65);
+            this.list.Name = "list";
+            this.list.Size = new System.Drawing.Size(423, 326);
+            this.list.TabIndex = 8;
+            // 
             // ListAddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.Controls.Add(this.list);
             this.Controls.Add(this.label);
             this.Controls.Add(this.annuler);
             this.Name = "ListAddEmployee";
@@ -67,5 +77,6 @@
         #endregion
         private System.Windows.Forms.Button annuler;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Panel list;
     }
 }

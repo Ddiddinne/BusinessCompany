@@ -18,20 +18,21 @@ namespace BusinessCompany
         {
             this.listProjects = listProjects;
             InitializeComponent();
-            this.IsMdiContainer = true;
             int i = 0;
 
 
             foreach (Project project in listProjects.ListProject)
             {
                 AfficheProject afficheProject = new AfficheProject(false, project, this);
-                afficheProject.MdiParent = this;
-                afficheProject.Location = new Point(200, i * 150);
+                afficheProject.Location = new Point(0, i * 150);
+                afficheProject.TopLevel = false;
                 i++;
                 afficheProject.Dock = DockStyle.None;
                 afficheProject.Enabled = true;
                 afficheProject.Show();
+                this.list.Controls.Add(afficheProject);
             }
+            list.Size = new Size(300, 300);
 
         }
 

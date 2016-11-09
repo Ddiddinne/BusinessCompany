@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.annuler = new System.Windows.Forms.Button();
+            this.list = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // annuler
@@ -41,11 +42,20 @@
             this.annuler.UseVisualStyleBackColor = true;
             this.annuler.Click += new System.EventHandler(this.annuler_Click_1);
             // 
+            // list
+            // 
+            this.list.AutoScroll = true;
+            this.list.Location = new System.Drawing.Point(162, 55);
+            this.list.Name = "list";
+            this.list.Size = new System.Drawing.Size(379, 356);
+            this.list.TabIndex = 9;
+            // 
             // ListAddProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.Controls.Add(this.list);
             this.Controls.Add(this.annuler);
             this.Name = "ListAddProject";
             this.Text = "ListAddProject";
@@ -56,5 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Button annuler;
+        private System.Windows.Forms.Panel list;
     }
 }
