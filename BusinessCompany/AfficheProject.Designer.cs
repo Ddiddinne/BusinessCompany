@@ -53,6 +53,7 @@
             // projectName
             // 
             this.projectName.AutoSize = true;
+            this.projectName.BackColor = System.Drawing.SystemColors.Window;
             this.projectName.Font = new System.Drawing.Font("Miramonte", 14F);
             this.projectName.Location = new System.Drawing.Point(80, 58);
             this.projectName.Name = "projectName";

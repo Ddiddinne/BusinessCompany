@@ -35,6 +35,7 @@
             this.specialisation = new System.Windows.Forms.Label();
             this.level = new System.Windows.Forms.Label();
             this.delete = new System.Windows.Forms.Button();
+            this.Assigned = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,6 +90,7 @@
             // 
             this.level.AutoSize = true;
             this.level.BackColor = System.Drawing.SystemColors.Window;
+            this.level.ForeColor = System.Drawing.Color.Black;
             this.level.Location = new System.Drawing.Point(60, 9);
             this.level.Name = "level";
             this.level.Size = new System.Drawing.Size(29, 13);
@@ -104,6 +106,18 @@
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = true;
             // 
+            // Assigned
+            // 
+            this.Assigned.AutoSize = true;
+            this.Assigned.ForeColor = System.Drawing.Color.Black;
+            this.Assigned.Location = new System.Drawing.Point(177, 65);
+            this.Assigned.Name = "Assigned";
+            this.Assigned.Size = new System.Drawing.Size(69, 17);
+            this.Assigned.TabIndex = 7;
+            this.Assigned.Text = "Assigned";
+            this.Assigned.UseVisualStyleBackColor = true;
+            this.Assigned.Visible = false;
+            // 
             // AfficheEmployee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -111,6 +125,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
+            this.Controls.Add(this.Assigned);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.level);
             this.Controls.Add(this.specialisation);
@@ -141,5 +156,6 @@
         private System.Windows.Forms.Label specialisation;
         private System.Windows.Forms.Label level;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.CheckBox Assigned;
     }
 }

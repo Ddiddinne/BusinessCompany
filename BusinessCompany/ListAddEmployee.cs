@@ -23,7 +23,7 @@ namespace BusinessCompany
             foreach (Employee employee in listEmployees.ListPerson)
             {
 
-                AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee, this);
+                AfficheEmployee afficheEmployee = new AfficheEmployee(0, employee, this);
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;

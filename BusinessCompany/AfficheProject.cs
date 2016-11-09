@@ -39,6 +39,11 @@ namespace BusinessCompany
             return this.delete;
         }
 
+        public Label getNameProject()
+        {
+            return this.projectName;
+        }
+
         private void add_Click(object sender, EventArgs e)
         {
             Button btnAdd = (Button)sender;

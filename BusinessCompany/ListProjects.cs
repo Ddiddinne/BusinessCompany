@@ -76,10 +76,17 @@ namespace BusinessCompany
 
         private void showEmployees(object sender, EventArgs e)
         {
+            Button buttonClicked = (Button)sender;
+            foreach(AfficheProject afficheProject in this.list.Controls)
+            {
+                afficheProject.getNameProject().BackColor = Color.White;
+            }
+            AfficheProject afficheProjectSelected = (AfficheProject)buttonClicked.Parent;
+            afficheProjectSelected.getNameProject().BackColor = Color.Gray;
             int i = 0;
             foreach (Employee employee in company.ListEmployee)
             {
-                AfficheEmployee afficheEmployee = new AfficheEmployee(true, employee);
+                AfficheEmployee afficheEmployee = new AfficheEmployee(2, employee);
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;

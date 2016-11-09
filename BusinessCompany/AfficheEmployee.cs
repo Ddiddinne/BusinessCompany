@@ -21,18 +21,28 @@ namespace BusinessCompany
             set { employee = value; }
         }
         
-        public AfficheEmployee(Boolean show,Employee employee, ListAddEmployee parent = null)
+        public AfficheEmployee(int show,Employee employee, ListAddEmployee parent = null)
         {
             this.parent = parent;
             this.employee = employee;
             InitializeComponent();
-            this.BackColor = System.Drawing.Color.BlueViolet;
             name.Text = employee.FirstName.ToString() + " " +employee.LastName.ToString();
             salary.Text = employee.Salary.ToString() + "$";
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
             delete.Hide();
-            if (show) { add.Hide(); delete.Show(); }
+            switch (show)
+            {
+                case 0:
+                    add.Show(); delete.Hide(); Assigned.Hide();
+                    break;
+                case 1:
+                    add.Hide(); delete.Show(); Assigned.Hide();
+                    break;
+                case 2:
+                    add.Hide(); delete.Hide(); Assigned.Show();
+                    break;
+            }
         }
 
         public Button getButtonDelete()

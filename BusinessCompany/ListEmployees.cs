@@ -48,7 +48,7 @@ namespace BusinessCompany
             int i = 0;
             foreach (Employee employee in listEmployee)
             {
-                AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee);
+                AfficheEmployee afficheEmployee = new AfficheEmployee(1, employee);
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
