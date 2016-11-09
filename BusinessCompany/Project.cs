@@ -20,6 +20,16 @@ namespace BusinessCompany
             num = (num + 1) % 6;
         }
 
+        public Project(int levelCompany)
+        {
+            this.employeeAssigned = new List<Employee>();
+            Delay = random.Next(10, 50);
+            DelayCompetition = random.Next(10, 50);
+            this.level = random.Next(1,levelCompany+1);
+            this.name = (NameProject)num;
+            num = (num + 1) % 6;
+        }
+
         public enum NameProject
         {
             Catrun, CityBuiler, FarmValley, Labyrinth, Broforce, Hammerwatch

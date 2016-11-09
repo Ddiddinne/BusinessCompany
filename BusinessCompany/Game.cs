@@ -85,7 +85,7 @@ namespace BusinessCompany
             if (i == 10)
             {
                 i = 0;
-                listProjects.Add(new Project());
+                listProjects.Add(new Project(this.company.LevelCompany));
             }else
             {
                 i++;
