@@ -55,6 +55,8 @@ namespace BusinessCompany
                 afficheProject.Enabled = true;
                 Button btnDelete = afficheProject.getButtonDelete();
                 btnDelete.Click += new EventHandler(remove);
+                Button btnEmployee = afficheProject.getButtonAssignedEmployee();
+                btnEmployee.Click += new EventHandler(showEmployees);
                 afficheProject.Dock = DockStyle.None;
                 this.list.Controls.Add(afficheProject);
             }
@@ -70,6 +72,24 @@ namespace BusinessCompany
             affiche.Hide();
             this.list.Controls.Remove(affiche);
             this.refresh();
+        }
+
+        private void showEmployees(object sender, EventArgs e)
+        {
+            int i = 0;
+            foreach (Employee employee in company.ListEmployee)
+            {
+                AfficheEmployee afficheEmployee = new AfficheEmployee(true, employee);
+                afficheEmployee.TopLevel = false;
+                afficheEmployee.Location = new Point(0, i * 100);
+                i++;
+                afficheEmployee.Show();
+                afficheEmployee.Enabled = true;
+                Button btnDelete = afficheEmployee.getButtonDelete();
+                btnDelete.Click += new EventHandler(remove);
+                afficheEmployee.Dock = DockStyle.None;
+                this.listEmployees.Controls.Add(afficheEmployee);
+            }
         }
 
         public void refresh()

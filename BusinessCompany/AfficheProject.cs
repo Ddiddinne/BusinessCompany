@@ -29,7 +29,7 @@ namespace BusinessCompany
             timeProject.Text = project.Delay.ToString();
             timeConcurent.Text = project.DelayCompetition.ToString();
             this.lbLevel.Text = this.project.Level.ToString(); 
-            if (show) { add.Hide(); delete.Show(); }
+            if (show) { add.Hide(); delete.Show(); Employees.Show(); }
         }
 
         public Button getButtonDelete()
@@ -43,6 +43,11 @@ namespace BusinessCompany
             AfficheProject affiche = (AfficheProject)btnAdd.Parent;
             Project project = affiche.project;
             parent.add(project);
+        }
+
+        public Button getButtonAssignedEmployee()
+        {
+            return this.Employees;
         }
     }
 }

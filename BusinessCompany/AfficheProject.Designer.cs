@@ -38,6 +38,7 @@
             this.delete = new System.Windows.Forms.Button();
             this.lbLevel = new System.Windows.Forms.Label();
             this.lbLevextTxt = new System.Windows.Forms.Label();
+            this.Employees = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +114,7 @@
             // delete
             // 
             this.delete.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.delete.Location = new System.Drawing.Point(12, 107);
+            this.delete.Location = new System.Drawing.Point(12, 116);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(79, 25);
             this.delete.TabIndex = 8;
@@ -141,6 +142,17 @@
             this.lbLevextTxt.TabIndex = 10;
             this.lbLevextTxt.Text = "lvl:";
             // 
+            // Employees
+            // 
+            this.Employees.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.Employees.Location = new System.Drawing.Point(12, 85);
+            this.Employees.Name = "Employees";
+            this.Employees.Size = new System.Drawing.Size(95, 25);
+            this.Employees.TabIndex = 11;
+            this.Employees.Text = "Employees";
+            this.Employees.UseVisualStyleBackColor = true;
+            this.Employees.Visible = false;
+            // 
             // AfficheProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +160,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 150);
             this.ControlBox = false;
+            this.Controls.Add(this.Employees);
             this.Controls.Add(this.lbLevextTxt);
             this.Controls.Add(this.lbLevel);
             this.Controls.Add(this.delete);
@@ -180,5 +193,6 @@
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Label lbLevel;
         private System.Windows.Forms.Label lbLevextTxt;
+        private System.Windows.Forms.Button Employees;
     }
 }
