@@ -72,7 +72,7 @@ namespace BusinessCompany
             this.CA.Text = (this.company.Money).ToString();
 
             double unitWork = 0.2 * 100 / 30;
-            unitWork = Math.Round(unitWork, 2);
+            unitWork = Math.Round(unitWork, 0);
 
             foreach (Project project in company.ListProjects)
             {
@@ -80,6 +80,9 @@ namespace BusinessCompany
                 {
                    project.Time +=  unitWork/ employee.ProjectAssigned.Count;
                 }
+                double previousDelayCompetition=project.DelayCompetition;
+                project.DelayCompetition -= unitWork;
+                //lvlProjet*unitWork
             }
 
             if (i == 10)
