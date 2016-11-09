@@ -17,7 +17,6 @@ namespace BusinessCompany
         {
             this.listEmployees = listEmployees;
             InitializeComponent();
-            this.IsMdiContainer = true;
             int i = 0;
 
 
@@ -25,14 +24,16 @@ namespace BusinessCompany
             {
 
                 AfficheEmployee afficheEmployee = new AfficheEmployee(false, employee, this);
-                afficheEmployee.MdiParent = this;
-                afficheEmployee.Location = new Point(200, i * 100);
+                afficheEmployee.TopLevel = false;
+                afficheEmployee.Location = new Point(0, i * 100);
                 i++;
                 afficheEmployee.Dock = DockStyle.None;
                 afficheEmployee.Enabled = true;
                 afficheEmployee.Show();
+                this.list.Controls.Add(afficheEmployee);
             }
-            
+            list.Size = new Size(300, 300);
+
         }
 
         private void annuler_Click(object sender, EventArgs e)
