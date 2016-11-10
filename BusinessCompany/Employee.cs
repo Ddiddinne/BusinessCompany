@@ -11,6 +11,8 @@ namespace BusinessCompany
     {
 
         private static Random random = new Random();
+
+        public event EventHandler employeeUpdate;
         public Employee()
         {
             Level = 1;
@@ -22,6 +24,7 @@ namespace BusinessCompany
             lastName = (LastNames)numName;
             numName = (numName + 1) % 14;
             num = (num + 1) % 2;
+
         }
 
         private static int num = 0;
@@ -64,7 +67,17 @@ namespace BusinessCompany
         public int Experience
         {
             get { return experience; }
-            set { experience = value; }
+            set { experience = value;
+                if (experience >= 100)
+                {
+                    experience -= 100;
+                    Level += 1;
+                }
+                if (employeeUpdate != null)
+                {
+                    employeeUpdate(this, EventArgs.Empty);
+                }
+            }
         }
 
         private int salary;

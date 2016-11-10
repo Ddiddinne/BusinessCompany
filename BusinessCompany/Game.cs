@@ -94,6 +94,11 @@ namespace BusinessCompany
             {
                 if (copyListProject[i].DelayCompetition <= 0)
                 {
+                    
+                    foreach(Employee employee in copyListProject[i].EmployeeAssigned)
+                    {
+                        employee.ProjectAssigned.Remove(copyListProject[i]);
+                    }
                     company.removeProject(copyListProject[i]);
                     if (projectRemove != null)
                     {
@@ -105,6 +110,12 @@ namespace BusinessCompany
                     if(copyListProject[i].Delay <= 0)
                     {
                         company.Money += copyListProject[i].Price;
+                        
+                        foreach(Employee employee in copyListProject[i].EmployeeAssigned)
+                        {
+                            employee.Experience += 50;
+                            employee.ProjectAssigned.Remove(copyListProject[i]);
+                        }
                         company.removeProject(copyListProject[i]);
                         if (projectRemove != null)
                         {

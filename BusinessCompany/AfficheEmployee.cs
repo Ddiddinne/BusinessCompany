@@ -44,6 +44,7 @@ namespace BusinessCompany
                     add.Hide(); delete.Hide(); assigned.Show();
                     break;
             }
+            this.employee.employeeUpdate += EmployeUpdate;
         }
 
         public Button getButtonDelete()
@@ -62,6 +63,12 @@ namespace BusinessCompany
             AfficheEmployee affiche = (AfficheEmployee)btnAdd.Parent;
             Employee employee = affiche.employee;
             parent.add(employee);
+        }
+
+        private void EmployeUpdate(object sender, EventArgs e)
+        {
+            level.Text = employee.Level.ToString();
+            xp.Text = String.Format("{0} xp /100", employee.Experience);
         }
 
     }
