@@ -41,6 +41,8 @@ namespace BusinessCompany
         {
             InitializeComponent();
             DrawListEmployee(this.company.ListProjects);
+            this.game.timeChange += TimeChange;
+            this.game.projectRemove += ProjectRemove;
         }
 
         public void DrawListEmployee(List<Project> listProjects)
@@ -165,6 +167,15 @@ namespace BusinessCompany
                 projectSelected.removeEmployee(afficheEmployee.Employee);
                 afficheEmployee.Employee.removeProject(projectSelected);
             }
+        }
+        private void TimeChange(object sender, EventArgs e)
+        {
+            this.CA.Text = String.Format("{0}$", this.company.Money);
+        }
+
+        private void ProjectRemove(object sender, EventArgs e)
+        {
+            refresh();
         }
     }
 }

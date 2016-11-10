@@ -17,6 +17,9 @@ namespace BusinessCompany
         private List<Project> listProjects;
         static int i = 10;
 
+        public event EventHandler timeChange;
+        public event EventHandler projectRemove;
+
         public List<Project> ListProjects
         {
             get { return listProjects; }
@@ -74,6 +77,7 @@ namespace BusinessCompany
             double unitWork = 1;
             unitWork = Math.Round(unitWork, 0);
 
+            
             foreach (Project project in company.ListProjects)
             {
                 foreach(Employee employee in project.EmployeeAssigned)
@@ -81,8 +85,35 @@ namespace BusinessCompany
                    project.Delay -=  unitWork/ employee.ProjectAssigned.Count;
                 }
                 project.DelayCompetition -= project.Level*unitWork;
-                //lvlProjet*unitWork
+
             }
+
+            //verification if the projects are ended or not
+            List<Project> copyListProject = company.ListProjects;
+            for (int i = copyListProject.Count - 1; i >= 0; i--)
+            {
+                if (copyListProject[i].DelayCompetition <= 0)
+                {
+                    company.removeProject(copyListProject[i]);
+                    if (projectRemove != null)
+                    {
+                        projectRemove(this, EventArgs.Empty);
+                    }
+                }
+                else
+                {
+                    if(copyListProject[i].Delay <= 0)
+                    {
+                        company.Money += copyListProject[i].Price;
+                        company.removeProject(copyListProject[i]);
+                        if (projectRemove != null)
+                        {
+                            projectRemove(this, EventArgs.Empty);
+                        }
+                    }
+                }
+            }
+
 
             if (i == 10)
             {
@@ -96,6 +127,10 @@ namespace BusinessCompany
             if (this.company.Money <= 0)
             {
                 this.LostGame();
+            }
+            if (timeChange != null)
+            {
+                timeChange(this, EventArgs.Empty);
             }
         }
 

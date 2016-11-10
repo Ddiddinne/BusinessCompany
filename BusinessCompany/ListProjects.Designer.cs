@@ -32,6 +32,7 @@
             this.addProject = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.listEmployees = new System.Windows.Forms.Panel();
+            this.CA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // list
@@ -70,11 +71,24 @@
             this.listEmployees.Size = new System.Drawing.Size(290, 100);
             this.listEmployees.TabIndex = 7;
             // 
+            // CA
+            // 
+            this.CA.AutoSize = true;
+            this.CA.BackColor = System.Drawing.Color.Transparent;
+            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
+            this.CA.Location = new System.Drawing.Point(13, 13);
+            this.CA.Margin = new System.Windows.Forms.Padding(4);
+            this.CA.Name = "CA";
+            this.CA.Size = new System.Drawing.Size(68, 24);
+            this.CA.TabIndex = 8;
+            this.CA.Text = "label1";
+            // 
             // ListProjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.Controls.Add(this.CA);
             this.Controls.Add(this.listEmployees);
             this.Controls.Add(this.list);
             this.Controls.Add(this.addProject);
@@ -82,6 +96,7 @@
             this.Name = "ListProjects";
             this.Text = "ListProjects";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -91,5 +106,6 @@
         private System.Windows.Forms.Button addProject;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Panel listEmployees;
+        private System.Windows.Forms.Label CA;
     }
 }

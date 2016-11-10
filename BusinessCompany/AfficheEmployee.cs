@@ -30,6 +30,7 @@ namespace BusinessCompany
             salary.Text = String.Format("{0}$ /month", employee.Salary);
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
+            xp.Text = String.Format("{0} xp /100", employee.Experience);
             delete.Hide();
             switch (show)
             {

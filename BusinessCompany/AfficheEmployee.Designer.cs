@@ -36,6 +36,7 @@
             this.level = new System.Windows.Forms.Label();
             this.delete = new System.Windows.Forms.Button();
             this.assigned = new System.Windows.Forms.CheckBox();
+            this.xp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,13 +111,23 @@
             // 
             this.assigned.AutoSize = true;
             this.assigned.ForeColor = System.Drawing.Color.Black;
-            this.assigned.Location = new System.Drawing.Point(177, 65);
+            this.assigned.Location = new System.Drawing.Point(176, 67);
             this.assigned.Name = "assigned";
             this.assigned.Size = new System.Drawing.Size(69, 17);
             this.assigned.TabIndex = 7;
             this.assigned.Text = "Assigned";
             this.assigned.UseVisualStyleBackColor = true;
             this.assigned.Visible = false;
+            // 
+            // xp
+            // 
+            this.xp.AutoSize = true;
+            this.xp.ForeColor = System.Drawing.Color.Black;
+            this.xp.Location = new System.Drawing.Point(222, 40);
+            this.xp.Name = "xp";
+            this.xp.Size = new System.Drawing.Size(18, 13);
+            this.xp.TabIndex = 8;
+            this.xp.Text = "xp";
             // 
             // AfficheEmployee
             // 
@@ -125,6 +136,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
+            this.Controls.Add(this.xp);
             this.Controls.Add(this.assigned);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.level);
@@ -157,5 +169,6 @@
         private System.Windows.Forms.Label level;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.CheckBox assigned;
+        private System.Windows.Forms.Label xp;
     }
 }

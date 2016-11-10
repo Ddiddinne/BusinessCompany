@@ -16,6 +16,7 @@ namespace BusinessCompany
             Level = 1;
             Salary = random.Next(3, 9) * 10;
             Motivation = random.Next(1, 100);
+            Experience = 0;
             Specialisation = (Speciality)num;
             firstName = (FirstNames)numName;
             lastName = (LastNames)numName;

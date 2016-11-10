@@ -107,6 +107,11 @@ namespace BusinessCompany
             this.listProjects.Add(project);
         }
 
+        public void removeProject(Project project)
+        {
+            this.listProjects.Remove(project);
+        }
+
 
     }
 }
