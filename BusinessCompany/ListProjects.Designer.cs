@@ -38,6 +38,7 @@
             // list
             // 
             this.list.AutoScroll = true;
+            this.list.BackColor = System.Drawing.Color.Transparent;
             this.list.Location = new System.Drawing.Point(59, 68);
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(290, 100);
@@ -45,9 +46,10 @@
             // 
             // addProject
             // 
-            this.addProject.Location = new System.Drawing.Point(320, 397);
+            this.addProject.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.addProject.Location = new System.Drawing.Point(325, 397);
             this.addProject.Name = "addProject";
-            this.addProject.Size = new System.Drawing.Size(75, 23);
+            this.addProject.Size = new System.Drawing.Size(79, 27);
             this.addProject.TabIndex = 5;
             this.addProject.Text = "Add";
             this.addProject.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(320, 443);
+            this.back.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.back.Location = new System.Drawing.Point(325, 443);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(79, 27);
             this.back.TabIndex = 4;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -66,6 +69,7 @@
             // listEmployees
             // 
             this.listEmployees.AutoScroll = true;
+            this.listEmployees.BackColor = System.Drawing.Color.Transparent;
             this.listEmployees.Location = new System.Drawing.Point(390, 68);
             this.listEmployees.Name = "listEmployees";
             this.listEmployees.Size = new System.Drawing.Size(290, 100);
@@ -87,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.CA);
             this.Controls.Add(this.listEmployees);
@@ -94,6 +99,7 @@
             this.Controls.Add(this.addProject);
             this.Controls.Add(this.back);
             this.Name = "ListProjects";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListProjects";
             this.ResumeLayout(false);
             this.PerformLayout();

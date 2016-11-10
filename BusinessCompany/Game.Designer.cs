@@ -31,7 +31,6 @@
             this.companyName = new System.Windows.Forms.Label();
             this.employees = new System.Windows.Forms.Button();
             this.projects = new System.Windows.Forms.Button();
-            this.bourse = new System.Windows.Forms.Button();
             this.CA = new System.Windows.Forms.Label();
             this.btnModifyLivel = new System.Windows.Forms.Button();
             this.lbDate = new System.Windows.Forms.Label();
@@ -40,7 +39,7 @@
             // companyName
             // 
             this.companyName.AutoSize = true;
-            this.companyName.BackColor = System.Drawing.Color.Transparent;
+            this.companyName.BackColor = System.Drawing.Color.White;
             this.companyName.Font = new System.Drawing.Font("Miramonte", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.companyName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.companyName.Location = new System.Drawing.Point(248, 42);
@@ -55,7 +54,8 @@
             this.employees.BackColor = System.Drawing.Color.Transparent;
             this.employees.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.employees.FlatAppearance.BorderSize = 0;
-            this.employees.Location = new System.Drawing.Point(254, 172);
+            this.employees.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employees.Location = new System.Drawing.Point(254, 188);
             this.employees.Margin = new System.Windows.Forms.Padding(0);
             this.employees.Name = "employees";
             this.employees.Size = new System.Drawing.Size(184, 42);
@@ -66,22 +66,14 @@
             // 
             // projects
             // 
-            this.projects.Location = new System.Drawing.Point(254, 240);
+            this.projects.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.projects.Location = new System.Drawing.Point(254, 259);
             this.projects.Name = "projects";
             this.projects.Size = new System.Drawing.Size(184, 42);
             this.projects.TabIndex = 4;
             this.projects.Text = "Projects";
             this.projects.UseVisualStyleBackColor = true;
             this.projects.Click += new System.EventHandler(this.projects_Click);
-            // 
-            // bourse
-            // 
-            this.bourse.Location = new System.Drawing.Point(254, 315);
-            this.bourse.Name = "bourse";
-            this.bourse.Size = new System.Drawing.Size(184, 42);
-            this.bourse.TabIndex = 5;
-            this.bourse.Text = "Bourse";
-            this.bourse.UseVisualStyleBackColor = true;
             // 
             // CA
             // 
@@ -97,6 +89,7 @@
             // 
             // btnModifyLivel
             // 
+            this.btnModifyLivel.Font = new System.Drawing.Font("Miramonte", 12F);
             this.btnModifyLivel.Location = new System.Drawing.Point(254, 411);
             this.btnModifyLivel.Name = "btnModifyLivel";
             this.btnModifyLivel.Size = new System.Drawing.Size(184, 35);
@@ -110,7 +103,7 @@
             this.lbDate.AutoSize = true;
             this.lbDate.BackColor = System.Drawing.Color.Transparent;
             this.lbDate.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.lbDate.Location = new System.Drawing.Point(600, 24);
+            this.lbDate.Location = new System.Drawing.Point(577, 24);
             this.lbDate.Margin = new System.Windows.Forms.Padding(4);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(55, 24);
@@ -126,7 +119,6 @@
             this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.btnModifyLivel);
-            this.Controls.Add(this.bourse);
             this.Controls.Add(this.projects);
             this.Controls.Add(this.employees);
             this.Controls.Add(this.CA);
@@ -135,6 +127,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,7 +138,6 @@
         private System.Windows.Forms.Label companyName;
         private System.Windows.Forms.Button employees;
         private System.Windows.Forms.Button projects;
-        private System.Windows.Forms.Button bourse;
 
         private System.Windows.Forms.Label CA;
         private System.Windows.Forms.Button btnModifyLivel;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picture = new System.Windows.Forms.PictureBox();
             this.name = new System.Windows.Forms.Label();
             this.add = new System.Windows.Forms.Button();
             this.salary = new System.Windows.Forms.Label();
@@ -38,24 +37,18 @@
             this.assigned = new System.Windows.Forms.CheckBox();
             this.xp = new System.Windows.Forms.Label();
             this.btFormations = new System.Windows.Forms.Button();
+            this.picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picture
-            // 
-            this.picture.Location = new System.Drawing.Point(2, 4);
-            this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(52, 86);
-            this.picture.TabIndex = 0;
-            this.picture.TabStop = false;
             // 
             // name
             // 
             this.name.AutoSize = true;
+            this.name.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Bold);
             this.name.ForeColor = System.Drawing.Color.Black;
             this.name.Location = new System.Drawing.Point(135, 9);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(33, 13);
+            this.name.Size = new System.Drawing.Size(49, 19);
             this.name.TabIndex = 1;
             this.name.Text = "name";
             // 
@@ -72,10 +65,11 @@
             // salary
             // 
             this.salary.AutoSize = true;
+            this.salary.Font = new System.Drawing.Font("Miramonte", 10F);
             this.salary.ForeColor = System.Drawing.Color.Black;
-            this.salary.Location = new System.Drawing.Point(223, 22);
+            this.salary.Location = new System.Drawing.Point(198, 33);
             this.salary.Name = "salary";
-            this.salary.Size = new System.Drawing.Size(34, 13);
+            this.salary.Size = new System.Drawing.Size(43, 18);
             this.salary.TabIndex = 3;
             this.salary.Text = "salary";
             // 
@@ -92,15 +86,18 @@
             // 
             this.level.AutoSize = true;
             this.level.BackColor = System.Drawing.SystemColors.Window;
+            this.level.Font = new System.Drawing.Font("Miramonte", 10F);
             this.level.ForeColor = System.Drawing.Color.Black;
             this.level.Location = new System.Drawing.Point(60, 9);
             this.level.Name = "level";
-            this.level.Size = new System.Drawing.Size(29, 13);
+            this.level.Size = new System.Drawing.Size(34, 18);
             this.level.TabIndex = 5;
             this.level.Text = "level";
             // 
             // delete
             // 
+            this.delete.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.delete.ForeColor = System.Drawing.Color.Black;
             this.delete.Location = new System.Drawing.Point(191, 67);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 23);
@@ -111,10 +108,11 @@
             // assigned
             // 
             this.assigned.AutoSize = true;
+            this.assigned.Font = new System.Drawing.Font("Miramonte", 10F);
             this.assigned.ForeColor = System.Drawing.Color.Black;
-            this.assigned.Location = new System.Drawing.Point(176, 67);
+            this.assigned.Location = new System.Drawing.Point(138, 67);
             this.assigned.Name = "assigned";
-            this.assigned.Size = new System.Drawing.Size(69, 17);
+            this.assigned.Size = new System.Drawing.Size(80, 22);
             this.assigned.TabIndex = 7;
             this.assigned.Text = "Assigned";
             this.assigned.UseVisualStyleBackColor = true;
@@ -123,10 +121,11 @@
             // xp
             // 
             this.xp.AutoSize = true;
+            this.xp.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xp.ForeColor = System.Drawing.Color.Black;
-            this.xp.Location = new System.Drawing.Point(222, 40);
+            this.xp.Location = new System.Drawing.Point(107, 33);
             this.xp.Name = "xp";
-            this.xp.Size = new System.Drawing.Size(18, 13);
+            this.xp.Size = new System.Drawing.Size(22, 18);
             this.xp.TabIndex = 8;
             this.xp.Text = "xp";
             // 
@@ -134,13 +133,21 @@
             // 
             this.btFormations.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btFormations.ForeColor = System.Drawing.Color.Black;
-            this.btFormations.Location = new System.Drawing.Point(76, 63);
+            this.btFormations.Location = new System.Drawing.Point(76, 67);
             this.btFormations.Name = "btFormations";
             this.btFormations.Size = new System.Drawing.Size(92, 23);
             this.btFormations.TabIndex = 9;
             this.btFormations.Text = "Formations";
             this.btFormations.UseVisualStyleBackColor = true;
             this.btFormations.Visible = false;
+            // 
+            // picture
+            // 
+            this.picture.Location = new System.Drawing.Point(2, 4);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(52, 86);
+            this.picture.TabIndex = 0;
+            this.picture.TabStop = false;
             // 
             // AfficheEmployee
             // 

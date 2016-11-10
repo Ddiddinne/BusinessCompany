@@ -19,13 +19,7 @@ namespace BusinessCompany
             get { return game; }
             set { game = value; }
         }
-
         
-        public ModifyLevelCompany()
-        {
-            InitializeComponent();
-        }
-
         public ModifyLevelCompany(Game game)
         {
             InitializeComponent();
@@ -34,6 +28,7 @@ namespace BusinessCompany
             int levelMax = this.game.Company.LevelCompany + 1;;
             String upgrade = String.Format("You will upgrade to level {0} and you need to pay {1}", levelMax, price);
             this.lbLevel.Text = upgrade;
+            this.BackgroundImage = this.game.BackgroundImage;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

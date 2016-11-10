@@ -50,7 +50,7 @@
             // 
             this.lbPrice.AutoSize = true;
             this.lbPrice.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.Location = new System.Drawing.Point(108, 42);
+            this.lbPrice.Location = new System.Drawing.Point(106, 38);
             this.lbPrice.Name = "lbPrice";
             this.lbPrice.Size = new System.Drawing.Size(49, 18);
             this.lbPrice.TabIndex = 2;
@@ -60,7 +60,7 @@
             // 
             this.lbXpEarn.AutoSize = true;
             this.lbXpEarn.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.lbXpEarn.Location = new System.Drawing.Point(205, 42);
+            this.lbXpEarn.Location = new System.Drawing.Point(203, 38);
             this.lbXpEarn.Name = "lbXpEarn";
             this.lbXpEarn.Size = new System.Drawing.Size(50, 18);
             this.lbXpEarn.TabIndex = 3;

@@ -35,10 +35,11 @@
             // 
             // annuler
             // 
-            this.annuler.Location = new System.Drawing.Point(327, 415);
+            this.annuler.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.annuler.Location = new System.Drawing.Point(325, 441);
             this.annuler.Name = "annuler";
-            this.annuler.Size = new System.Drawing.Size(75, 23);
-            this.annuler.TabIndex = 6;
+            this.annuler.Size = new System.Drawing.Size(79, 27);
+            this.annuler.TabIndex = 8;
             this.annuler.Text = "Back";
             this.annuler.UseVisualStyleBackColor = true;
             this.annuler.Click += new System.EventHandler(this.annuler_Click);
@@ -54,6 +55,8 @@
             // list
             // 
             this.list.AutoScroll = true;
+            this.list.BackColor = System.Drawing.Color.Transparent;
+            this.list.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.list.Location = new System.Drawing.Point(147, 65);
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(423, 326);
@@ -63,11 +66,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.list);
             this.Controls.Add(this.label);
             this.Controls.Add(this.annuler);
             this.Name = "ListAddEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

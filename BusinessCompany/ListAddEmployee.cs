@@ -17,6 +17,7 @@ namespace BusinessCompany
         {
             this.listEmployees = listEmployees;
             InitializeComponent();
+            this.BackgroundImage = listEmployees.BackgroundImage;
             int i = 0;
 
 

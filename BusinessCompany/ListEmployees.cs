@@ -47,6 +47,7 @@ namespace BusinessCompany
         private void init()
         {
             InitializeComponent();
+            this.BackgroundImage = company.Picture;
             this.CA.Text = String.Format("{0}$", this.company.Money);
             DrawListEmployee(this.company.ListEmployee);
             DrawListFormation();

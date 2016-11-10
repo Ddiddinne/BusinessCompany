@@ -80,12 +80,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnApprove);
             this.Controls.Add(this.lbLevel);
             this.Controls.Add(this.lbDefault);
             this.Name = "ModifyLevelCompany";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyLevelCompany";
             this.ResumeLayout(false);
             this.PerformLayout();

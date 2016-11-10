@@ -18,13 +18,14 @@ namespace BusinessCompany
         {
             this.listProjects = listProjects;
             InitializeComponent();
+            this.BackgroundImage = listProjects.BackgroundImage;
             int i = 0;
 
 
             foreach (Project project in listProjects.ListProject)
             {
                 AfficheProject afficheProject = new AfficheProject(false, project, this);
-                afficheProject.Location = new Point(0, i * 150);
+                afficheProject.Location = new Point(0, i * 155);
                 afficheProject.TopLevel = false;
                 i++;
                 afficheProject.Dock = DockStyle.None;
@@ -32,7 +33,7 @@ namespace BusinessCompany
                 afficheProject.Show();
                 this.list.Controls.Add(afficheProject);
             }
-            list.Size = new Size(300, 300);
+            list.Size = new Size(315, 300);
 
         }
 

@@ -119,7 +119,7 @@
             this.valid.Name = "valid";
             this.valid.Size = new System.Drawing.Size(86, 33);
             this.valid.TabIndex = 10;
-            this.valid.Text = "validate";
+            this.valid.Text = "Validate";
             this.valid.UseVisualStyleBackColor = true;
             this.valid.Click += new System.EventHandler(this.valid_Click);
             // 
@@ -148,6 +148,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameCompany);
             this.Name = "Option";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Option";
             this.levelchecked.ResumeLayout(false);
             this.levelchecked.PerformLayout();

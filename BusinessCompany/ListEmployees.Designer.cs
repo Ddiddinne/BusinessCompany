@@ -37,9 +37,10 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(340, 427);
+            this.back.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.back.Location = new System.Drawing.Point(327, 457);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(79, 27);
             this.back.TabIndex = 1;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -47,9 +48,10 @@
             // 
             // addEmployee
             // 
-            this.addEmployee.Location = new System.Drawing.Point(340, 379);
+            this.addEmployee.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.addEmployee.Location = new System.Drawing.Point(327, 409);
             this.addEmployee.Name = "addEmployee";
-            this.addEmployee.Size = new System.Drawing.Size(75, 23);
+            this.addEmployee.Size = new System.Drawing.Size(79, 27);
             this.addEmployee.TabIndex = 2;
             this.addEmployee.Text = "Add Employee";
             this.addEmployee.UseVisualStyleBackColor = true;
@@ -58,6 +60,8 @@
             // panelEmployees
             // 
             this.panelEmployees.AutoScroll = true;
+            this.panelEmployees.BackColor = System.Drawing.Color.Transparent;
+            this.panelEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelEmployees.Location = new System.Drawing.Point(44, 57);
             this.panelEmployees.Name = "panelEmployees";
             this.panelEmployees.Size = new System.Drawing.Size(301, 100);
@@ -66,6 +70,7 @@
             // panelFormations
             // 
             this.panelFormations.AutoScroll = true;
+            this.panelFormations.BackColor = System.Drawing.Color.Transparent;
             this.panelFormations.Location = new System.Drawing.Point(373, 57);
             this.panelFormations.Name = "panelFormations";
             this.panelFormations.Size = new System.Drawing.Size(301, 100);
@@ -88,6 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
             this.Controls.Add(this.CA);
             this.Controls.Add(this.panelFormations);
@@ -95,6 +101,7 @@
             this.Controls.Add(this.addEmployee);
             this.Controls.Add(this.back);
             this.Name = "ListEmployees";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListEmploye";
             this.ResumeLayout(false);
             this.PerformLayout();

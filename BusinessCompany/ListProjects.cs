@@ -40,6 +40,7 @@ namespace BusinessCompany
         private void init()
         {
             InitializeComponent();
+            this.BackgroundImage = company.Picture;
             this.CA.Text = String.Format("{0}$", this.company.Money);
             DrawListEmployee(this.company.ListProjects);
             this.game.timeChange += TimeChange;
@@ -64,7 +65,7 @@ namespace BusinessCompany
                 afficheProject.Dock = DockStyle.None;
                 this.list.Controls.Add(afficheProject);
             }
-            list.Size = new Size(300, 300);
+            list.Size = new Size(315, 300);
         }
 
         private void remove(object sender, EventArgs e)
