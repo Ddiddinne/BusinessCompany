@@ -34,6 +34,7 @@
             this.bourse = new System.Windows.Forms.Button();
             this.CA = new System.Windows.Forms.Label();
             this.btnModifyLivel = new System.Windows.Forms.Button();
+            this.lbDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // companyName
@@ -104,6 +105,18 @@
             this.btnModifyLivel.UseVisualStyleBackColor = true;
             this.btnModifyLivel.Click += new System.EventHandler(this.btnModifyLevel_Click);
             // 
+            // lbDate
+            // 
+            this.lbDate.AutoSize = true;
+            this.lbDate.BackColor = System.Drawing.Color.Transparent;
+            this.lbDate.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
+            this.lbDate.Location = new System.Drawing.Point(600, 24);
+            this.lbDate.Margin = new System.Windows.Forms.Padding(4);
+            this.lbDate.Name = "lbDate";
+            this.lbDate.Size = new System.Drawing.Size(55, 24);
+            this.lbDate.TabIndex = 7;
+            this.lbDate.Text = "Date";
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,6 +124,7 @@
             this.BackgroundImage = global::BusinessCompany.Properties.Resources.room_b;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.Controls.Add(this.lbDate);
             this.Controls.Add(this.btnModifyLivel);
             this.Controls.Add(this.bourse);
             this.Controls.Add(this.projects);
@@ -135,6 +149,7 @@
 
         private System.Windows.Forms.Label CA;
         private System.Windows.Forms.Button btnModifyLivel;
+        private System.Windows.Forms.Label lbDate;
     }
 }
 

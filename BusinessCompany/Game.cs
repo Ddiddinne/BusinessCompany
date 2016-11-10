@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace BusinessCompany
@@ -15,7 +16,9 @@ namespace BusinessCompany
         private Timer timer1=new Timer();
         private Company company;
         private List<Project> listProjects;
+        private DateTime date = new DateTime(2010, 1, 1);
         static int i = 10;
+        
 
         public event EventHandler timeChange;
         public event EventHandler projectRemove;
@@ -39,6 +42,7 @@ namespace BusinessCompany
             this.BackgroundImage = company.Picture;
             CA.Text = company.Money.ToString();
             companyName.Text = company.Name;
+            lbDate.Text = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
             companyName.Location = new Point(
                 this.Width / 2 - companyName.Width / 2,
                 companyName.Location.Y);
@@ -66,6 +70,8 @@ namespace BusinessCompany
         
         public void timer1_Tick(object sender, EventArgs e)
         {
+            date = date.AddDays(1);
+            lbDate.Text = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
             int expense = this.company.LevelCompany * 10;
             foreach(Employee employee in company.ListEmployee)
             {
