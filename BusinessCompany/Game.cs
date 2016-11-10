@@ -88,7 +88,7 @@ namespace BusinessCompany
             {
                 foreach(Employee employee in project.EmployeeAssigned)
                 {
-                   project.Delay -=  unitWork/ employee.ProjectAssigned.Count;
+                   project.Delay -=  unitWork * employee.Level/ employee.ProjectAssigned.Count;
                 }
                 project.DelayCompetition -= project.Level*unitWork;
 

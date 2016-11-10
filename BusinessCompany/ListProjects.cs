@@ -40,6 +40,7 @@ namespace BusinessCompany
         private void init()
         {
             InitializeComponent();
+            this.CA.Text = String.Format("{0}$", this.company.Money);
             DrawListEmployee(this.company.ListProjects);
             this.game.timeChange += TimeChange;
             this.game.projectRemove += ProjectRemove;

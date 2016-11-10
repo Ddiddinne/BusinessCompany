@@ -83,6 +83,16 @@ namespace BusinessCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap formation {
+            get {
+                object obj = ResourceManager.GetObject("formation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap garage {
             get {
                 object obj = ResourceManager.GetObject("garage", resourceCulture);

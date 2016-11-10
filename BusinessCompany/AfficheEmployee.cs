@@ -35,16 +35,16 @@ namespace BusinessCompany
             switch (show)
             {
                 case 0:
-                    add.Show(); delete.Hide(); assigned.Hide();
+                    add.Show(); delete.Hide(); assigned.Hide(); btFormations.Hide();
                     break;
                 case 1:
-                    add.Hide(); delete.Show(); assigned.Hide();
+                    add.Hide(); delete.Show(); assigned.Hide(); btFormations.Show();
                     break;
                 case 2:
-                    add.Hide(); delete.Hide(); assigned.Show();
+                    add.Hide(); delete.Hide(); assigned.Show(); btFormations.Hide();
                     break;
             }
-            this.employee.employeeUpdate += EmployeUpdate;
+            this.employee.employeeUpdate += EmployeeUpdate;
         }
 
         public Button getButtonDelete()
@@ -57,6 +57,16 @@ namespace BusinessCompany
             return this.assigned; ;
         }
 
+        public Button getButtonFormation()
+        {
+            return this.btFormations;
+        }
+
+        public Label getLabelName()
+        {
+            return this.name;
+        }
+
         private void addEmployee_Click(object sender, EventArgs e)
         {
             Button btnAdd = (Button)sender;
@@ -65,7 +75,7 @@ namespace BusinessCompany
             parent.add(employee);
         }
 
-        private void EmployeUpdate(object sender, EventArgs e)
+        private void EmployeeUpdate(object sender, EventArgs e)
         {
             level.Text = employee.Level.ToString();
             xp.Text = String.Format("{0} xp /100", employee.Experience);

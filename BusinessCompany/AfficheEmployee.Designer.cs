@@ -37,6 +37,7 @@
             this.delete = new System.Windows.Forms.Button();
             this.assigned = new System.Windows.Forms.CheckBox();
             this.xp = new System.Windows.Forms.Label();
+            this.btFormations = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,6 +130,18 @@
             this.xp.TabIndex = 8;
             this.xp.Text = "xp";
             // 
+            // btFormations
+            // 
+            this.btFormations.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFormations.ForeColor = System.Drawing.Color.Black;
+            this.btFormations.Location = new System.Drawing.Point(76, 63);
+            this.btFormations.Name = "btFormations";
+            this.btFormations.Size = new System.Drawing.Size(92, 23);
+            this.btFormations.TabIndex = 9;
+            this.btFormations.Text = "Formations";
+            this.btFormations.UseVisualStyleBackColor = true;
+            this.btFormations.Visible = false;
+            // 
             // AfficheEmployee
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -136,6 +149,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
+            this.Controls.Add(this.btFormations);
             this.Controls.Add(this.xp);
             this.Controls.Add(this.assigned);
             this.Controls.Add(this.delete);
@@ -170,5 +184,6 @@
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.CheckBox assigned;
         private System.Windows.Forms.Label xp;
+        private System.Windows.Forms.Button btFormations;
     }
 }

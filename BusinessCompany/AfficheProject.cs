@@ -27,8 +27,8 @@ namespace BusinessCompany
             this.project = project;
             this.parent = parent;
             projectName.Text = project.Name.ToString();
-            timeProject.Text = project.Delay.ToString();
-            timeConcurent.Text = project.DelayCompetition.ToString();
+            timeProject.Text = String.Format("{0} days", project.Delay);
+            timeConcurent.Text = String.Format("{0} days", project.DelayCompetition); 
             this.project.timeDelayChange+=TimeDelayChange;
             this.lbLevel.Text = this.project.Level.ToString();
             this.lbMoney.Text = String.Format("{0} $", this.project.Price);
@@ -59,8 +59,8 @@ namespace BusinessCompany
         }
         private void TimeDelayChange(object sender, EventArgs e)
         {
-            this.timeConcurent.Text = this.project.DelayCompetition.ToString();
-            this.timeProject.Text = this.project.Delay.ToString();
+            timeProject.Text = String.Format("{0} days", project.Delay);
+            timeConcurent.Text = String.Format("{0} days", project.DelayCompetition);
         }
 
     }

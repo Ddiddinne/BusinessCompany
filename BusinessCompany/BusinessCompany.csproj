@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AfficheFormation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficheFormation.Designer.cs">
+      <DependentUpon>AfficheFormation.cs</DependentUpon>
+    </Compile>
     <Compile Include="AfficheProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <EmbeddedResource Include="AfficheEmployee.resx">
       <DependentUpon>AfficheEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AfficheFormation.resx">
+      <DependentUpon>AfficheFormation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AfficheProject.resx">
       <DependentUpon>AfficheProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Company\garage.jpg" />
+    <None Include="Resources\formation.png" />
     <None Include="Resources\Company\immeuble.jpg" />
     <Content Include="Resources\Company\immeuble2.jpg" />
     <Content Include="Resources\Company\maisonMoyenne2.png" />

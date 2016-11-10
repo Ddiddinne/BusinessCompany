@@ -15,6 +15,8 @@ namespace BusinessCompany
         
         Game game;
         private Company company;
+        private List<String> formationName = new List<String>();
+        private Employee employeeSelected;
 
         public Company Company
         {
@@ -33,6 +35,11 @@ namespace BusinessCompany
 
         public ListEmployees(Game game)
         {
+            this.formationName.Add("Formation Agile");
+            this.formationName.Add("Conception Graphique");
+            this.formationName.Add("Java avanced");
+            this.formationName.Add("Concept objet");
+            this.formationName.Add("Data Science");
             this.company = game.Company;
             this.game = game;
             init();
@@ -40,7 +47,10 @@ namespace BusinessCompany
         private void init()
         {
             InitializeComponent();
+            this.CA.Text = String.Format("{0}$", this.company.Money);
             DrawListEmployee(this.company.ListEmployee);
+            DrawListFormation();
+            this.game.timeChange += TimeChange;
         }
 
         public void DrawListEmployee(List<Employee> listEmployee)
@@ -56,16 +66,49 @@ namespace BusinessCompany
                 afficheEmployee.Enabled = true;
                 Button btnDelete = afficheEmployee.getButtonDelete();
                 btnDelete.Click+=new EventHandler(remove);
+                Button btnShowFormations = afficheEmployee.getButtonFormation();
+                btnShowFormations.Click += new EventHandler(showFormations);
                 afficheEmployee.Dock = DockStyle.None;
-                this.list.Controls.Add(afficheEmployee);
+                this.panelEmployees.Controls.Add(afficheEmployee);
             }
-            list.Size = new Size(300, 300);
+            panelEmployees.Size = new Size(300, 300);
+        }
+
+        public void DrawListFormation()
+        {
+            int j = 0;
+            for (int i = 0; i < formationName.Count; i++)
+            {
+                AfficheFormation afficheFormation = new AfficheFormation(formationName[i], i);
+                afficheFormation.TopLevel = false;
+                afficheFormation.Location = new Point(0, j * 100);
+                j++;
+                afficheFormation.Show();
+                afficheFormation.Enabled = true;
+                Button btnForm = afficheFormation.getBtForm();
+                btnForm.Click += new EventHandler(form);
+                afficheFormation.Dock = DockStyle.None;
+                this.panelFormations.Controls.Add(afficheFormation);
+            }
+            panelFormations.Size = new Size(300, 300);
+            panelFormations.Hide();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
             game.Show();
             this.Close(); 
+        }
+
+        private void form(object sender, EventArgs e)
+        {
+            Button btForm = (Button)sender;
+            AfficheFormation formation = (AfficheFormation)btForm.Parent;
+            if (company.Money > formation.Price)
+            {
+                company.Money -= formation.Price;
+                employeeSelected.Experience += formation.Xp;
+            }
         }
 
         private void addEmployee_Click(object sender, EventArgs e)
@@ -96,10 +139,34 @@ namespace BusinessCompany
             }
             this.company.ListEmployee.Remove(employee);
             affiche.Hide();
-            this.list.Controls.Remove(affiche);
+            this.panelEmployees.Controls.Remove(affiche);
             this.refresh();
         }
 
-  
+        private void showFormations(object sender, EventArgs e)
+        {
+            
+            Button buttonSelected = (Button)sender;
+            AfficheEmployee afficheEmployeeSelected = (AfficheEmployee)buttonSelected.Parent;
+            if(employeeSelected != afficheEmployeeSelected.Employee)
+            {
+                panelFormations.Show();
+                employeeSelected = afficheEmployeeSelected.Employee;
+                afficheEmployeeSelected.getLabelName().BackColor = Color.Gray;
+            }else
+            {
+                afficheEmployeeSelected.getLabelName().BackColor = Color.White;
+                panelFormations.Hide();
+                employeeSelected = null;
+            }
+            
+        }
+
+        private void TimeChange(object sender, EventArgs e)
+        {
+            this.CA.Text = String.Format("{0}$", this.company.Money);
+        }
+
+
     }
 }

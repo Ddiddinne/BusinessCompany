@@ -48,7 +48,7 @@
             // 
             this.picture.Location = new System.Drawing.Point(-3, 1);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(285, 54);
+            this.picture.Size = new System.Drawing.Size(297, 54);
             this.picture.TabIndex = 1;
             this.picture.TabStop = false;
             // 
@@ -67,7 +67,7 @@
             // 
             this.timeProject.AutoSize = true;
             this.timeProject.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.timeProject.Location = new System.Drawing.Point(224, 95);
+            this.timeProject.Location = new System.Drawing.Point(237, 103);
             this.timeProject.Name = "timeProject";
             this.timeProject.Size = new System.Drawing.Size(45, 18);
             this.timeProject.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             this.timeConcurent.AutoSize = true;
             this.timeConcurent.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.timeConcurent.Location = new System.Drawing.Point(224, 123);
+            this.timeConcurent.Location = new System.Drawing.Point(237, 121);
             this.timeConcurent.Name = "timeConcurent";
             this.timeConcurent.Size = new System.Drawing.Size(45, 18);
             this.timeConcurent.TabIndex = 4;
@@ -86,7 +86,7 @@
             // add
             // 
             this.add.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.add.Location = new System.Drawing.Point(12, 107);
+            this.add.Location = new System.Drawing.Point(35, 109);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(79, 25);
             this.add.TabIndex = 5;
@@ -98,26 +98,26 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.label1.Location = new System.Drawing.Point(133, 95);
+            this.label1.Location = new System.Drawing.Point(171, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 18);
+            this.label1.Size = new System.Drawing.Size(45, 18);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Time to do it:";
+            this.label1.Text = "Work:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.label2.Location = new System.Drawing.Point(113, 123);
+            this.label2.Location = new System.Drawing.Point(150, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 18);
+            this.label2.Size = new System.Drawing.Size(81, 18);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Your competitor:";
+            this.label2.Text = "Competitor:";
             // 
             // delete
             // 
             this.delete.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.delete.Location = new System.Drawing.Point(12, 116);
+            this.delete.Location = new System.Drawing.Point(35, 121);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(79, 25);
             this.delete.TabIndex = 8;
@@ -148,7 +148,7 @@
             // Employees
             // 
             this.Employees.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.Employees.Location = new System.Drawing.Point(12, 85);
+            this.Employees.Location = new System.Drawing.Point(29, 90);
             this.Employees.Name = "Employees";
             this.Employees.Size = new System.Drawing.Size(95, 25);
             this.Employees.TabIndex = 11;
@@ -159,20 +159,20 @@
             // lbMonextTxt
             // 
             this.lbMonextTxt.AutoSize = true;
-            this.lbMonextTxt.Font = new System.Drawing.Font("Miramonte", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonextTxt.Location = new System.Drawing.Point(197, 80);
+            this.lbMonextTxt.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMonextTxt.Location = new System.Drawing.Point(189, 80);
             this.lbMonextTxt.Name = "lbMonextTxt";
-            this.lbMonextTxt.Size = new System.Drawing.Size(31, 14);
+            this.lbMonextTxt.Size = new System.Drawing.Size(39, 18);
             this.lbMonextTxt.TabIndex = 13;
             this.lbMonextTxt.Text = "earn:";
             // 
             // lbMoney
             // 
             this.lbMoney.AutoSize = true;
-            this.lbMoney.Font = new System.Drawing.Font("Miramonte", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMoney.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMoney.Location = new System.Drawing.Point(232, 80);
             this.lbMoney.Name = "lbMoney";
-            this.lbMoney.Size = new System.Drawing.Size(37, 14);
+            this.lbMoney.Size = new System.Drawing.Size(45, 18);
             this.lbMoney.TabIndex = 12;
             this.lbMoney.Text = "label3";
             // 
@@ -181,7 +181,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(281, 150);
+            this.ClientSize = new System.Drawing.Size(294, 150);
             this.ControlBox = false;
             this.Controls.Add(this.lbMonextTxt);
             this.Controls.Add(this.lbMoney);
