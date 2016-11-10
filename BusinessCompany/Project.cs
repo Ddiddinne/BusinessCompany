@@ -12,14 +12,6 @@ namespace BusinessCompany
         private static int num = 0;
         private static Random random = new Random();
         public event EventHandler timeDelayChange;
-        public Project() {
-            this.level = 1;
-            this.employeeAssigned = new List<Employee>();
-            Delay = random.Next(10,50);
-            DelayCompetition = random.Next(10, 50);
-            this.name = (NameProject)num;
-            num = (num + 1) % 6;
-        }
 
         public Project(int levelCompany)
         {
@@ -28,6 +20,7 @@ namespace BusinessCompany
             DelayCompetition = random.Next(10, 50);
             this.level = random.Next(1,levelCompany+1);
             this.name = (NameProject)num;
+            this.price = random.Next(100, 600);
             num = (num + 1) % 6;
         }
 
@@ -49,23 +42,6 @@ namespace BusinessCompany
         {
             get { return price; }
             set { price = value; }
-        }
-
-        //we decide to choose the time as a flaot of mounth
-        private double time; 
-
-        public double Time
-        {
-            get { return time; }
-            set { time = value; }
-        }
-
-        private double timeCompetition;
-
-        public double TimeCompetition
-        {
-            get { return timeCompetition; }
-            set { timeCompetition = value; }
         }
 
         private double delay;

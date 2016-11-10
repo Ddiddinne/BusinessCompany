@@ -80,7 +80,7 @@ namespace BusinessCompany
                     case 2:
                         this.picture = Properties.Resources.maisonMoyenne2;
                         break;
-                    case 3:
+                    default:
                         this.picture = Properties.Resources.immeuble2;
                         break;
                 }

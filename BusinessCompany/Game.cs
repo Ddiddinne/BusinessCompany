@@ -66,12 +66,12 @@ namespace BusinessCompany
             int expense = this.company.LevelCompany * 10;
             foreach(Employee employee in company.ListEmployee)
             {
-                expense += employee.Salary / 15;
+                expense += employee.Salary / 30;
             }
             this.company.Money -= expense;
-            this.CA.Text = (this.company.Money).ToString();
+            this.CA.Text = String.Format("{0}$", this.company.Money);
 
-            double unitWork = 0.2 * 100 / 30;
+            double unitWork = 1;
             unitWork = Math.Round(unitWork, 0);
 
             foreach (Project project in company.ListProjects)

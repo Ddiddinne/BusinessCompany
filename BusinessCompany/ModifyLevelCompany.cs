@@ -13,8 +13,7 @@ namespace BusinessCompany
     public partial class ModifyLevelCompany : Form
     {
         private Game game;
-
-        private static List<int> ListPrice = new List<int>(){10000,50000};
+        
         public Game Game
         {
             get { return game; }
@@ -31,19 +30,10 @@ namespace BusinessCompany
         {
             InitializeComponent();
             this.game = game;
-            if(game.Company.LevelCompany==3){
-                this.lbDefault.Text = "You are already at the maximun level";
-                this.lbLevel.Hide();
-                this.btnApprove.Hide();
-                this.btnCancel.Text = "Cancel";
-            }
-            else
-            {
-                int levelMax = this.game.Company.LevelCompany + 1;
-                int price = ListPrice.ElementAt(this.game.Company.LevelCompany - 1);
-                String upgrade = String.Format("You will upgrade to level {0} and you need to pay {1}", levelMax, price);
-                this.lbLevel.Text = upgrade;
-            }
+            int price = this.game.Company.LevelCompany * 5000;
+            int levelMax = this.game.Company.LevelCompany + 1;;
+            String upgrade = String.Format("You will upgrade to level {0} and you need to pay {1}", levelMax, price);
+            this.lbLevel.Text = upgrade;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -53,9 +43,9 @@ namespace BusinessCompany
 
         private void btnApprove_Click(object sender, EventArgs e)
         {
-            int price = ListPrice.ElementAt(this.game.Company.LevelCompany - 1);
+            int price = this.game.Company.LevelCompany * 5000;
             int level = this.game.Company.LevelCompany;
-            if ((this.game.Company.LevelCompany < 3)&&(this.game.Company.Money>=price))
+            if (this.game.Company.Money>=price)
             {
                 this.game.Company.LevelCompany += 1;
                 this.game.Company.Money = this.game.Company.Money - price;

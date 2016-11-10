@@ -26,8 +26,8 @@ namespace BusinessCompany
             this.parent = parent;
             this.employee = employee;
             InitializeComponent();
-            name.Text = employee.FirstName.ToString() + " " +employee.LastName.ToString();
-            salary.Text = employee.Salary.ToString() + "$";
+            name.Text = String.Format("{0} {1} ", employee.FirstName, employee.LastName);
+            salary.Text = String.Format("{0}$ /month", employee.Salary);
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
             delete.Hide();

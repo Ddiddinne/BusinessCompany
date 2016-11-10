@@ -150,8 +150,15 @@ namespace BusinessCompany
 
             if (checkAssigned.Checked)
             {
-                projectSelected.addEmployee(afficheEmployee.Employee);
-                afficheEmployee.Employee.addProject(projectSelected);
+                if (projectSelected.Level <= afficheEmployee.Employee.Level)
+                {
+                    projectSelected.addEmployee(afficheEmployee.Employee);
+                    afficheEmployee.Employee.addProject(projectSelected);
+                }
+                else {
+                    afficheEmployee.getButtonSelect().Checked = false;
+                    afficheEmployee.getButtonSelect().Text = "level insufficient";
+                }
             }
             else
             {

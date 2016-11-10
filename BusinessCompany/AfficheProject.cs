@@ -30,7 +30,8 @@ namespace BusinessCompany
             timeProject.Text = project.Delay.ToString();
             timeConcurent.Text = project.DelayCompetition.ToString();
             this.project.timeDelayChange+=TimeDelayChange;
-            this.lbLevel.Text = this.project.Level.ToString(); 
+            this.lbLevel.Text = this.project.Level.ToString();
+            this.lbMoney.Text = String.Format("{0} $", this.project.Price);
             if (show) { add.Hide(); delete.Show(); Employees.Show(); }
         }
 
@@ -61,5 +62,6 @@ namespace BusinessCompany
             this.timeConcurent.Text = this.project.DelayCompetition.ToString();
             this.timeProject.Text = this.project.Delay.ToString();
         }
+
     }
 }

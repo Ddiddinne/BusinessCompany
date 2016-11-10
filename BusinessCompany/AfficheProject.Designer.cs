@@ -39,6 +39,8 @@
             this.lbLevel = new System.Windows.Forms.Label();
             this.lbLevextTxt = new System.Windows.Forms.Label();
             this.Employees = new System.Windows.Forms.Button();
+            this.lbMonextTxt = new System.Windows.Forms.Label();
+            this.lbMoney = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,6 +156,26 @@
             this.Employees.UseVisualStyleBackColor = true;
             this.Employees.Visible = false;
             // 
+            // lbMonextTxt
+            // 
+            this.lbMonextTxt.AutoSize = true;
+            this.lbMonextTxt.Font = new System.Drawing.Font("Miramonte", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMonextTxt.Location = new System.Drawing.Point(197, 80);
+            this.lbMonextTxt.Name = "lbMonextTxt";
+            this.lbMonextTxt.Size = new System.Drawing.Size(31, 14);
+            this.lbMonextTxt.TabIndex = 13;
+            this.lbMonextTxt.Text = "earn:";
+            // 
+            // lbMoney
+            // 
+            this.lbMoney.AutoSize = true;
+            this.lbMoney.Font = new System.Drawing.Font("Miramonte", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMoney.Location = new System.Drawing.Point(232, 80);
+            this.lbMoney.Name = "lbMoney";
+            this.lbMoney.Size = new System.Drawing.Size(37, 14);
+            this.lbMoney.TabIndex = 12;
+            this.lbMoney.Text = "label3";
+            // 
             // AfficheProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +183,8 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 150);
             this.ControlBox = false;
+            this.Controls.Add(this.lbMonextTxt);
+            this.Controls.Add(this.lbMoney);
             this.Controls.Add(this.Employees);
             this.Controls.Add(this.lbLevextTxt);
             this.Controls.Add(this.lbLevel);
@@ -195,5 +219,7 @@
         private System.Windows.Forms.Label lbLevel;
         private System.Windows.Forms.Label lbLevextTxt;
         private System.Windows.Forms.Button Employees;
+        private System.Windows.Forms.Label lbMonextTxt;
+        private System.Windows.Forms.Label lbMoney;
     }
 }
