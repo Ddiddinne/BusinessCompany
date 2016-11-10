@@ -114,7 +114,7 @@ namespace BusinessCompany
                         foreach(Employee employee in copyListProject[i].EmployeeAssigned)
                         {
                             employee.Experience += 50;
-                            employee.ProjectAssigned.Remove(copyListProject[i]);
+                            employee.removeProject(copyListProject[i]);
                         }
                         company.removeProject(copyListProject[i]);
                         if (projectRemove != null)

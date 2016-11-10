@@ -72,6 +72,10 @@ namespace BusinessCompany
             Button btnAdd = (Button)sender;
             AfficheProject affiche = (AfficheProject)btnAdd.Parent;
             Project project = affiche.Project;
+            foreach(Employee employee in project.EmployeeAssigned)
+            {
+                employee.removeProject(project);
+            }
             this.company.ListProjects.Remove(project);
             affiche.Hide();
             this.list.Controls.Remove(affiche);
