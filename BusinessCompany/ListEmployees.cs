@@ -13,8 +13,8 @@ namespace BusinessCompany
     public partial class ListEmployees : Form
     {
         
-        Game game;
-        private Company company;
+        public Game game;
+        public Company company;
         private List<String> formationName = new List<String>();
         private Employee employeeSelected;
 
@@ -52,6 +52,7 @@ namespace BusinessCompany
             DrawListEmployee(this.company.ListEmployee);
             DrawListFormation();
             this.game.timeChange += TimeChange;
+            this.game.storyGoOn += storyShow;
         }
 
         public void DrawListEmployee(List<Employee> listEmployee)
@@ -168,6 +169,15 @@ namespace BusinessCompany
             this.CA.Text = String.Format("{0}$", this.company.Money);
         }
 
-
-    }
+        private void storyShow(object sender, EventArgs e)
+        {
+            if (this.Visible)
+            {
+                game.timer1.Stop();
+                this.Hide();
+                AfficheStory story = new AfficheStory(this, company, game.timer1, this.game.IndexStory);
+                this.game.IndexStory ++;
+            }
+        }
+}
 }

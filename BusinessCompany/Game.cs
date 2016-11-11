@@ -13,16 +13,22 @@ namespace BusinessCompany
 {
     public partial class Game : Form
     {
-        private Timer timer1=new Timer();
+        public Timer timer1=new Timer();
         private Company company;
         private List<Project> listProjects;
         private DateTime date = new DateTime(2010, 1, 1);
         static int i = 10;
+        private int indexStory = 0;
         
-
         public event EventHandler timeChange;
         public event EventHandler projectRemove;
+        public event EventHandler storyGoOn;
 
+        public int IndexStory
+        {
+            get { return indexStory; }
+            set { indexStory = value; }
+        }
         public List<Project> ListProjects
         {
             get { return listProjects; }
@@ -96,16 +102,16 @@ namespace BusinessCompany
 
             //verification if the projects are ended or not
             List<Project> copyListProject = company.ListProjects;
-            for (int i = copyListProject.Count - 1; i >= 0; i--)
+            for (int j = copyListProject.Count - 1; j >= 0; j--)
             {
-                if (copyListProject[i].DelayCompetition <= 0)
+                if (copyListProject[j].DelayCompetition <= 0)
                 {
                     
-                    foreach(Employee employee in copyListProject[i].EmployeeAssigned)
+                    foreach(Employee employee in copyListProject[j].EmployeeAssigned)
                     {
-                        employee.ProjectAssigned.Remove(copyListProject[i]);
+                        employee.ProjectAssigned.Remove(copyListProject[j]);
                     }
-                    company.removeProject(copyListProject[i]);
+                    company.removeProject(copyListProject[j]);
                     if (projectRemove != null)
                     {
                         projectRemove(this, EventArgs.Empty);
@@ -113,16 +119,16 @@ namespace BusinessCompany
                 }
                 else
                 {
-                    if(copyListProject[i].Delay <= 0)
+                    if(copyListProject[j].Delay <= 0)
                     {
-                        company.Money += copyListProject[i].Price;
+                        company.Money += copyListProject[j].Price;
                         
-                        foreach(Employee employee in copyListProject[i].EmployeeAssigned)
+                        foreach(Employee employee in copyListProject[j].EmployeeAssigned)
                         {
                             employee.Experience += 50;
-                            employee.removeProject(copyListProject[i]);
+                            employee.removeProject(copyListProject[j]);
                         }
-                        company.removeProject(copyListProject[i]);
+                        company.removeProject(copyListProject[j]);
                         if (projectRemove != null)
                         {
                             projectRemove(this, EventArgs.Empty);
@@ -131,7 +137,7 @@ namespace BusinessCompany
                 }
             }
 
-
+            //ajout project
             if (i == 10)
             {
                 i = 0;
@@ -148,6 +154,24 @@ namespace BusinessCompany
             if (timeChange != null)
             {
                 timeChange(this, EventArgs.Empty);
+            }
+            if (date.Day == 2)
+            {
+                
+                if (this.Visible)
+                {
+                    timer1.Stop();
+                    this.Hide();
+                    AfficheStory story = new AfficheStory(this, company, timer1, indexStory);
+                    indexStory++;
+                }
+                else
+                {
+                    if (storyGoOn != null)
+                    {
+                        storyGoOn(this, EventArgs.Empty);
+                    }
+                }
             }
         }
 

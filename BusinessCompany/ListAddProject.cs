@@ -16,7 +16,9 @@ namespace BusinessCompany
         ListProjects listProjects;
         public ListAddProject(ListProjects listProjects)
         {
+            
             this.listProjects = listProjects;
+            this.listProjects.game.storyGoOn += storyShow;
             InitializeComponent();
             this.BackgroundImage = listProjects.BackgroundImage;
             int i = 0;
@@ -57,6 +59,17 @@ namespace BusinessCompany
         {
             listProjects.Show();
             this.Close();
+        }
+
+        private void storyShow(object sender, EventArgs e)
+        {
+            if (this.Visible)
+            {
+                this.listProjects.game.timer1.Stop();
+                this.Hide();
+                AfficheStory story = new AfficheStory(this, this.listProjects.company, this.listProjects.game.timer1, this.listProjects.game.IndexStory);
+                this.listProjects.game.IndexStory++;
+            }
         }
     }
 }
