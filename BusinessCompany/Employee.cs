@@ -22,9 +22,9 @@ namespace BusinessCompany
             Specialisation = (Speciality)num;
             firstName = (FirstNames)numName;
             lastName = (LastNames)numName;
+            getImage(numName);
             numName = (numName + 1) % 14;
             num = (num + 1) % 2;
-            getImage(numName);
         }
 
         private static int num = 0;
@@ -32,7 +32,7 @@ namespace BusinessCompany
 
         public enum FirstNames
         {
-            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Félix, Thomas, Raphaël, Gaspar, Sandrine, Sébastien
+            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Félix, Thomas, Raphaël, Gaspar, Sandrine, Marie
         }
         
         public enum LastNames
@@ -138,7 +138,7 @@ namespace BusinessCompany
         public void getImage(int idPerso)
         {
             switch (idPerso)
-            {
+            { 
                 case 0:
                     portrait = Properties.Resources.persoF;
                     break;
@@ -174,6 +174,9 @@ namespace BusinessCompany
                     break;
                 case 11:
                     portrait = Properties.Resources.persoL;
+                    break;
+                case 12:
+                    portrait = Properties.Resources.persoM;
                     break;
             }
         }
