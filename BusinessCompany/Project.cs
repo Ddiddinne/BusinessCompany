@@ -21,10 +21,33 @@ namespace BusinessCompany
             this.level = random.Next(1,levelCompany+1);
             this.name = (NameProject)num;
             this.price = random.Next(100, 600);
-            
+            imageProject(num);
             num = (num + 1) % 6;
         }
-
+        public void imageProject(int idProject)
+        {
+            switch (idProject)
+            {
+                case 0:
+                    picture = Properties.Resources.nyancat;
+                    break;
+                case 1:
+                    picture = Properties.Resources.SimCity;
+                    break;
+                case 2:
+                    picture = Properties.Resources.stardew;
+                    break;
+                case 3:
+                    picture = Properties.Resources.labyrinth;
+                    break;
+                case 4:
+                    picture = Properties.Resources.Broforce;
+                    break;
+                case 5:
+                    picture = Properties.Resources.donjon;
+                    break;
+            }
+        }
         public enum NameProject
         {
             Catrun, CityBuiler, FarmValley, Labyrinth, Broforce, Hammerwatch
