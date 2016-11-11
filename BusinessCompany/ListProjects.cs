@@ -21,8 +21,8 @@ namespace BusinessCompany
             init();
         }
 
-        Company company;
-        Game game;
+        public Company company;
+        public Game game;
         private Project projectSelected;
         private List<Project> listProject = new List<Project>();
         public List<Project> ListProject
@@ -45,6 +45,7 @@ namespace BusinessCompany
             DrawListEmployee(this.company.ListProjects);
             this.game.timeChange += TimeChange;
             this.game.projectRemove += ProjectRemove;
+            this.game.storyGoOn += storyShow;
         }
 
         public void DrawListEmployee(List<Project> listProjects)
@@ -182,6 +183,17 @@ namespace BusinessCompany
         private void ProjectRemove(object sender, EventArgs e)
         {
             refresh();
+        }
+
+        private void storyShow(object sender, EventArgs e)
+        {
+            if (this.Visible)
+            {
+                game.timer1.Stop();
+                this.Hide();
+                AfficheStory story = new AfficheStory(this, company, game.timer1, this.game.IndexStory);
+                this.game.IndexStory++;
+            }
         }
     }
 }

@@ -16,6 +16,7 @@ namespace BusinessCompany
         public ListAddEmployee(ListEmployees listEmployees)
         {
             this.listEmployees = listEmployees;
+            this.listEmployees.game.storyGoOn += storyShow;
             InitializeComponent();
             this.BackgroundImage = listEmployees.BackgroundImage;
             int i = 0;
@@ -51,6 +52,17 @@ namespace BusinessCompany
             listEmployees.Show();
             listEmployees.refresh();
             this.Close();
+        }
+
+        private void storyShow(object sender, EventArgs e)
+        {
+            if (this.Visible)
+            {
+                this.listEmployees.game.timer1.Stop();
+                this.Hide();
+                AfficheStory story = new AfficheStory(this, this.listEmployees.company, this.listEmployees.game.timer1, this.listEmployees.game.IndexStory);
+                this.listEmployees.game.IndexStory++;
+            }
         }
 
     }

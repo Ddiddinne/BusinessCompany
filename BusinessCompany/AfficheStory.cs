@@ -27,13 +27,13 @@ namespace BusinessCompany
                     this.lbStory.Text = "Nice Job!! \n " +
                         "You have created your start-up of IT Development. \n "+
                         "You are now ready to hire some employees, but be careful, the money is not endless.";
-                    index++;
+                    this.Show();
                     break;
                 case 1:
                     this.lbStory.Text = "Your parents gave you 100 000$ to start your company \n " +
                         "Now, they need money, they ask you to give money back. \n " +
                         "They need it for the begining of the next month.";
-                    index++;
+                    this.Show();
                     break;
 
                 case 2:
@@ -42,14 +42,20 @@ namespace BusinessCompany
                         "Your company has less money. \n " +
                         "I hope that it will be ok for the future.";
                     company.Money -= 50000;
-                    index++;
+                    this.Show();
                     break;
 
-                case 3:
+                case 4:
                     this.lbStory.Text = "As asked by your parents, you give them back the rest of the money. \n " +
                         "Now you just have to earn more!!!! \n ";
                     company.Money -= 50000;
-                    index++;
+                    this.Show();
+                    break;
+
+                default:
+                    parent.Show();
+                    timer.Start();
+                    this.Hide();
                     break;
             }
 
