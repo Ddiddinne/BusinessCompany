@@ -24,7 +24,7 @@ namespace BusinessCompany
             lastName = (LastNames)numName;
             numName = (numName + 1) % 14;
             num = (num + 1) % 2;
-
+            getImage(numName);
         }
 
         private static int num = 0;
@@ -135,6 +135,35 @@ namespace BusinessCompany
             this.projectAssigned.Remove(project);
         }
 
-
+        public void getImage(int idPerso)
+        {
+            switch (idPerso)
+            {
+                case 0:
+                    portrait = Properties.Resources.persoA;
+                    break;
+                case 1:
+                    portrait = Properties.Resources.persoB;
+                    break;
+                case 2:
+                    portrait = Properties.Resources.persoC;
+                    break;
+                case 3:
+                    portrait = Properties.Resources.persoD;
+                    break;
+                case 4:
+                    portrait = Properties.Resources.persoE;
+                    break;
+                case 5:
+                    portrait = Properties.Resources.persoF;
+                    break;
+                case 6:
+                    portrait = Properties.Resources.persoG;
+                    break;
+                case 7:
+                    portrait = Properties.Resources.persoH;
+                    break;
+            }
+        }
     }
 }

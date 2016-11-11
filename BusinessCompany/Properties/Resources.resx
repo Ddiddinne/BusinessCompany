@@ -130,8 +130,14 @@
   <data name="room b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\room b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="formation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="immeuble2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Company\immeuble2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maisonMoyenne2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Company\maisonMoyenne2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +148,25 @@
   <data name="building" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\building.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="formation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\formation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="persoB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoH.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -31,6 +31,7 @@ namespace BusinessCompany
             specialisation.Text = employee.Specialisation.ToString();
             level.Text = employee.Level.ToString();
             xp.Text = String.Format("{0} xp /100", employee.Experience);
+            this.picture.BackgroundImage = employee.Portrait;
             delete.Hide();
             switch (show)
             {
