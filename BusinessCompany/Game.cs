@@ -192,6 +192,7 @@ namespace BusinessCompany
 
         private void btnModifyLevel_Click(object sender, EventArgs e)
         {
+            timer1.Stop();
             this.Hide();
             ModifyLevelCompany modifyLevelCompany = new ModifyLevelCompany(this);
             modifyLevelCompany.Show();

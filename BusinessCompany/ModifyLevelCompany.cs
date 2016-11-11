@@ -58,6 +58,7 @@ namespace BusinessCompany
         {
             this.game.BackgroundImage = this.game.Company.Picture;
             this.game.Show();
+            this.game.timer1.Start();
             this.Close();
         }
 

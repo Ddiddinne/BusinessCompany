@@ -33,6 +33,9 @@
             this.back = new System.Windows.Forms.Button();
             this.listEmployees = new System.Windows.Forms.Panel();
             this.CA = new System.Windows.Forms.Label();
+            this.tuto = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // list
@@ -87,12 +90,35 @@
             this.CA.TabIndex = 8;
             this.CA.Text = "label1";
             // 
+            // tuto
+            // 
+            this.tuto.AutoSize = true;
+            this.tuto.BackColor = System.Drawing.Color.Transparent;
+            this.tuto.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.tuto.Location = new System.Drawing.Point(330, 171);
+            this.tuto.Name = "tuto";
+            this.tuto.Size = new System.Drawing.Size(46, 24);
+            this.tuto.TabIndex = 10;
+            this.tuto.Text = "tuto";
+            this.tuto.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(325, 240);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(95, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // ListProjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.Controls.Add(this.tuto);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CA);
             this.Controls.Add(this.listEmployees);
             this.Controls.Add(this.list);
@@ -101,6 +127,7 @@
             this.Name = "ListProjects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListProjects";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +140,7 @@
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Panel listEmployees;
         private System.Windows.Forms.Label CA;
+        private System.Windows.Forms.Label tuto;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

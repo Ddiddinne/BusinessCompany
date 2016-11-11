@@ -42,31 +42,43 @@ namespace BusinessCompany
             InitializeComponent();
             this.BackgroundImage = company.Picture;
             this.CA.Text = String.Format("{0}$", this.company.Money);
-            DrawListEmployee(this.company.ListProjects);
+            DrawListProjects(this.company.ListProjects);
             this.game.timeChange += TimeChange;
             this.game.projectRemove += ProjectRemove;
             this.game.storyGoOn += storyShow;
         }
 
-        public void DrawListEmployee(List<Project> listProjects)
+        public void DrawListProjects(List<Project> listProjects)
         {
-            int i = 0;
-            foreach (Project project in listProjects)
+            if (listProjects.Count() != 0)
             {
-                AfficheProject afficheProject = new AfficheProject(true, project);
-                afficheProject.TopLevel = false;
-                afficheProject.Location = new Point(0, i * 155);
-                i++;
-                afficheProject.Show();
-                afficheProject.Enabled = true;
-                Button btnDelete = afficheProject.getButtonDelete();
-                btnDelete.Click += new EventHandler(remove);
-                Button btnEmployee = afficheProject.getButtonAssignedEmployee();
-                btnEmployee.Click += new EventHandler(showEmployees);
-                afficheProject.Dock = DockStyle.None;
-                this.list.Controls.Add(afficheProject);
+                tuto.Hide();
+                int i = 0;
+                foreach (Project project in listProjects)
+                {
+                    AfficheProject afficheProject = new AfficheProject(true, project);
+                    afficheProject.TopLevel = false;
+                    afficheProject.Location = new Point(0, i * 155);
+                    i++;
+                    afficheProject.Show();
+                    afficheProject.Enabled = true;
+                    Button btnDelete = afficheProject.getButtonDelete();
+                    btnDelete.Click += new EventHandler(remove);
+                    Button btnEmployee = afficheProject.getButtonAssignedEmployee();
+                    btnEmployee.Click += new EventHandler(showEmployees);
+                    afficheProject.Dock = DockStyle.None;
+                    this.list.Controls.Add(afficheProject);
+                }
+                list.Size = new Size(315, 300);
+            }else
+            {
+                tuto.Text = "You don't have Project yet. \n \n You have to add one here";
+                tuto.Location = new Point(
+                    this.Width / 2 - tuto.Width / 2,
+                    tuto.Location.Y);
+                tuto.Show();
+                list.Hide();
             }
-            list.Size = new Size(315, 300);
         }
 
         private void remove(object sender, EventArgs e)

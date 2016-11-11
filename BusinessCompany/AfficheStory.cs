@@ -55,7 +55,7 @@ namespace BusinessCompany
                 default:
                     parent.Show();
                     timer.Start();
-                    this.Hide();
+                    this.Close();
                     break;
             }
 
@@ -65,7 +65,7 @@ namespace BusinessCompany
         {
             parent.Show();
             timer.Start();
-            this.Hide();
+            this.Close();
         }
     }
 }
