@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[HighScore]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)
