@@ -49,19 +49,19 @@
             this.projectName.AutoSize = true;
             this.projectName.BackColor = System.Drawing.SystemColors.Window;
             this.projectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.projectName.Location = new System.Drawing.Point(234, 1);
+            this.projectName.Location = new System.Drawing.Point(228, 5);
             this.projectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.projectName.Name = "projectName";
             this.projectName.Size = new System.Drawing.Size(152, 29);
             this.projectName.TabIndex = 2;
             this.projectName.Text = "projectName";
-            this.projectName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.projectName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timeProject
             // 
             this.timeProject.AutoSize = true;
             this.timeProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.timeProject.Location = new System.Drawing.Point(326, 136);
+            this.timeProject.Location = new System.Drawing.Point(320, 140);
             this.timeProject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeProject.Name = "timeProject";
             this.timeProject.Size = new System.Drawing.Size(53, 20);
@@ -72,7 +72,7 @@
             // 
             this.timeConcurent.AutoSize = true;
             this.timeConcurent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.timeConcurent.Location = new System.Drawing.Point(326, 158);
+            this.timeConcurent.Location = new System.Drawing.Point(320, 162);
             this.timeConcurent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeConcurent.Name = "timeConcurent";
             this.timeConcurent.Size = new System.Drawing.Size(53, 20);
@@ -82,7 +82,7 @@
             // add
             // 
             this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.add.Location = new System.Drawing.Point(276, 45);
+            this.add.Location = new System.Drawing.Point(270, 49);
             this.add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(73, 31);
@@ -95,7 +95,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(265, 136);
+            this.label1.Location = new System.Drawing.Point(259, 140);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 20);
@@ -106,7 +106,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(222, 156);
+            this.label2.Location = new System.Drawing.Point(216, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
@@ -116,7 +116,7 @@
             // delete
             // 
             this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.delete.Location = new System.Drawing.Point(270, 66);
+            this.delete.Location = new System.Drawing.Point(264, 70);
             this.delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(103, 31);
@@ -129,7 +129,7 @@
             // 
             this.lbLevel.AutoSize = true;
             this.lbLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLevel.Location = new System.Drawing.Point(327, 99);
+            this.lbLevel.Location = new System.Drawing.Point(321, 103);
             this.lbLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbLevel.Name = "lbLevel";
             this.lbLevel.Size = new System.Drawing.Size(46, 17);
@@ -140,7 +140,7 @@
             // 
             this.lbLevextTxt.AutoSize = true;
             this.lbLevextTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLevextTxt.Location = new System.Drawing.Point(293, 99);
+            this.lbLevextTxt.Location = new System.Drawing.Point(287, 103);
             this.lbLevextTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbLevextTxt.Name = "lbLevextTxt";
             this.lbLevextTxt.Size = new System.Drawing.Size(25, 17);
@@ -150,7 +150,7 @@
             // Employees
             // 
             this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Employees.Location = new System.Drawing.Point(259, 27);
+            this.Employees.Location = new System.Drawing.Point(253, 31);
             this.Employees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Employees.Name = "Employees";
             this.Employees.Size = new System.Drawing.Size(127, 31);
@@ -163,7 +163,7 @@
             // 
             this.lbMonextTxt.AutoSize = true;
             this.lbMonextTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonextTxt.Location = new System.Drawing.Point(271, 116);
+            this.lbMonextTxt.Location = new System.Drawing.Point(265, 120);
             this.lbMonextTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMonextTxt.Name = "lbMonextTxt";
             this.lbMonextTxt.Size = new System.Drawing.Size(47, 20);
@@ -174,7 +174,7 @@
             // 
             this.lbMoney.AutoSize = true;
             this.lbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoney.Location = new System.Drawing.Point(326, 116);
+            this.lbMoney.Location = new System.Drawing.Point(320, 120);
             this.lbMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMoney.Name = "lbMoney";
             this.lbMoney.Size = new System.Drawing.Size(53, 20);
@@ -185,10 +185,10 @@
             // 
             this.picture.BackgroundImage = global::BusinessCompany.Properties.Resources.Broforce;
             this.picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picture.Location = new System.Drawing.Point(-5, 1);
+            this.picture.Location = new System.Drawing.Point(-1, 1);
             this.picture.Margin = new System.Windows.Forms.Padding(4);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(219, 184);
+            this.picture.Size = new System.Drawing.Size(206, 188);
             this.picture.TabIndex = 1;
             this.picture.TabStop = false;
             // 
@@ -197,7 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(410, 185);
+            this.ClientSize = new System.Drawing.Size(396, 185);
             this.ControlBox = false;
             this.Controls.Add(this.lbMonextTxt);
             this.Controls.Add(this.lbMoney);

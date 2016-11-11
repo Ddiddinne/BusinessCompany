@@ -21,6 +21,7 @@ namespace BusinessCompany
             this.level = random.Next(1,levelCompany+1);
             this.name = (NameProject)num;
             this.price = random.Next(100, 600);
+            
             num = (num + 1) % 6;
         }
 

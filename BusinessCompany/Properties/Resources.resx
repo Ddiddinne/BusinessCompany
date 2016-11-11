@@ -118,55 +118,112 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="backgroudOption" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroudOption.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="garage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Company\garage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="immeuble" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Company\immeuble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="room b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\room b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="formation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\formation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="immeuble2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Company\immeuble2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="persoA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personnages\persoA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maisonMoyenne2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Company\maisonMoyenne2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maisonVieille" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Company\maisonVieille.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="building" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\building.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="persoB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personnages\persoB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="persoC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personnages\persoC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="persoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personnages\persoD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="persoE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personnages\persoE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="persoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\personnages\persoF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="persoG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\personnages\persoG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="persoE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="building" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\building.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoJ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="persoH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\personnages\persoH.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maisonVieille" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company\maisonVieille.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="immeuble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company\immeuble.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="garage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company\garage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maisonMoyenne2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company\maisonMoyenne2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroudOption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroudOption.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoH1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoH.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="immeuble2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Company\immeuble2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persoK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\personnages\persoK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Broforce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projects\Broforce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="donjon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projects\donjon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="labyrinth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projects\labyrinth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nyancat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projects\nyancat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SimCity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projects\SimCity.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stardew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Projects\stardew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

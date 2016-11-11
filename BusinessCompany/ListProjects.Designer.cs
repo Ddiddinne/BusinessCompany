@@ -39,17 +39,19 @@
             // 
             this.list.AutoScroll = true;
             this.list.BackColor = System.Drawing.Color.Transparent;
-            this.list.Location = new System.Drawing.Point(59, 68);
+            this.list.Location = new System.Drawing.Point(79, 84);
+            this.list.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(290, 100);
+            this.list.Size = new System.Drawing.Size(387, 123);
             this.list.TabIndex = 6;
             // 
             // addProject
             // 
-            this.addProject.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.addProject.Location = new System.Drawing.Point(325, 397);
+            this.addProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.addProject.Location = new System.Drawing.Point(433, 489);
+            this.addProject.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addProject.Name = "addProject";
-            this.addProject.Size = new System.Drawing.Size(79, 27);
+            this.addProject.Size = new System.Drawing.Size(105, 33);
             this.addProject.TabIndex = 5;
             this.addProject.Text = "Add";
             this.addProject.UseVisualStyleBackColor = true;
@@ -57,10 +59,11 @@
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.back.Location = new System.Drawing.Point(325, 443);
+            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.back.Location = new System.Drawing.Point(433, 545);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(79, 27);
+            this.back.Size = new System.Drawing.Size(105, 33);
             this.back.TabIndex = 4;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -70,34 +73,36 @@
             // 
             this.listEmployees.AutoScroll = true;
             this.listEmployees.BackColor = System.Drawing.Color.Transparent;
-            this.listEmployees.Location = new System.Drawing.Point(390, 68);
+            this.listEmployees.Location = new System.Drawing.Point(520, 84);
+            this.listEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listEmployees.Name = "listEmployees";
-            this.listEmployees.Size = new System.Drawing.Size(290, 100);
+            this.listEmployees.Size = new System.Drawing.Size(387, 123);
             this.listEmployees.TabIndex = 7;
             // 
             // CA
             // 
             this.CA.AutoSize = true;
             this.CA.BackColor = System.Drawing.Color.Transparent;
-            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.CA.Location = new System.Drawing.Point(13, 13);
-            this.CA.Margin = new System.Windows.Forms.Padding(4);
+            this.CA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.CA.Location = new System.Drawing.Point(17, 16);
+            this.CA.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(68, 24);
+            this.CA.Size = new System.Drawing.Size(87, 29);
             this.CA.TabIndex = 8;
             this.CA.Text = "label1";
             // 
             // ListProjects
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(719, 538);
+            this.ClientSize = new System.Drawing.Size(959, 662);
             this.Controls.Add(this.CA);
             this.Controls.Add(this.listEmployees);
             this.Controls.Add(this.list);
             this.Controls.Add(this.addProject);
             this.Controls.Add(this.back);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListProjects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListProjects";

@@ -186,6 +186,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Company\garage.jpg" />
+    <None Include="Resources\Projects\stardew.png" />
+    <None Include="Resources\Projects\SimCity.jpg" />
+    <None Include="Resources\Projects\nyancat.jpg" />
+    <None Include="Resources\Projects\labyrinth.jpg" />
+    <None Include="Resources\Projects\donjon.jpg" />
+    <None Include="Resources\Projects\Broforce.png" />
+    <None Include="Resources\personnages\persoM.jpg" />
+    <None Include="Resources\personnages\persoL.jpg" />
+    <None Include="Resources\personnages\persoK.jpg" />
+    <None Include="Resources\personnages\persoJ.jpg" />
+    <None Include="Resources\personnages\persoI.jpg" />
+    <None Include="Resources\personnages\persoH.jpg" />
+    <None Include="Resources\personnages\persoG.jpg" />
+    <None Include="Resources\personnages\persoF.jpg" />
+    <None Include="Resources\personnages\persoE.jpg" />
+    <None Include="Resources\personnages\persoD.jpg" />
+    <None Include="Resources\personnages\persoC.jpg" />
+    <None Include="Resources\personnages\persoB.jpg" />
+    <None Include="Resources\personnages\persoA.jpg" />
     <None Include="Resources\formation.png" />
     <None Include="Resources\Company\immeuble.jpg" />
     <Content Include="Resources\Company\immeuble2.jpg" />
