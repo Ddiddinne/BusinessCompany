@@ -32,12 +32,12 @@ namespace BusinessCompany
 
         public enum FirstNames
         {
-            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Anne, Thomas, Raphaël, Gaspar, Sandrine, Marion, Sébastien
+            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Félix, Thomas, Raphaël, Gaspar, Sandrine, Sébastien
         }
-
+        
         public enum LastNames
         {
-            Onette, Puce, Touille, Luation, Covert, Jambon, Dufour, Tameire, Durand, Lannister, Delrue, Balleuil, Belfort, Toto 
+            Onette, Puce, Touille, Luation, Covert, Jambon, Dufour, Tameire, Durand, Lannister, Delrue, Belfort, Toto 
         }
 
         private LastNames lastName;
@@ -140,10 +140,10 @@ namespace BusinessCompany
             switch (idPerso)
             {
                 case 0:
-                    portrait = Properties.Resources.persoA;
+                    portrait = Properties.Resources.persoF;
                     break;
                 case 1:
-                    portrait = Properties.Resources.persoB;
+                    portrait = Properties.Resources.persoG;
                     break;
                 case 2:
                     portrait = Properties.Resources.persoC;
@@ -152,16 +152,28 @@ namespace BusinessCompany
                     portrait = Properties.Resources.persoD;
                     break;
                 case 4:
-                    portrait = Properties.Resources.persoE;
+                    portrait = Properties.Resources.persoB;
                     break;
                 case 5:
-                    portrait = Properties.Resources.persoF;
+                    portrait = Properties.Resources.persoH;
                     break;
                 case 6:
-                    portrait = Properties.Resources.persoG;
+                    portrait = Properties.Resources.persoE;
                     break;
                 case 7:
-                    portrait = Properties.Resources.persoH;
+                    portrait = Properties.Resources.persoA;
+                    break;
+                case 8:
+                    portrait = Properties.Resources.persoI;
+                    break;
+                case 9:
+                    portrait = Properties.Resources.persoJ;
+                    break;
+                case 10:
+                    portrait = Properties.Resources.persoK;
+                    break;
+                case 11:
+                    portrait = Properties.Resources.persoL;
                     break;
             }
         }
