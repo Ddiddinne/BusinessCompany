@@ -18,6 +18,7 @@ namespace BusinessCompany
         private List<Project> listProjects;
         private DateTime date = new DateTime(2010, 1, 1);
         static int i = 10;
+        private int indexStory = 0;
         
 
         public event EventHandler timeChange;
@@ -148,6 +149,13 @@ namespace BusinessCompany
             if (timeChange != null)
             {
                 timeChange(this, EventArgs.Empty);
+            }
+            if (date.Day == 2)
+            {
+                timer1.Stop();
+                AfficheStory story = new AfficheStory(this, company, timer1, indexStory);
+                this.Hide();
+                story.Show();
             }
         }
 

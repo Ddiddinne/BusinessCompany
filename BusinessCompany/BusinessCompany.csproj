@@ -59,6 +59,12 @@
     <Compile Include="AfficheProject.Designer.cs">
       <DependentUpon>AfficheProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="AfficheStory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfficheStory.Designer.cs">
+      <DependentUpon>AfficheStory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Company.cs" />
     <Compile Include="AfficheEmployee.cs">
       <SubType>Form</SubType>
@@ -127,6 +133,9 @@
     <EmbeddedResource Include="AfficheProject.resx">
       <DependentUpon>AfficheProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AfficheStory.resx">
+      <DependentUpon>AfficheStory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +194,7 @@
     <None Include="Resources\backgroudOption.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\backgroudStory.jpg" />
     <Content Include="Resources\Company\garage.jpg" />
     <None Include="Resources\formation.png" />
     <None Include="Resources\Company\immeuble.jpg" />

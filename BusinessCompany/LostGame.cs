@@ -17,7 +17,7 @@ namespace BusinessCompany
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btNewGame_Click(object sender, EventArgs e)
         {
             int levelgame=0;
 
@@ -39,6 +39,11 @@ namespace BusinessCompany
                 this.Close();
                 Game game = new Game(company);
                 game.Show();
+            }
+            else
+            {
+                Button button = (Button)sender;
+                button.Text = "Name of company?";
             }
         }
 
