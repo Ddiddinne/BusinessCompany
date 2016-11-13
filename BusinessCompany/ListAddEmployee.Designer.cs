@@ -36,7 +36,7 @@
             // annuler
             // 
             this.annuler.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.annuler.Location = new System.Drawing.Point(325, 441);
+            this.annuler.Location = new System.Drawing.Point(401, 539);
             this.annuler.Name = "annuler";
             this.annuler.Size = new System.Drawing.Size(79, 27);
             this.annuler.TabIndex = 8;
@@ -59,7 +59,7 @@
             this.list.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.list.Location = new System.Drawing.Point(147, 65);
             this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(423, 326);
+            this.list.Size = new System.Drawing.Size(584, 423);
             this.list.TabIndex = 8;
             // 
             // ListAddEmployee
@@ -67,13 +67,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(719, 538);
+            this.ClientSize = new System.Drawing.Size(839, 662);
+            this.ControlBox = false;
             this.Controls.Add(this.list);
             this.Controls.Add(this.label);
             this.Controls.Add(this.annuler);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListAddEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Business Company";
             this.ResumeLayout(false);
             this.PerformLayout();
 

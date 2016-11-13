@@ -35,10 +35,9 @@
             // annuler
             // 
             this.annuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.annuler.Location = new System.Drawing.Point(429, 558);
-            this.annuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.annuler.Location = new System.Drawing.Point(376, 558);
             this.annuler.Name = "annuler";
-            this.annuler.Size = new System.Drawing.Size(105, 33);
+            this.annuler.Size = new System.Drawing.Size(92, 33);
             this.annuler.TabIndex = 8;
             this.annuler.Text = "Back";
             this.annuler.UseVisualStyleBackColor = true;
@@ -48,24 +47,25 @@
             // 
             this.list.AutoScroll = true;
             this.list.BackColor = System.Drawing.Color.Transparent;
-            this.list.Location = new System.Drawing.Point(216, 68);
-            this.list.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.list.Location = new System.Drawing.Point(213, 93);
             this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(505, 438);
+            this.list.Size = new System.Drawing.Size(290, 100);
             this.list.TabIndex = 9;
             // 
             // ListAddProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(959, 662);
+            this.ClientSize = new System.Drawing.Size(839, 662);
+            this.ControlBox = false;
             this.Controls.Add(this.list);
             this.Controls.Add(this.annuler);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListAddProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListAddProject";
+            this.Text = "Business Company";
             this.ResumeLayout(false);
 
         }

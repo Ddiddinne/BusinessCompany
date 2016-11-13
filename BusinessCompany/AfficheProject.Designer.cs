@@ -48,11 +48,10 @@
             // 
             this.projectName.AutoSize = true;
             this.projectName.BackColor = System.Drawing.SystemColors.Window;
-            this.projectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.projectName.Location = new System.Drawing.Point(234, 1);
-            this.projectName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.projectName.Font = new System.Drawing.Font("Miramonte", 14F);
+            this.projectName.Location = new System.Drawing.Point(176, 1);
             this.projectName.Name = "projectName";
-            this.projectName.Size = new System.Drawing.Size(152, 29);
+            this.projectName.Size = new System.Drawing.Size(119, 24);
             this.projectName.TabIndex = 2;
             this.projectName.Text = "projectName";
             this.projectName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -60,32 +59,29 @@
             // timeProject
             // 
             this.timeProject.AutoSize = true;
-            this.timeProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.timeProject.Location = new System.Drawing.Point(316, 140);
-            this.timeProject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.timeProject.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.timeProject.Location = new System.Drawing.Point(238, 108);
             this.timeProject.Name = "timeProject";
-            this.timeProject.Size = new System.Drawing.Size(53, 20);
+            this.timeProject.Size = new System.Drawing.Size(45, 18);
             this.timeProject.TabIndex = 3;
             this.timeProject.Text = "label1";
             // 
             // timeConcurent
             // 
             this.timeConcurent.AutoSize = true;
-            this.timeConcurent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.timeConcurent.Location = new System.Drawing.Point(316, 162);
-            this.timeConcurent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.timeConcurent.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.timeConcurent.Location = new System.Drawing.Point(238, 126);
             this.timeConcurent.Name = "timeConcurent";
-            this.timeConcurent.Size = new System.Drawing.Size(53, 20);
+            this.timeConcurent.Size = new System.Drawing.Size(45, 18);
             this.timeConcurent.TabIndex = 4;
             this.timeConcurent.Text = "label1";
             // 
             // add
             // 
-            this.add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.add.Location = new System.Drawing.Point(276, 45);
-            this.add.Margin = new System.Windows.Forms.Padding(4);
+            this.add.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.add.Location = new System.Drawing.Point(199, 37);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(73, 31);
+            this.add.Size = new System.Drawing.Size(75, 23);
             this.add.TabIndex = 5;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = true;
@@ -94,32 +90,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(256, 140);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.label1.Location = new System.Drawing.Point(193, 108);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.Size = new System.Drawing.Size(45, 18);
             this.label1.TabIndex = 6;
             this.label1.Text = "Work:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(213, 160);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.label2.Location = new System.Drawing.Point(161, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
+            this.label2.Size = new System.Drawing.Size(81, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "Competitor:";
             // 
             // delete
             // 
-            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.delete.Location = new System.Drawing.Point(266, 69);
-            this.delete.Margin = new System.Windows.Forms.Padding(4);
+            this.delete.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.delete.Location = new System.Drawing.Point(200, 56);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(86, 31);
+            this.delete.Size = new System.Drawing.Size(75, 23);
             this.delete.TabIndex = 8;
             this.delete.Text = "Delete";
             this.delete.UseVisualStyleBackColor = true;
@@ -128,32 +121,29 @@
             // lbLevel
             // 
             this.lbLevel.AutoSize = true;
-            this.lbLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLevel.Location = new System.Drawing.Point(317, 103);
-            this.lbLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbLevel.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbLevel.Location = new System.Drawing.Point(239, 78);
             this.lbLevel.Name = "lbLevel";
-            this.lbLevel.Size = new System.Drawing.Size(46, 17);
+            this.lbLevel.Size = new System.Drawing.Size(45, 18);
             this.lbLevel.TabIndex = 9;
             this.lbLevel.Text = "label3";
             // 
             // lbLevextTxt
             // 
             this.lbLevextTxt.AutoSize = true;
-            this.lbLevextTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLevextTxt.Location = new System.Drawing.Point(284, 103);
-            this.lbLevextTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbLevextTxt.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbLevextTxt.Location = new System.Drawing.Point(214, 78);
             this.lbLevextTxt.Name = "lbLevextTxt";
-            this.lbLevextTxt.Size = new System.Drawing.Size(25, 17);
+            this.lbLevextTxt.Size = new System.Drawing.Size(23, 18);
             this.lbLevextTxt.TabIndex = 10;
             this.lbLevextTxt.Text = "lvl:";
             // 
             // Employees
             // 
-            this.Employees.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Employees.Location = new System.Drawing.Point(246, 34);
-            this.Employees.Margin = new System.Windows.Forms.Padding(4);
+            this.Employees.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.Employees.Location = new System.Drawing.Point(194, 27);
             this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(127, 34);
+            this.Employees.Size = new System.Drawing.Size(89, 23);
             this.Employees.TabIndex = 11;
             this.Employees.Text = "Employees";
             this.Employees.UseVisualStyleBackColor = true;
@@ -162,22 +152,20 @@
             // lbMonextTxt
             // 
             this.lbMonextTxt.AutoSize = true;
-            this.lbMonextTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMonextTxt.Location = new System.Drawing.Point(262, 120);
-            this.lbMonextTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMonextTxt.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbMonextTxt.Location = new System.Drawing.Point(197, 92);
             this.lbMonextTxt.Name = "lbMonextTxt";
-            this.lbMonextTxt.Size = new System.Drawing.Size(47, 20);
+            this.lbMonextTxt.Size = new System.Drawing.Size(39, 18);
             this.lbMonextTxt.TabIndex = 13;
             this.lbMonextTxt.Text = "earn:";
             // 
             // lbMoney
             // 
             this.lbMoney.AutoSize = true;
-            this.lbMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMoney.Location = new System.Drawing.Point(316, 120);
-            this.lbMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMoney.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbMoney.Location = new System.Drawing.Point(238, 92);
             this.lbMoney.Name = "lbMoney";
-            this.lbMoney.Size = new System.Drawing.Size(53, 20);
+            this.lbMoney.Size = new System.Drawing.Size(45, 18);
             this.lbMoney.TabIndex = 12;
             this.lbMoney.Text = "label3";
             // 
@@ -185,19 +173,18 @@
             // 
             this.picture.BackgroundImage = global::BusinessCompany.Properties.Resources.SimCity;
             this.picture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picture.Location = new System.Drawing.Point(-4, 1);
-            this.picture.Margin = new System.Windows.Forms.Padding(4);
+            this.picture.Location = new System.Drawing.Point(-3, 1);
             this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(215, 184);
+            this.picture.Size = new System.Drawing.Size(161, 150);
             this.picture.TabIndex = 1;
             this.picture.TabStop = false;
             // 
             // AfficheProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(392, 185);
+            this.ClientSize = new System.Drawing.Size(294, 150);
             this.ControlBox = false;
             this.Controls.Add(this.lbMonextTxt);
             this.Controls.Add(this.lbMoney);
@@ -213,7 +200,6 @@
             this.Controls.Add(this.projectName);
             this.Controls.Add(this.picture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AfficheProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "AfficheProject";

@@ -197,5 +197,10 @@ namespace BusinessCompany
             ModifyLevelCompany modifyLevelCompany = new ModifyLevelCompany(this);
             modifyLevelCompany.Show();
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

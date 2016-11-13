@@ -41,13 +41,13 @@
             this.list.BackColor = System.Drawing.Color.Transparent;
             this.list.Location = new System.Drawing.Point(59, 68);
             this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(290, 100);
+            this.list.Size = new System.Drawing.Size(334, 100);
             this.list.TabIndex = 6;
             // 
             // addProject
             // 
-            this.addProject.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.addProject.Location = new System.Drawing.Point(325, 397);
+            this.addProject.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.addProject.Location = new System.Drawing.Point(406, 490);
             this.addProject.Name = "addProject";
             this.addProject.Size = new System.Drawing.Size(79, 27);
             this.addProject.TabIndex = 5;
@@ -57,8 +57,8 @@
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.back.Location = new System.Drawing.Point(325, 443);
+            this.back.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.back.Location = new System.Drawing.Point(406, 535);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(79, 27);
             this.back.TabIndex = 4;
@@ -70,20 +70,20 @@
             // 
             this.listEmployees.AutoScroll = true;
             this.listEmployees.BackColor = System.Drawing.Color.Transparent;
-            this.listEmployees.Location = new System.Drawing.Point(390, 68);
+            this.listEmployees.Location = new System.Drawing.Point(466, 68);
             this.listEmployees.Name = "listEmployees";
-            this.listEmployees.Size = new System.Drawing.Size(290, 100);
+            this.listEmployees.Size = new System.Drawing.Size(305, 100);
             this.listEmployees.TabIndex = 7;
             // 
             // CA
             // 
             this.CA.AutoSize = true;
             this.CA.BackColor = System.Drawing.Color.Transparent;
-            this.CA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
             this.CA.Location = new System.Drawing.Point(13, 13);
-            this.CA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CA.Margin = new System.Windows.Forms.Padding(4);
             this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(70, 25);
+            this.CA.Size = new System.Drawing.Size(68, 24);
             this.CA.TabIndex = 8;
             this.CA.Text = "label1";
             // 
@@ -92,12 +92,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(719, 538);
+            this.ClientSize = new System.Drawing.Size(839, 662);
+            this.ControlBox = false;
             this.Controls.Add(this.CA);
             this.Controls.Add(this.listEmployees);
             this.Controls.Add(this.list);
             this.Controls.Add(this.addProject);
             this.Controls.Add(this.back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListProjects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListProjects";

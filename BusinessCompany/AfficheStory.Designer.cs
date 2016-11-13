@@ -61,8 +61,10 @@
             this.BackgroundImage = global::BusinessCompany.Properties.Resources.backgroudStory;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(719, 538);
+            this.ControlBox = false;
             this.Controls.Add(this.ok);
             this.Controls.Add(this.lbStory);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AfficheStory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AfficheStory";

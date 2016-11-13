@@ -35,7 +35,7 @@ namespace BusinessCompany
                 afficheProject.Show();
                 this.list.Controls.Add(afficheProject);
             }
-            list.Size = new Size(315, 300);
+            list.Size = new Size(370, 300);
 
         }
 

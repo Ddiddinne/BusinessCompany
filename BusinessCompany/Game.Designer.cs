@@ -34,6 +34,7 @@
             this.CA = new System.Windows.Forms.Label();
             this.btnModifyLivel = new System.Windows.Forms.Button();
             this.lbDate = new System.Windows.Forms.Label();
+            this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // companyName
@@ -42,7 +43,7 @@
             this.companyName.BackColor = System.Drawing.Color.White;
             this.companyName.Font = new System.Drawing.Font("Miramonte", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.companyName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.companyName.Location = new System.Drawing.Point(248, 42);
+            this.companyName.Location = new System.Drawing.Point(346, 123);
             this.companyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.companyName.Name = "companyName";
             this.companyName.Size = new System.Drawing.Size(201, 33);
@@ -55,7 +56,7 @@
             this.employees.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.employees.FlatAppearance.BorderSize = 0;
             this.employees.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employees.Location = new System.Drawing.Point(254, 188);
+            this.employees.Location = new System.Drawing.Point(352, 269);
             this.employees.Margin = new System.Windows.Forms.Padding(0);
             this.employees.Name = "employees";
             this.employees.Size = new System.Drawing.Size(184, 42);
@@ -67,7 +68,7 @@
             // projects
             // 
             this.projects.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.projects.Location = new System.Drawing.Point(254, 259);
+            this.projects.Location = new System.Drawing.Point(352, 340);
             this.projects.Name = "projects";
             this.projects.Size = new System.Drawing.Size(184, 42);
             this.projects.TabIndex = 4;
@@ -90,7 +91,7 @@
             // btnModifyLivel
             // 
             this.btnModifyLivel.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.btnModifyLivel.Location = new System.Drawing.Point(254, 411);
+            this.btnModifyLivel.Location = new System.Drawing.Point(352, 458);
             this.btnModifyLivel.Name = "btnModifyLivel";
             this.btnModifyLivel.Size = new System.Drawing.Size(184, 35);
             this.btnModifyLivel.TabIndex = 6;
@@ -103,12 +104,23 @@
             this.lbDate.AutoSize = true;
             this.lbDate.BackColor = System.Drawing.Color.Transparent;
             this.lbDate.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.lbDate.Location = new System.Drawing.Point(577, 24);
+            this.lbDate.Location = new System.Drawing.Point(715, 24);
             this.lbDate.Margin = new System.Windows.Forms.Padding(4);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(55, 24);
             this.lbDate.TabIndex = 7;
             this.lbDate.Text = "Date";
+            // 
+            // exit
+            // 
+            this.exit.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.exit.Location = new System.Drawing.Point(352, 510);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(184, 42);
+            this.exit.TabIndex = 8;
+            this.exit.Text = "Exit";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // Game
             // 
@@ -116,7 +128,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BusinessCompany.Properties.Resources.room_b;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(719, 538);
+            this.ClientSize = new System.Drawing.Size(839, 662);
+            this.ControlBox = false;
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.btnModifyLivel);
             this.Controls.Add(this.projects);
@@ -125,6 +139,7 @@
             this.Controls.Add(this.companyName);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -142,6 +157,7 @@
         private System.Windows.Forms.Label CA;
         private System.Windows.Forms.Button btnModifyLivel;
         private System.Windows.Forms.Label lbDate;
+        private System.Windows.Forms.Button exit;
     }
 }
 
