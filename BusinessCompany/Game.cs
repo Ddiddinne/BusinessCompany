@@ -62,7 +62,7 @@ namespace BusinessCompany
                 }
             }
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 1000; //(1 second)
+            timer1.Interval = 1000* (4-this.company.LevelGame); //(1000 = 1 second)
             timer1.Start();
         }
 

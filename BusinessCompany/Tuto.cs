@@ -34,7 +34,7 @@ namespace BusinessCompany
             switch (i)
             {
                 case 0:
-                    ok.Location = new Point(719; 614);
+                    ok.Location = new Point(719, 614);
                     skipTuto.Hide();
                     lbStory.Hide();
                     this.BackgroundImage = Properties.Resources.Menu1;
@@ -82,7 +82,7 @@ namespace BusinessCompany
                     break;
 
                 case 9:
-                    ok.Location = new Point(520; 492);
+                    ok.Location = new Point(520, 492);
                     lbStory.Text = "You are now ready to begin!";
                     lbStory.Show();
                     this.BackgroundImage = Properties.Resources.backgroudStory;
