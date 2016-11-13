@@ -34,10 +34,10 @@
             // 
             // annuler
             // 
-            this.annuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.annuler.Location = new System.Drawing.Point(376, 558);
+            this.annuler.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.annuler.Location = new System.Drawing.Point(374, 554);
             this.annuler.Name = "annuler";
-            this.annuler.Size = new System.Drawing.Size(92, 33);
+            this.annuler.Size = new System.Drawing.Size(99, 44);
             this.annuler.TabIndex = 8;
             this.annuler.Text = "Back";
             this.annuler.UseVisualStyleBackColor = true;

@@ -46,21 +46,21 @@
             // 
             // addProject
             // 
-            this.addProject.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.addProject.Location = new System.Drawing.Point(406, 490);
+            this.addProject.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.addProject.Location = new System.Drawing.Point(352, 495);
             this.addProject.Name = "addProject";
-            this.addProject.Size = new System.Drawing.Size(79, 27);
+            this.addProject.Size = new System.Drawing.Size(133, 44);
             this.addProject.TabIndex = 5;
-            this.addProject.Text = "Add";
+            this.addProject.Text = "Add Project";
             this.addProject.UseVisualStyleBackColor = true;
             this.addProject.Click += new System.EventHandler(this.addProject_Click);
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.back.Location = new System.Drawing.Point(406, 535);
+            this.back.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.back.Location = new System.Drawing.Point(369, 545);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(79, 27);
+            this.back.Size = new System.Drawing.Size(99, 44);
             this.back.TabIndex = 4;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -102,7 +102,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListProjects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListProjects";
+            this.Text = "Business Company";
             this.ResumeLayout(false);
             this.PerformLayout();
 

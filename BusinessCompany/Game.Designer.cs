@@ -91,9 +91,9 @@
             // btnModifyLivel
             // 
             this.btnModifyLivel.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.btnModifyLivel.Location = new System.Drawing.Point(352, 458);
+            this.btnModifyLivel.Location = new System.Drawing.Point(338, 462);
             this.btnModifyLivel.Name = "btnModifyLivel";
-            this.btnModifyLivel.Size = new System.Drawing.Size(184, 35);
+            this.btnModifyLivel.Size = new System.Drawing.Size(219, 42);
             this.btnModifyLivel.TabIndex = 6;
             this.btnModifyLivel.Text = "Upgrade Company";
             this.btnModifyLivel.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Business Company";
             this.ResumeLayout(false);
             this.PerformLayout();
 

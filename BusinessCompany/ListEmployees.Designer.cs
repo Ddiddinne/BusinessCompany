@@ -37,10 +37,10 @@
             // 
             // back
             // 
-            this.back.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.back.Location = new System.Drawing.Point(414, 498);
+            this.back.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.back.Location = new System.Drawing.Point(379, 541);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(79, 27);
+            this.back.Size = new System.Drawing.Size(99, 44);
             this.back.TabIndex = 1;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -48,10 +48,10 @@
             // 
             // addEmployee
             // 
-            this.addEmployee.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.addEmployee.Location = new System.Drawing.Point(414, 450);
+            this.addEmployee.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.addEmployee.Location = new System.Drawing.Point(342, 491);
             this.addEmployee.Name = "addEmployee";
-            this.addEmployee.Size = new System.Drawing.Size(79, 27);
+            this.addEmployee.Size = new System.Drawing.Size(174, 44);
             this.addEmployee.TabIndex = 2;
             this.addEmployee.Text = "Add Employee";
             this.addEmployee.UseVisualStyleBackColor = true;

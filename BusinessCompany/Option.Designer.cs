@@ -178,7 +178,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Option";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Option";
+            this.Text = "Business Company";
             this.levelchecked.ResumeLayout(false);
             this.levelchecked.PerformLayout();
             this.ResumeLayout(false);

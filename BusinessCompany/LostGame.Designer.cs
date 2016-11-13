@@ -54,7 +54,7 @@
             // 
             // btNewGame
             // 
-            this.btNewGame.Font = new System.Drawing.Font("Miramonte", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNewGame.Font = new System.Drawing.Font("Miramonte", 10F);
             this.btNewGame.Location = new System.Drawing.Point(444, 477);
             this.btNewGame.Name = "btNewGame";
             this.btNewGame.Size = new System.Drawing.Size(103, 45);
@@ -65,7 +65,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Miramonte", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Miramonte", 10F);
             this.button2.Location = new System.Drawing.Point(625, 477);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 45);
@@ -78,10 +78,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.label2.Location = new System.Drawing.Point(479, 295);
+            this.label2.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.label2.Location = new System.Drawing.Point(463, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 18);
+            this.label2.Size = new System.Drawing.Size(122, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Name Company";
             // 
@@ -171,7 +171,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LostGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "lostGame";
+            this.Text = "Business Company";
             this.Load += new System.EventHandler(this.LostGame_Load);
             this.levelchecked.ResumeLayout(false);
             this.levelchecked.PerformLayout();

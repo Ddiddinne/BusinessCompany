@@ -56,7 +56,7 @@
             // 
             // btnApprove
             // 
-            this.btnApprove.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApprove.Font = new System.Drawing.Font("Miramonte", 15F);
             this.btnApprove.Location = new System.Drawing.Point(313, 395);
             this.btnApprove.Name = "btnApprove";
             this.btnApprove.Size = new System.Drawing.Size(100, 50);
@@ -67,7 +67,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Miramonte", 15F);
             this.btnCancel.Location = new System.Drawing.Point(442, 395);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 50);
@@ -90,7 +90,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ModifyLevelCompany";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ModifyLevelCompany";
+            this.Text = "Business Company";
             this.ResumeLayout(false);
             this.PerformLayout();
 
