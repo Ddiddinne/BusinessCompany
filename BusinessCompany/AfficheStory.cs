@@ -23,12 +23,7 @@ namespace BusinessCompany
             this.timer = timer;
             switch (index)
             {
-                case 0:
-                    this.lbStory.Text = "Nice Job!! \n " +
-                        "You have created your start-up of IT Development. \n "+
-                        "You are now ready to hire some employees, but be careful, the money is not endless.";
-                    this.Show();
-                    break;
+                
                 case 1:
                     this.lbStory.Text = "Your parents gave you 100 000$ to start your company \n " +
                         "Now, they need money, they ask you to give money back. \n " +

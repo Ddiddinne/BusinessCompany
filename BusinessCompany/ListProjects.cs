@@ -52,7 +52,6 @@ namespace BusinessCompany
         {
             if (listProjects.Count() != 0)
             {
-                tuto.Hide();
                 int i = 0;
                 foreach (Project project in listProjects)
                 {
@@ -70,14 +69,6 @@ namespace BusinessCompany
                     this.list.Controls.Add(afficheProject);
                 }
                 list.Size = new Size(315, 300);
-            }else
-            {
-                tuto.Text = "You don't have Project yet. \n \n You have to add one here";
-                tuto.Location = new Point(
-                    this.Width / 2 - tuto.Width / 2,
-                    tuto.Location.Y);
-                tuto.Show();
-                list.Hide();
             }
         }
 

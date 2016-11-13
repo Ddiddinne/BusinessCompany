@@ -18,7 +18,7 @@ namespace BusinessCompany
         private List<Project> listProjects;
         private DateTime date = new DateTime(2010, 1, 1);
         static int i = 10;
-        private int indexStory = 0;
+        private int indexStory = 1;
         
         public event EventHandler timeChange;
         public event EventHandler projectRemove;
@@ -155,7 +155,7 @@ namespace BusinessCompany
             {
                 timeChange(this, EventArgs.Empty);
             }
-            if (date.Day == 2)
+            if (date.Day == 1)
             {
                 
                 if (this.Visible)

@@ -32,6 +32,7 @@ namespace BusinessCompany
             this.project.timeDelayChange+=TimeDelayChange;
             this.lbLevel.Text = this.project.Level.ToString();
             this.lbMoney.Text = String.Format("{0} $", this.project.Price);
+            this.picture.BackgroundImage = project.Picture;
             if (show) { add.Hide(); delete.Show(); Employees.Show(); }
         }
 

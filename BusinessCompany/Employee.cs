@@ -22,9 +22,9 @@ namespace BusinessCompany
             Specialisation = (Speciality)num;
             firstName = (FirstNames)numName;
             lastName = (LastNames)numName;
+            getImage(numName);
             numName = (numName + 1) % 14;
             num = (num + 1) % 2;
-
         }
 
         private static int num = 0;
@@ -32,12 +32,12 @@ namespace BusinessCompany
 
         public enum FirstNames
         {
-            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Anne, Thomas, Raphaël, Gaspar, Sandrine, Marion, Sébastien
+            Camille, Clara, Sacha, Eva, Harry, Jérémy, Mathilde, Félix, Thomas, Raphaël, Gaspar, Sandrine, Marie
         }
-
+        
         public enum LastNames
         {
-            Onette, Puce, Touille, Luation, Covert, Jambon, Dufour, Tameire, Durand, Lannister, Delrue, Balleuil, Belfort, Toto 
+            Onette, Puce, Touille, Luation, Covert, Jambon, Dufour, Tameire, Durand, Lannister, Delrue, Belfort, Toto 
         }
 
         private LastNames lastName;
@@ -135,6 +135,50 @@ namespace BusinessCompany
             this.projectAssigned.Remove(project);
         }
 
-
+        public void getImage(int idPerso)
+        {
+            switch (idPerso)
+            { 
+                case 0:
+                    portrait = Properties.Resources.persoF;
+                    break;
+                case 1:
+                    portrait = Properties.Resources.persoG;
+                    break;
+                case 2:
+                    portrait = Properties.Resources.persoC;
+                    break;
+                case 3:
+                    portrait = Properties.Resources.persoD;
+                    break;
+                case 4:
+                    portrait = Properties.Resources.persoB;
+                    break;
+                case 5:
+                    portrait = Properties.Resources.persoH;
+                    break;
+                case 6:
+                    portrait = Properties.Resources.persoE;
+                    break;
+                case 7:
+                    portrait = Properties.Resources.persoA;
+                    break;
+                case 8:
+                    portrait = Properties.Resources.persoI;
+                    break;
+                case 9:
+                    portrait = Properties.Resources.persoJ;
+                    break;
+                case 10:
+                    portrait = Properties.Resources.persoK;
+                    break;
+                case 11:
+                    portrait = Properties.Resources.persoL;
+                    break;
+                case 12:
+                    portrait = Properties.Resources.persoM;
+                    break;
+            }
+        }
     }
 }

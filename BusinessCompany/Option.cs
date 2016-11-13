@@ -36,10 +36,9 @@ namespace BusinessCompany
 
             if (!nameCompany.Text.Equals("") && levelgame != 0)
             {
-                Company company = new Company(nameCompany.Text, levelgame);
+                Tuto tuto = new Tuto(nameCompany.Text, levelgame);
+                tuto.Show();
                 this.Hide();
-                Game game = new Game(company);
-                game.Show();
                 
             }
 
