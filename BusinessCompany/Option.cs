@@ -48,6 +48,13 @@ namespace BusinessCompany
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Highscore highscore = new Highscore();
+            highscore.Show();
+        }
+
 
     }
 }

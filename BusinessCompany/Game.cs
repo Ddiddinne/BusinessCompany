@@ -61,10 +61,11 @@ namespace BusinessCompany
             timer1.Start();
         }
 
-        private void LostGame()
+        private void LostGame(DateTime date)
         {
             timer1.Stop();
             LostGame lostGame = new LostGame();
+            Highscore highscore = new Highscore(this.company, date);
             lostGame.Show();
             this.Close();
         }
@@ -97,16 +98,16 @@ namespace BusinessCompany
 
             //verification if the projects are ended or not
             List<Project> copyListProject = company.ListProjects;
-            for (int i = copyListProject.Count - 1; i >= 0; i--)
+            for (int j = copyListProject.Count - 1; j >= 0; j--)
             {
-                if (copyListProject[i].DelayCompetition <= 0)
+                if (copyListProject[j].DelayCompetition <= 0)
                 {
                     
-                    foreach(Employee employee in copyListProject[i].EmployeeAssigned)
+                    foreach(Employee employee in copyListProject[j].EmployeeAssigned)
                     {
-                        employee.ProjectAssigned.Remove(copyListProject[i]);
+                        employee.ProjectAssigned.Remove(copyListProject[j]);
                     }
-                    company.removeProject(copyListProject[i]);
+                    company.removeProject(copyListProject[j]);
                     if (projectRemove != null)
                     {
                         projectRemove(this, EventArgs.Empty);
@@ -114,16 +115,16 @@ namespace BusinessCompany
                 }
                 else
                 {
-                    if(copyListProject[i].Delay <= 0)
+                    if(copyListProject[j].Delay <= 0)
                     {
-                        company.Money += copyListProject[i].Price;
+                        company.Money += copyListProject[j].Price;
                         
-                        foreach(Employee employee in copyListProject[i].EmployeeAssigned)
+                        foreach(Employee employee in copyListProject[j].EmployeeAssigned)
                         {
                             employee.Experience += 50;
-                            employee.removeProject(copyListProject[i]);
+                            employee.removeProject(copyListProject[j]);
                         }
-                        company.removeProject(copyListProject[i]);
+                        company.removeProject(copyListProject[j]);
                         if (projectRemove != null)
                         {
                             projectRemove(this, EventArgs.Empty);
@@ -144,7 +145,7 @@ namespace BusinessCompany
             
             if (this.company.Money <= 0)
             {
-                this.LostGame();
+                this.LostGame(this.date);
             }
             if (timeChange != null)
             {
