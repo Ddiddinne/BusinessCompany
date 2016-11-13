@@ -36,13 +36,12 @@ namespace BusinessCompany
                 this.list.Controls.Add(afficheProject);
             }
             list.Size = new Size(315, 300);
-
         }
 
         private void annuler_Click(object sender, EventArgs e)
         {
             listProjects.Show();
-            this.Close();
+            this.Hide();
         }
 
         public void add(Project project)
@@ -52,13 +51,13 @@ namespace BusinessCompany
             listProjects.ListProject.Remove(project);
             listProjects.Show();
             listProjects.refresh();
-            this.Close();
+            this.Hide();
         }
 
         private void annuler_Click_1(object sender, EventArgs e)
         {
             listProjects.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void storyShow(object sender, EventArgs e)

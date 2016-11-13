@@ -15,6 +15,12 @@ namespace BusinessCompany
         public LostGame()
         {
             InitializeComponent();
+            LostGameLeave.Click += new EventHandler(leaveGame_Click);
+        }
+
+        private void leaveGame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btNewGame_Click(object sender, EventArgs e)
@@ -56,7 +62,7 @@ namespace BusinessCompany
 
         private void LostGame_Load(object sender, EventArgs e)
         {
-            Form.ActiveForm.Close();
+            Form.ActiveForm.Hide();
         }
     }
 }

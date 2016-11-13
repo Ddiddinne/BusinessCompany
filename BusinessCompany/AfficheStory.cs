@@ -58,9 +58,8 @@ namespace BusinessCompany
                     this.Hide();
                     break;
             }
-
         }
-
+        
         private void ok_Click(object sender, EventArgs e)
         {
             parent.Show();

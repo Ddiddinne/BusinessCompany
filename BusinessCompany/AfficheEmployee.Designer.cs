@@ -85,7 +85,7 @@
             // level
             // 
             this.level.AutoSize = true;
-            this.level.BackColor = System.Drawing.SystemColors.Window;
+            this.level.BackColor = System.Drawing.Color.Transparent;
             this.level.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.level.ForeColor = System.Drawing.Color.Black;
             this.level.Location = new System.Drawing.Point(60, 9);
@@ -154,7 +154,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
             this.Controls.Add(this.btFormations);

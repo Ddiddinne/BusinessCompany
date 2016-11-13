@@ -149,7 +149,7 @@ namespace BusinessCompany
         private void back_Click(object sender, EventArgs e)
         {
             game.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void select(object sender, EventArgs e)

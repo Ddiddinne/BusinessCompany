@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListAddProject));
             this.annuler = new System.Windows.Forms.Button();
             this.list = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -36,7 +37,7 @@
             // 
             this.annuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.annuler.Location = new System.Drawing.Point(429, 558);
-            this.annuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.annuler.Margin = new System.Windows.Forms.Padding(4);
             this.annuler.Name = "annuler";
             this.annuler.Size = new System.Drawing.Size(105, 33);
             this.annuler.TabIndex = 8;
@@ -49,7 +50,7 @@
             this.list.AutoScroll = true;
             this.list.BackColor = System.Drawing.Color.Transparent;
             this.list.Location = new System.Drawing.Point(216, 68);
-            this.list.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.list.Margin = new System.Windows.Forms.Padding(4);
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(505, 438);
             this.list.TabIndex = 9;
@@ -60,12 +61,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(959, 662);
+            this.ControlBox = false;
             this.Controls.Add(this.list);
             this.Controls.Add(this.annuler);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListAddProject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ListAddProject";
+            this.Text = "Business Company";
             this.ResumeLayout(false);
 
         }

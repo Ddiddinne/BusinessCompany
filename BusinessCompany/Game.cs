@@ -24,6 +24,7 @@ namespace BusinessCompany
         public event EventHandler projectRemove;
         public event EventHandler storyGoOn;
 
+
         public int IndexStory
         {
             get { return indexStory; }
@@ -61,9 +62,15 @@ namespace BusinessCompany
                         c.Location.Y);
                 }
             }
+            gameLeave.Click += new EventHandler(leaveGame_Click);
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; //(1 second)
             timer1.Start();
+        }
+
+        private void leaveGame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void LostGame()
@@ -71,7 +78,7 @@ namespace BusinessCompany
             timer1.Stop();
             LostGame lostGame = new LostGame();
             lostGame.Show();
-            this.Close();
+            this.Hide();
         }
         
         public void timer1_Tick(object sender, EventArgs e)

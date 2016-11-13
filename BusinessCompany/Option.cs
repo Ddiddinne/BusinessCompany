@@ -15,6 +15,12 @@ namespace BusinessCompany
         public Option()
         {
             InitializeComponent();
+            leaveOption.Click += new EventHandler(leaveGame_Click);
+        }
+
+        private void leaveGame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void valid_Click(object sender, EventArgs e)

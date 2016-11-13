@@ -44,6 +44,7 @@ namespace BusinessCompany
             this.game = game;
             init();
         }
+
         private void init()
         {
             InitializeComponent();
@@ -99,7 +100,7 @@ namespace BusinessCompany
         private void back_Click(object sender, EventArgs e)
         {
             game.Show();
-            this.Close(); 
+            this.Hide(); 
         }
 
         private void form(object sender, EventArgs e)

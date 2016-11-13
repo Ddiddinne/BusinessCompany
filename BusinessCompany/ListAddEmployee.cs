@@ -35,13 +35,12 @@ namespace BusinessCompany
                 this.list.Controls.Add(afficheEmployee);
             }
             list.Size = new Size(300, 300);
-
         }
 
         private void annuler_Click(object sender, EventArgs e)
         {
             listEmployees.Show();
-            this.Close();
+            this.Hide();
         }
 
         public void add(Employee employee)
@@ -51,7 +50,7 @@ namespace BusinessCompany
             listEmployees.ListPerson.Remove(employee);
             listEmployees.Show();
             listEmployees.refresh();
-            this.Close();
+            this.Hide();
         }
 
         private void storyShow(object sender, EventArgs e)
