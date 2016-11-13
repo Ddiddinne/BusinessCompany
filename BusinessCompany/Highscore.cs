@@ -23,52 +23,11 @@ namespace BusinessCompany
         {
             InitializeComponent();
             //try to connect to the database, be careful change the address
-            string address ="Data Source=(D:\\ISEN\\M2\\C#PROJETCLONE\\CLONEBUSINESS\\BUSINESSCOMPANY\\RESULT.MDF)\\v11.0;Initial Catalog=yourDB;Integrated Security=True"; 
-            SqlConnection conn = new SqlConnection(address);
-            SqlCommand cmd=new SqlCommand();
-            SqlDataReader reader;
-
-            //try to prepare the command for read all the data from the table score
-            cmd.CommandText="SELECT * FROM Score";
-            cmd.CommandType=CommandType.Text;
-            cmd.Connection=conn;
-
-            //open the connection
-            conn.Open();//Error->don't know the server
-
-            //read the data
-            reader=cmd.ExecuteReader();
-            
-            //display the data into the textbox
-            this.txtScore.Text=reader.ToString();
-
-            //close the connection
-            conn.Close();
-        }
-
-        public Highscore(Company company,DateTime date)
-        {
-            InitializeComponent();
-            //try to connect to the database, be careful change the address
             string address = "Data Source=(D:\\ISEN\\M2\\C#PROJETCLONE\\CLONEBUSINESS\\BUSINESSCOMPANY\\RESULT.MDF)\\v11.0;Initial Catalog=yourDB;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(address);
-            SqlCommand cmdRead = new SqlCommand();
-            SqlCommand cmdAddData = new SqlCommand();
+            SqlConnection conn = connectionDatabase(address);
+            //try to prepare the command for read all the data from the table score
+            SqlCommand cmdRead = prepareCommand("SELECT * FROM Score", conn);
             SqlDataReader reader;
-      
-            //try to prepare the command for read all the data from the table score
-            cmdRead.CommandText = "SELECT * FROM Score";
-            cmdRead.CommandType = CommandType.Text;
-            cmdRead.Connection = conn;
-
-
-            //try to prepare the command for read all the data from the table score
-            string dateFormat=date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
-            cmdAddData.CommandText = "INSERT INTO Score(NameCompany,LevelCompany,LevelGame,DateEndGame VALUES (company.Name,company.LevelCompany,company.LevelGame,dateFormat)";
-            cmdAddData.CommandType = CommandType.Text;
-            cmdAddData.Connection = conn;
-            //open the connection
-            conn.Open();//Error->don't know the server
 
             //read the data
             reader = cmdRead.ExecuteReader();
@@ -80,8 +39,46 @@ namespace BusinessCompany
             conn.Close();
         }
 
-        private void connectionDatabase(){
+        public Highscore(Company company,DateTime date)
+        {
+            InitializeComponent();
+            //try to connect to the database, be careful change the address
+            string address = "Data Source=(D:\\ISEN\\M2\\C#PROJETCLONE\\CLONEBUSINESS\\BUSINESSCOMPANY\\RESULT.MDF)\\v11.0;Initial Catalog=yourDB;Integrated Security=True";
+            SqlConnection conn = connectionDatabase(address);
+            //try to prepare the command for read all the data from the table score
+            SqlCommand cmdRead = prepareCommand("SELECT * FROM Score",conn);
 
+            //try to prepare the command for read all the data from the table score
+            string dateFormat = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
+
+            SqlCommand cmdAddData = prepareCommand("INSERT INTO Score(NameCompany,LevelCompany,LevelGame,DateEndGame VALUES (company.Name,company.LevelCompany,company.LevelGame,dateFormat)", conn); ;
+            SqlDataReader reader;
+      
+            //read the data
+            reader = cmdRead.ExecuteReader();
+
+            //display the data into the textbox
+            this.txtScore.Text = reader.ToString();
+
+            //close the connection
+            conn.Close();
+        }
+
+        private SqlConnection connectionDatabase(string address){
+            //try to connect to the database, be careful change the address
+            SqlConnection conn = new SqlConnection(address);
+            conn.Open();
+            return conn;
+        }
+
+        private SqlCommand prepareCommand(string commandText, SqlConnection conn)
+        {
+            SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = commandText;
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = conn;
+            return cmd;
         }
     }
 }
