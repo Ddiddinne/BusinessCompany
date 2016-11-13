@@ -35,10 +35,10 @@
             // 
             // ok
             // 
-            this.ok.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ok.Location = new System.Drawing.Point(363, 400);
+            this.ok.Font = new System.Drawing.Font("Miramonte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ok.Location = new System.Drawing.Point(423, 432);
             this.ok.Name = "ok";
-            this.ok.Size = new System.Drawing.Size(82, 26);
+            this.ok.Size = new System.Drawing.Size(108, 36);
             this.ok.TabIndex = 3;
             this.ok.Text = "OK";
             this.ok.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // skipTuto
             // 
             this.skipTuto.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skipTuto.Location = new System.Drawing.Point(503, 400);
+            this.skipTuto.Location = new System.Drawing.Point(438, 400);
             this.skipTuto.Name = "skipTuto";
             this.skipTuto.Size = new System.Drawing.Size(82, 26);
             this.skipTuto.TabIndex = 4;

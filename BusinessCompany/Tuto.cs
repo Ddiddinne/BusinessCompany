@@ -1,6 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Reflection;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,23 +34,62 @@ namespace BusinessCompany
             switch (i)
             {
                 case 0:
-                    var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase);
-
-                    var logoimage = Path.Combine(outPutDirectory, "Tuto\\Menu.png");
-                    string relLogo = new Uri(logoimage).LocalPath;
-                    this.BackgroundImage = (Bitmap)Image.FromFile(new LinkedResource(relLogo));
+                    ok.Location = new Point(599, 490);
+                    skipTuto.Hide();
+                    lbStory.Hide();
+                    this.BackgroundImage = Properties.Resources.Menu1;
                     i++;
                     break;
 
                 case 1:
+                    this.BackgroundImage = Properties.Resources.WithoutEmployee;
                     i++;
                     break;
 
                 case 2:
+                    this.BackgroundImage = Properties.Resources.AddEmployee;
                     i++;
                     break;
 
                 case 3:
+                    this.BackgroundImage = Properties.Resources.Employee;
+                    i++;
+                    break;
+
+                case 4:
+                    this.BackgroundImage = Properties.Resources.Menu2;
+                    i++;
+                    break;
+
+                case 5:
+                    this.BackgroundImage = Properties.Resources.WithoutProject;
+                    i++;
+                    break;
+
+                case 6:
+                    this.BackgroundImage = Properties.Resources.AddProject;
+                    i++;
+                    break;
+
+                case 7:
+                    this.BackgroundImage = Properties.Resources.Project;
+                    i++;
+                    break;
+
+                case 8:
+                    this.BackgroundImage = Properties.Resources.AssignedEmployee;
+                    i++;
+                    break;
+
+                case 9:
+                    ok.Location = new Point(438, 400);
+                    lbStory.Text = "You are now ready to begin!";
+                    lbStory.Show();
+                    this.BackgroundImage = Properties.Resources.backgroudStory;
+                    i++;
+                    break;
+
+                case 10:
                     Company company = new Company(this.companyName, levelGame);
                     Game game = new Game(company);
                     game.Show();

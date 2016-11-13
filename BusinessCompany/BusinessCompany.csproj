@@ -203,6 +203,15 @@
     <None Include="Resources\backgroudOption.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Tuto\Project.PNG" />
+    <None Include="Resources\Tuto\Menu2.PNG" />
+    <None Include="Resources\Tuto\AddProject.PNG" />
+    <None Include="Resources\Tuto\WithoutProject.PNG" />
+    <None Include="Resources\Tuto\AssignedEmployee.PNG" />
+    <None Include="Resources\Tuto\AddEmployee.PNG" />
+    <None Include="Resources\Tuto\WithoutEmployee.PNG" />
+    <None Include="Resources\Tuto\Menu1.PNG" />
+    <None Include="Resources\Tuto\Employee.PNG" />
     <None Include="Resources\backgroudStory.jpg" />
     <Content Include="Resources\Company\garage.jpg" />
     <None Include="Resources\Projects\stardew.png" />

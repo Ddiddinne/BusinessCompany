@@ -63,6 +63,36 @@ namespace BusinessCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddEmployee {
+            get {
+                object obj = ResourceManager.GetObject("AddEmployee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AddProject {
+            get {
+                object obj = ResourceManager.GetObject("AddProject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AssignedEmployee {
+            get {
+                object obj = ResourceManager.GetObject("AssignedEmployee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backgroudOption {
             get {
                 object obj = ResourceManager.GetObject("backgroudOption", resourceCulture);
@@ -116,6 +146,16 @@ namespace BusinessCompany.Properties {
         internal static System.Drawing.Bitmap donjon {
             get {
                 object obj = ResourceManager.GetObject("donjon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Employee {
+            get {
+                object obj = ResourceManager.GetObject("Employee", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +226,26 @@ namespace BusinessCompany.Properties {
         internal static System.Drawing.Bitmap maisonVieille {
             get {
                 object obj = ResourceManager.GetObject("maisonVieille", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu1 {
+            get {
+                object obj = ResourceManager.GetObject("Menu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Menu2 {
+            get {
+                object obj = ResourceManager.GetObject("Menu2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +473,16 @@ namespace BusinessCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Project {
+            get {
+                object obj = ResourceManager.GetObject("Project", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap room_b {
             get {
                 object obj = ResourceManager.GetObject("room b", resourceCulture);
@@ -436,6 +506,26 @@ namespace BusinessCompany.Properties {
         internal static System.Drawing.Bitmap stardew {
             get {
                 object obj = ResourceManager.GetObject("stardew", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WithoutEmployee {
+            get {
+                object obj = ResourceManager.GetObject("WithoutEmployee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WithoutProject {
+            get {
+                object obj = ResourceManager.GetObject("WithoutProject", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
