@@ -18,6 +18,9 @@ namespace BusinessCompany
             this.listProject = game.ListProjects;
             this.company = game.Company;
             this.game = game;
+            this.game.timeChange += TimeChange;
+            this.game.projectRemove += ProjectRemove;
+            this.game.storyGoOn += storyShow;
             init();
         }
 
@@ -43,9 +46,7 @@ namespace BusinessCompany
             this.BackgroundImage = company.Picture;
             this.CA.Text = String.Format("{0}$", this.company.Money);
             DrawListProjects(this.company.ListProjects);
-            this.game.timeChange += TimeChange;
-            this.game.projectRemove += ProjectRemove;
-            this.game.storyGoOn += storyShow;
+            
         }
 
         public void DrawListProjects(List<Project> listProjects)

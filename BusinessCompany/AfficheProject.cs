@@ -60,8 +60,13 @@ namespace BusinessCompany
         }
         private void TimeDelayChange(object sender, EventArgs e)
         {
+            
             timeProject.Text = String.Format("{0} days", project.Delay);
-            timeConcurent.Text = String.Format("{0} days", project.DelayCompetition);
+
+            if (timeConcurent != null && project !=null)
+            {
+                timeConcurent.Text = String.Format("{0} days", project.DelayCompetition);
+            }
         }
 
     }
