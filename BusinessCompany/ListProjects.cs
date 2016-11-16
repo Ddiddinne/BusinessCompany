@@ -62,12 +62,10 @@ namespace BusinessCompany
                     afficheProject.Location = new Point(0, i * 155);
                     i++;
                     afficheProject.Show();
-                    afficheProject.Enabled = true;
                     Button btnDelete = afficheProject.getButtonDelete();
                     btnDelete.Click += new EventHandler(remove);
                     Button btnEmployee = afficheProject.getButtonAssignedEmployee();
                     btnEmployee.Click += new EventHandler(showEmployees);
-                    afficheProject.Dock = DockStyle.None;
                     this.list.Controls.Add(afficheProject);
                 }
                 list.Size = new Size(315, 300);
@@ -122,10 +120,8 @@ namespace BusinessCompany
                     afficheEmployee.Location = new Point(0, i * 100);
                     i++;
                     afficheEmployee.Show();
-                    afficheEmployee.Enabled = true;
                     Button btnDelete = afficheEmployee.getButtonDelete();
                     btnDelete.Click += new EventHandler(remove);
-                    afficheEmployee.Dock = DockStyle.None;
                     if (projectSelected.EmployeeAssigned.Contains(employee))
                     {
                         afficheEmployee.getButtonSelect().Checked = true;

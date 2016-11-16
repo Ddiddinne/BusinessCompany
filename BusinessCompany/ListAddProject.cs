@@ -31,8 +31,6 @@ namespace BusinessCompany
                 afficheProject.Location = new Point(0, i * 155);
                 afficheProject.TopLevel = false;
                 i++;
-                afficheProject.Dock = DockStyle.None;
-                afficheProject.Enabled = true;
                 afficheProject.Show();
                 this.list.Controls.Add(afficheProject);
             }

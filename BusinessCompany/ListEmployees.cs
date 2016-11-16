@@ -66,12 +66,10 @@ namespace BusinessCompany
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
                 afficheEmployee.Show();
-                afficheEmployee.Enabled = true;
                 Button btnDelete = afficheEmployee.getButtonDelete();
                 btnDelete.Click += new EventHandler(remove);
                 Button btnShowFormations = afficheEmployee.getButtonFormation();
                 btnShowFormations.Click += new EventHandler(showFormations);
-                afficheEmployee.Dock = DockStyle.None;
                 this.panelEmployees.Controls.Add(afficheEmployee);
             }
             panelEmployees.Size = new Size(300, 300);
@@ -87,10 +85,8 @@ namespace BusinessCompany
                 afficheFormation.Location = new Point(0, j * 100);
                 j++;
                 afficheFormation.Show();
-                afficheFormation.Enabled = true;
                 Button btnForm = afficheFormation.getBtForm();
                 btnForm.Click += new EventHandler(form);
-                afficheFormation.Dock = DockStyle.None;
                 this.panelFormations.Controls.Add(afficheFormation);
             }
             panelFormations.Size = new Size(300, 300);

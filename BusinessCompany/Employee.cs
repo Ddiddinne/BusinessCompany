@@ -17,17 +17,13 @@ namespace BusinessCompany
         {
             Level = 1;
             Salary = random.Next(3, 9) * 10;
-            Motivation = random.Next(1, 100);
             Experience = 0;
-            Specialisation = (Speciality)num;
             firstName = (FirstNames)numName;
             lastName = (LastNames)numName;
             getImage(numName);
             numName = (numName + 1) % 13;
-            num = (num + 1) % 2;
         }
-
-        private static int num = 0;
+        
         private static int numName = 0;
 
         public enum FirstNames
@@ -54,14 +50,6 @@ namespace BusinessCompany
             get { return firstName; }
         }
 
-        private int motivation;
-
-        public int Motivation
-        {
-            get { return motivation; }
-            set { motivation = value; }
-        }
-
         private int experience;
 
         public int Experience
@@ -86,19 +74,6 @@ namespace BusinessCompany
         {
             get { return salary; }
             set { salary = value; }
-        }
-
-        public enum Speciality
-            {
-                designer, developper
-            };
-
-        private Speciality specialisation;
-
-        public Speciality Specialisation
-        {
-            get { return specialisation; }
-            set { specialisation = value; }
         }
 
         private Image portrait;

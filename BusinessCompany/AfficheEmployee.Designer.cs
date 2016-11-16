@@ -168,7 +168,6 @@
             this.Controls.Add(this.add);
             this.Controls.Add(this.name);
             this.Controls.Add(this.picture);
-            this.Enabled = false;
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AfficheEmployee";

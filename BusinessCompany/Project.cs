@@ -115,14 +115,6 @@ namespace BusinessCompany
             set { level = value; }
         }
 
-        private float partMarket;
-
-        public float PartMarcket
-        {
-            get { return partMarket; }
-            set { partMarket = value; }
-        }
-
         private List<Employee> employeeAssigned;
 
         public List<Employee> EmployeeAssigned

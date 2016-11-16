@@ -30,8 +30,6 @@ namespace BusinessCompany
                 afficheEmployee.TopLevel = false;
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
-                afficheEmployee.Dock = DockStyle.None;
-                afficheEmployee.Enabled = true;
                 afficheEmployee.Show();
                 this.list.Controls.Add(afficheEmployee);
             }
