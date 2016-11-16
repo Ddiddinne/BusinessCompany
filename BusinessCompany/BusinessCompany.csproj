@@ -118,6 +118,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Tuto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,14 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Tuto.resx">
       <DependentUpon>Tuto.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,16 +184,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\room b.png" />
-    <None Include="Resources\building.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Company\maisonVieille.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\backgroudOption.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Tuto\Project.PNG" />
     <None Include="Resources\Tuto\Menu2.PNG" />
     <None Include="Resources\Tuto\AddProject.PNG" />
@@ -203,7 +193,7 @@
     <None Include="Resources\Tuto\WithoutEmployee.PNG" />
     <None Include="Resources\Tuto\Menu1.PNG" />
     <None Include="Resources\Tuto\Employee.PNG" />
-    <None Include="Resources\backgroudStory.jpg" />
+    <None Include="Resources\background.jpg" />
     <Content Include="Resources\Company\garage.jpg" />
     <None Include="Resources\Projects\stardew.png" />
     <None Include="Resources\Projects\SimCity.jpg" />
@@ -225,9 +215,8 @@
     <None Include="Resources\personnages\persoB.jpg" />
     <None Include="Resources\personnages\persoA.jpg" />
     <None Include="Resources\formation.png" />
+    <None Include="Resources\Company\maisonMoyenne.PNG" />
     <None Include="Resources\Company\immeuble.jpg" />
-    <Content Include="Resources\Company\immeuble2.jpg" />
-    <Content Include="Resources\Company\maisonMoyenne2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

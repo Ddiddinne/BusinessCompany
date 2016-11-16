@@ -93,29 +93,9 @@ namespace BusinessCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap backgroudOption {
+        internal static System.Drawing.Bitmap background {
             get {
-                object obj = ResourceManager.GetObject("backgroudOption", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroudStory {
-            get {
-                object obj = ResourceManager.GetObject("backgroudStory", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroudStory1 {
-            get {
-                object obj = ResourceManager.GetObject("backgroudStory1", resourceCulture);
+                object obj = ResourceManager.GetObject("background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,16 +106,6 @@ namespace BusinessCompany.Properties {
         internal static System.Drawing.Bitmap Broforce {
             get {
                 object obj = ResourceManager.GetObject("Broforce", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap building {
-            get {
-                object obj = ResourceManager.GetObject("building", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,16 +163,6 @@ namespace BusinessCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap immeuble2 {
-            get {
-                object obj = ResourceManager.GetObject("immeuble2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap labyrinth {
             get {
                 object obj = ResourceManager.GetObject("labyrinth", resourceCulture);
@@ -213,19 +173,9 @@ namespace BusinessCompany.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maisonMoyenne2 {
+        internal static System.Drawing.Bitmap maisonMoyenne {
             get {
-                object obj = ResourceManager.GetObject("maisonMoyenne2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap maisonVieille {
-            get {
-                object obj = ResourceManager.GetObject("maisonVieille", resourceCulture);
+                object obj = ResourceManager.GetObject("maisonMoyenne", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,16 +426,6 @@ namespace BusinessCompany.Properties {
         internal static System.Drawing.Bitmap Project {
             get {
                 object obj = ResourceManager.GetObject("Project", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap room_b {
-            get {
-                object obj = ResourceManager.GetObject("room b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

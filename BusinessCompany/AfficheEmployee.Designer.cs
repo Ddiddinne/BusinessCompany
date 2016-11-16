@@ -31,7 +31,6 @@
             this.name = new System.Windows.Forms.Label();
             this.add = new System.Windows.Forms.Button();
             this.salary = new System.Windows.Forms.Label();
-            this.specialisation = new System.Windows.Forms.Label();
             this.level = new System.Windows.Forms.Label();
             this.delete = new System.Windows.Forms.Button();
             this.assigned = new System.Windows.Forms.CheckBox();
@@ -72,16 +71,6 @@
             this.salary.Size = new System.Drawing.Size(43, 18);
             this.salary.TabIndex = 3;
             this.salary.Text = "salary";
-            // 
-            // specialisation
-            // 
-            this.specialisation.AutoSize = true;
-            this.specialisation.Font = new System.Drawing.Font("Miramonte", 8.25F);
-            this.specialisation.Location = new System.Drawing.Point(73, 33);
-            this.specialisation.Name = "specialisation";
-            this.specialisation.Size = new System.Drawing.Size(72, 14);
-            this.specialisation.TabIndex = 4;
-            this.specialisation.Text = "specialisation";
             // 
             // level
             // 
@@ -163,7 +152,6 @@
             this.Controls.Add(this.assigned);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.level);
-            this.Controls.Add(this.specialisation);
             this.Controls.Add(this.salary);
             this.Controls.Add(this.add);
             this.Controls.Add(this.name);
@@ -187,7 +175,6 @@
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Label salary;
-        private System.Windows.Forms.Label specialisation;
         private System.Windows.Forms.Label level;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.CheckBox assigned;

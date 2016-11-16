@@ -85,7 +85,7 @@ namespace BusinessCompany
                     ok.Location = new Point(520, 492);
                     lbStory.Text = "You are now ready to begin!";
                     lbStory.Show();
-                    this.BackgroundImage = Properties.Resources.backgroudStory;
+                    this.BackgroundImage = Properties.Resources.background;
                     i++;
                     break;
 

@@ -78,10 +78,10 @@ namespace BusinessCompany
                         this.picture = Properties.Resources.garage;
                         break;
                     case 2:
-                        this.picture = Properties.Resources.maisonMoyenne2;
+                        this.picture = Properties.Resources.maisonMoyenne;
                         break;
                     default:
-                        this.picture = Properties.Resources.immeuble2;
+                        this.picture = Properties.Resources.immeuble;
                         break;
                 }
             }
