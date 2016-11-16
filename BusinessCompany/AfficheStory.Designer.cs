@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lbStory = new System.Windows.Forms.Label();
-            this.ok = new System.Windows.Forms.Button();
+            this.btOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbStory
@@ -43,16 +43,16 @@
             this.lbStory.Text = "Story";
             this.lbStory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ok
+            // btOk
             // 
-            this.ok.Font = new System.Drawing.Font("Miramonte", 13F);
-            this.ok.Location = new System.Drawing.Point(525, 488);
-            this.ok.Name = "ok";
-            this.ok.Size = new System.Drawing.Size(97, 37);
-            this.ok.TabIndex = 1;
-            this.ok.Text = "OK";
-            this.ok.UseVisualStyleBackColor = true;
-            this.ok.Click += new System.EventHandler(this.ok_Click);
+            this.btOk.Font = new System.Drawing.Font("Miramonte", 13F);
+            this.btOk.Location = new System.Drawing.Point(525, 488);
+            this.btOk.Name = "btOk";
+            this.btOk.Size = new System.Drawing.Size(97, 37);
+            this.btOk.TabIndex = 1;
+            this.btOk.Text = "OK";
+            this.btOk.UseVisualStyleBackColor = true;
+            this.btOk.Click += new System.EventHandler(this.ok_Click);
             // 
             // AfficheStory
             // 
@@ -62,7 +62,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.ok);
+            this.Controls.Add(this.btOk);
             this.Controls.Add(this.lbStory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AfficheStory";
@@ -75,6 +75,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbStory;
-        private System.Windows.Forms.Button ok;
+        private System.Windows.Forms.Button btOk;
     }
 }

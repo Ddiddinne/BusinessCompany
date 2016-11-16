@@ -28,108 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.name = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.Button();
-            this.salary = new System.Windows.Forms.Label();
-            this.level = new System.Windows.Forms.Label();
-            this.delete = new System.Windows.Forms.Button();
-            this.assigned = new System.Windows.Forms.CheckBox();
-            this.xp = new System.Windows.Forms.Label();
-            this.btFormations = new System.Windows.Forms.Button();
+            this.lbName = new System.Windows.Forms.Label();
+            this.btAdd = new System.Windows.Forms.Button();
+            this.lbSalary = new System.Windows.Forms.Label();
+            this.lbLevel = new System.Windows.Forms.Label();
+            this.btFire = new System.Windows.Forms.Button();
+            this.chkAssigned = new System.Windows.Forms.CheckBox();
+            this.lbXp = new System.Windows.Forms.Label();
+            this.btForm = new System.Windows.Forms.Button();
             this.picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
-            // name
+            // lbName
             // 
-            this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Bold);
-            this.name.ForeColor = System.Drawing.Color.Black;
-            this.name.Location = new System.Drawing.Point(135, 9);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(49, 19);
-            this.name.TabIndex = 1;
-            this.name.Text = "name";
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Bold);
+            this.lbName.ForeColor = System.Drawing.Color.Black;
+            this.lbName.Location = new System.Drawing.Point(135, 9);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(49, 19);
+            this.lbName.TabIndex = 1;
+            this.lbName.Text = "name";
             // 
-            // add
+            // btAdd
             // 
-            this.add.Location = new System.Drawing.Point(110, 67);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 23);
-            this.add.TabIndex = 2;
-            this.add.Text = "Add";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.addEmployee_Click);
+            this.btAdd.ForeColor = System.Drawing.Color.Black;
+            this.btAdd.Location = new System.Drawing.Point(110, 67);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(75, 23);
+            this.btAdd.TabIndex = 2;
+            this.btAdd.Text = "Add";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.addEmployee_Click);
             // 
-            // salary
+            // lbSalary
             // 
-            this.salary.AutoSize = true;
-            this.salary.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.salary.ForeColor = System.Drawing.Color.Black;
-            this.salary.Location = new System.Drawing.Point(198, 33);
-            this.salary.Name = "salary";
-            this.salary.Size = new System.Drawing.Size(43, 18);
-            this.salary.TabIndex = 3;
-            this.salary.Text = "salary";
+            this.lbSalary.AutoSize = true;
+            this.lbSalary.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbSalary.ForeColor = System.Drawing.Color.Black;
+            this.lbSalary.Location = new System.Drawing.Point(198, 33);
+            this.lbSalary.Name = "lbSalary";
+            this.lbSalary.Size = new System.Drawing.Size(43, 18);
+            this.lbSalary.TabIndex = 3;
+            this.lbSalary.Text = "salary";
             // 
-            // level
+            // lbLevel
             // 
-            this.level.AutoSize = true;
-            this.level.BackColor = System.Drawing.SystemColors.Window;
-            this.level.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.level.ForeColor = System.Drawing.Color.Black;
-            this.level.Location = new System.Drawing.Point(60, 9);
-            this.level.Name = "level";
-            this.level.Size = new System.Drawing.Size(34, 18);
-            this.level.TabIndex = 5;
-            this.level.Text = "level";
+            this.lbLevel.AutoSize = true;
+            this.lbLevel.BackColor = System.Drawing.SystemColors.Window;
+            this.lbLevel.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbLevel.ForeColor = System.Drawing.Color.Black;
+            this.lbLevel.Location = new System.Drawing.Point(60, 9);
+            this.lbLevel.Name = "lbLevel";
+            this.lbLevel.Size = new System.Drawing.Size(34, 18);
+            this.lbLevel.TabIndex = 5;
+            this.lbLevel.Text = "level";
             // 
-            // delete
+            // btFire
             // 
-            this.delete.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.delete.ForeColor = System.Drawing.Color.Black;
-            this.delete.Location = new System.Drawing.Point(191, 67);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
-            this.delete.TabIndex = 6;
-            this.delete.Text = "Delete";
-            this.delete.UseVisualStyleBackColor = true;
+            this.btFire.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.btFire.ForeColor = System.Drawing.Color.Black;
+            this.btFire.Location = new System.Drawing.Point(191, 67);
+            this.btFire.Name = "btFire";
+            this.btFire.Size = new System.Drawing.Size(75, 23);
+            this.btFire.TabIndex = 6;
+            this.btFire.Text = "Fire";
+            this.btFire.UseVisualStyleBackColor = true;
             // 
-            // assigned
+            // chkAssigned
             // 
-            this.assigned.AutoSize = true;
-            this.assigned.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.assigned.ForeColor = System.Drawing.Color.Black;
-            this.assigned.Location = new System.Drawing.Point(138, 67);
-            this.assigned.Name = "assigned";
-            this.assigned.Size = new System.Drawing.Size(80, 22);
-            this.assigned.TabIndex = 7;
-            this.assigned.Text = "Assigned";
-            this.assigned.UseVisualStyleBackColor = true;
-            this.assigned.Visible = false;
+            this.chkAssigned.AutoSize = true;
+            this.chkAssigned.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.chkAssigned.ForeColor = System.Drawing.Color.Black;
+            this.chkAssigned.Location = new System.Drawing.Point(139, 67);
+            this.chkAssigned.Name = "chkAssigned";
+            this.chkAssigned.Size = new System.Drawing.Size(80, 22);
+            this.chkAssigned.TabIndex = 7;
+            this.chkAssigned.Text = "Assigned";
+            this.chkAssigned.UseVisualStyleBackColor = true;
+            this.chkAssigned.Visible = false;
             // 
-            // xp
+            // lbXp
             // 
-            this.xp.AutoSize = true;
-            this.xp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xp.ForeColor = System.Drawing.Color.Black;
-            this.xp.Location = new System.Drawing.Point(107, 33);
-            this.xp.Name = "xp";
-            this.xp.Size = new System.Drawing.Size(22, 17);
-            this.xp.TabIndex = 8;
-            this.xp.Text = "xp";
+            this.lbXp.AutoSize = true;
+            this.lbXp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbXp.ForeColor = System.Drawing.Color.Black;
+            this.lbXp.Location = new System.Drawing.Point(107, 33);
+            this.lbXp.Name = "lbXp";
+            this.lbXp.Size = new System.Drawing.Size(22, 17);
+            this.lbXp.TabIndex = 8;
+            this.lbXp.Text = "xp";
             // 
-            // btFormations
+            // btForm
             // 
-            this.btFormations.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.btFormations.ForeColor = System.Drawing.Color.Black;
-            this.btFormations.Location = new System.Drawing.Point(76, 67);
-            this.btFormations.Name = "btFormations";
-            this.btFormations.Size = new System.Drawing.Size(92, 23);
-            this.btFormations.TabIndex = 9;
-            this.btFormations.Text = "Formations";
-            this.btFormations.UseVisualStyleBackColor = true;
-            this.btFormations.Visible = false;
+            this.btForm.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.btForm.ForeColor = System.Drawing.Color.Black;
+            this.btForm.Location = new System.Drawing.Point(76, 67);
+            this.btForm.Name = "btForm";
+            this.btForm.Size = new System.Drawing.Size(92, 23);
+            this.btForm.TabIndex = 9;
+            this.btForm.Text = "Formations";
+            this.btForm.UseVisualStyleBackColor = true;
+            this.btForm.Visible = false;
             // 
             // picture
             // 
@@ -147,14 +148,14 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(281, 94);
             this.ControlBox = false;
-            this.Controls.Add(this.btFormations);
-            this.Controls.Add(this.xp);
-            this.Controls.Add(this.assigned);
-            this.Controls.Add(this.delete);
-            this.Controls.Add(this.level);
-            this.Controls.Add(this.salary);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.btForm);
+            this.Controls.Add(this.lbXp);
+            this.Controls.Add(this.chkAssigned);
+            this.Controls.Add(this.btFire);
+            this.Controls.Add(this.lbLevel);
+            this.Controls.Add(this.lbSalary);
+            this.Controls.Add(this.btAdd);
+            this.Controls.Add(this.lbName);
             this.Controls.Add(this.picture);
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -172,13 +173,13 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picture;
-        private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Button add;
-        private System.Windows.Forms.Label salary;
-        private System.Windows.Forms.Label level;
-        private System.Windows.Forms.Button delete;
-        private System.Windows.Forms.CheckBox assigned;
-        private System.Windows.Forms.Label xp;
-        private System.Windows.Forms.Button btFormations;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Button btAdd;
+        private System.Windows.Forms.Label lbSalary;
+        private System.Windows.Forms.Label lbLevel;
+        private System.Windows.Forms.Button btFire;
+        private System.Windows.Forms.CheckBox chkAssigned;
+        private System.Windows.Forms.Label lbXp;
+        private System.Windows.Forms.Button btForm;
     }
 }

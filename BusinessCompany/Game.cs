@@ -20,6 +20,7 @@ namespace BusinessCompany
         private int i = 10;
         private int indexStory = 1;
         
+        //The events
         public event EventHandler timeChange;
         public event EventHandler projectRemove;
         public event EventHandler storyGoOn;
@@ -46,13 +47,14 @@ namespace BusinessCompany
             this.listProjects = new List<Project>();
             this.company = company;
             InitializeComponent();
+            //Initialize labels, buttons and background
             this.BackgroundImage = company.Picture;
-            CA.Text = company.Money.ToString();
-            companyName.Text = company.Name;
-            lbDate.Text = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
-            companyName.Location = new Point(
-                this.Width / 2 - companyName.Width / 2,
-                companyName.Location.Y);
+            this.lbCA.Text = company.Money.ToString();
+            this.lbCompanyName.Text = company.Name;
+            this.lbDate.Text = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
+            this.lbCompanyName.Location = new Point(
+                this.Width / 2 - lbCompanyName.Width / 2,
+                this.lbCompanyName.Location.Y);
             foreach(Control c in this.Controls)
             {
                 if(c is Button)
@@ -62,6 +64,8 @@ namespace BusinessCompany
                         c.Location.Y);
                 }
             }
+
+            //timer start
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000* (4-this.company.LevelGame); //(1000 = 1 second)
             timer1.Start();
@@ -81,20 +85,22 @@ namespace BusinessCompany
         
         public void timer1_Tick(object sender, EventArgs e)
         {
+            //Refresh the date
             date = date.AddDays(1);
             lbDate.Text = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
+
+            //We decrease the money of the company depending on the level of the company and the salaries
             int expense = this.company.LevelCompany * 10;
             foreach(Employee employee in company.ListEmployee)
             {
                 expense += employee.Salary / 30;
             }
             this.company.Money -= expense;
-            this.CA.Text = String.Format("{0}$", this.company.Money);
+            this.lbCA.Text = String.Format("{0}$", this.company.Money);
 
+            //We decrease the time to do the project for the competitor and for the company if there are employees assigned
             double unitWork = 1;
             unitWork = Math.Round(unitWork, 0);
-
-            
             foreach (Project project in company.ListProjects)
             {
                 foreach(Employee employee in project.EmployeeAssigned)
@@ -105,7 +111,7 @@ namespace BusinessCompany
 
             }
 
-            //verification if the projects are ended or not
+            //Verification if the projects are ended or not
             List<Project> copyListProject = company.ListProjects;
             for (int j = copyListProject.Count - 1; j >= 0; j--)
             {
@@ -142,7 +148,7 @@ namespace BusinessCompany
                 }
             }
 
-            //ajout project
+            //Add project in the list of the propositions
             if (i == 10)
             {
                 i = 0;
@@ -160,6 +166,8 @@ namespace BusinessCompany
             {
                 timeChange(this, EventArgs.Empty);
             }
+
+            // If we we are the first of the month, we have the story
             if (date.Day == 1)
             {
                 

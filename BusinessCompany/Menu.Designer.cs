@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.nameCompany = new System.Windows.Forms.TextBox();
+            this.inpNameCompany = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.valid = new System.Windows.Forms.Button();
-            this.exit = new System.Windows.Forms.Button();
+            this.btValid = new System.Windows.Forms.Button();
+            this.btExit = new System.Windows.Forms.Button();
             this.levelchecked = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdBtLevel3 = new System.Windows.Forms.RadioButton();
+            this.rdBtLevel2 = new System.Windows.Forms.RadioButton();
+            this.rdBtLevel1 = new System.Windows.Forms.RadioButton();
             this.lbTitle = new System.Windows.Forms.Label();
             this.levelchecked.SuspendLayout();
             this.SuspendLayout();
@@ -49,13 +49,13 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // nameCompany
+            // inpNameCompany
             // 
-            this.nameCompany.Font = new System.Drawing.Font("Miramonte", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameCompany.Location = new System.Drawing.Point(512, 275);
-            this.nameCompany.Name = "nameCompany";
-            this.nameCompany.Size = new System.Drawing.Size(100, 29);
-            this.nameCompany.TabIndex = 1;
+            this.inpNameCompany.Font = new System.Drawing.Font("Miramonte", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inpNameCompany.Location = new System.Drawing.Point(512, 275);
+            this.inpNameCompany.Name = "inpNameCompany";
+            this.inpNameCompany.Size = new System.Drawing.Size(100, 29);
+            this.inpNameCompany.TabIndex = 1;
             // 
             // label1
             // 
@@ -77,77 +77,77 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "level";
             // 
-            // valid
+            // btValid
             // 
-            this.valid.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valid.Location = new System.Drawing.Point(432, 492);
-            this.valid.Name = "valid";
-            this.valid.Size = new System.Drawing.Size(113, 56);
-            this.valid.TabIndex = 10;
-            this.valid.Text = "Validate";
-            this.valid.UseVisualStyleBackColor = true;
-            this.valid.Click += new System.EventHandler(this.valid_Click);
+            this.btValid.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btValid.Location = new System.Drawing.Point(432, 492);
+            this.btValid.Name = "btValid";
+            this.btValid.Size = new System.Drawing.Size(113, 56);
+            this.btValid.TabIndex = 10;
+            this.btValid.Text = "Validate";
+            this.btValid.UseVisualStyleBackColor = true;
+            this.btValid.Click += new System.EventHandler(this.valid_Click);
             // 
-            // exit
+            // btExit
             // 
-            this.exit.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit.Location = new System.Drawing.Point(586, 492);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(113, 56);
-            this.exit.TabIndex = 12;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = true;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
+            this.btExit.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExit.Location = new System.Drawing.Point(586, 492);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(113, 56);
+            this.btExit.TabIndex = 12;
+            this.btExit.Text = "Exit";
+            this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.exit_Click);
             // 
             // levelchecked
             // 
             this.levelchecked.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.levelchecked.Controls.Add(this.radioButton3);
-            this.levelchecked.Controls.Add(this.radioButton2);
-            this.levelchecked.Controls.Add(this.radioButton1);
+            this.levelchecked.Controls.Add(this.rdBtLevel3);
+            this.levelchecked.Controls.Add(this.rdBtLevel2);
+            this.levelchecked.Controls.Add(this.rdBtLevel1);
             this.levelchecked.Location = new System.Drawing.Point(432, 371);
             this.levelchecked.Name = "levelchecked";
             this.levelchecked.Size = new System.Drawing.Size(267, 65);
             this.levelchecked.TabIndex = 13;
             this.levelchecked.TabStop = false;
             // 
-            // radioButton3
+            // rdBtLevel3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(198, 19);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(59, 23);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "hard";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdBtLevel3.AutoSize = true;
+            this.rdBtLevel3.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtLevel3.Location = new System.Drawing.Point(198, 19);
+            this.rdBtLevel3.Name = "rdBtLevel3";
+            this.rdBtLevel3.Size = new System.Drawing.Size(59, 23);
+            this.rdBtLevel3.TabIndex = 6;
+            this.rdBtLevel3.TabStop = true;
+            this.rdBtLevel3.Text = "hard";
+            this.rdBtLevel3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdBtLevel2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton2.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(78, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(114, 23);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "intermediate";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.rdBtLevel2.AutoSize = true;
+            this.rdBtLevel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.rdBtLevel2.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtLevel2.Location = new System.Drawing.Point(78, 19);
+            this.rdBtLevel2.Name = "rdBtLevel2";
+            this.rdBtLevel2.Size = new System.Drawing.Size(114, 23);
+            this.rdBtLevel2.TabIndex = 5;
+            this.rdBtLevel2.TabStop = true;
+            this.rdBtLevel2.Text = "intermediate";
+            this.rdBtLevel2.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // rdBtLevel1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(15, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(57, 23);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "easy";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdBtLevel1.AutoSize = true;
+            this.rdBtLevel1.Checked = true;
+            this.rdBtLevel1.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdBtLevel1.Location = new System.Drawing.Point(15, 19);
+            this.rdBtLevel1.Name = "rdBtLevel1";
+            this.rdBtLevel1.Size = new System.Drawing.Size(57, 23);
+            this.rdBtLevel1.TabIndex = 4;
+            this.rdBtLevel1.TabStop = true;
+            this.rdBtLevel1.Text = "easy";
+            this.rdBtLevel1.UseVisualStyleBackColor = true;
             // 
             // lbTitle
             // 
@@ -170,11 +170,11 @@
             this.ControlBox = false;
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.levelchecked);
-            this.Controls.Add(this.exit);
-            this.Controls.Add(this.valid);
+            this.Controls.Add(this.btExit);
+            this.Controls.Add(this.btValid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.nameCompany);
+            this.Controls.Add(this.inpNameCompany);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -189,15 +189,15 @@
         #endregion
 
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.TextBox nameCompany;
+        private System.Windows.Forms.TextBox inpNameCompany;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button valid;
-        private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Button btValid;
+        private System.Windows.Forms.Button btExit;
         private System.Windows.Forms.GroupBox levelchecked;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdBtLevel3;
+        private System.Windows.Forms.RadioButton rdBtLevel2;
+        private System.Windows.Forms.RadioButton rdBtLevel1;
         private System.Windows.Forms.Label lbTitle;
     }
 }

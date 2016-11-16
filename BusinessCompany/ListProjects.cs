@@ -45,7 +45,7 @@ namespace BusinessCompany
         {
             InitializeComponent();
             this.BackgroundImage = company.Picture;
-            this.CA.Text = String.Format("{0}$", this.company.Money);
+            this.lbCA.Text = String.Format("{0}$", this.company.Money);
             DrawListProjects(this.company.ListProjects);
             
         }
@@ -55,6 +55,7 @@ namespace BusinessCompany
             if (listProjects.Count() != 0)
             {
                 int i = 0;
+                //draw the list of projects
                 foreach (Project project in listProjects)
                 {
                     AfficheProject afficheProject = new AfficheProject(true, project);
@@ -66,9 +67,9 @@ namespace BusinessCompany
                     btnDelete.Click += new EventHandler(remove);
                     Button btnEmployee = afficheProject.getButtonAssignedEmployee();
                     btnEmployee.Click += new EventHandler(showEmployees);
-                    this.list.Controls.Add(afficheProject);
+                    this.pnlList.Controls.Add(afficheProject);
                 }
-                list.Size = new Size(315, 300);
+                pnlList.Size = new Size(315, 300);
             }
         }
 
@@ -84,7 +85,7 @@ namespace BusinessCompany
             }
             this.company.ListProjects.Remove(project);
             affiche.Hide();
-            this.list.Controls.Remove(affiche);
+            this.pnlList.Controls.Remove(affiche);
             this.refresh();
         }
 
@@ -101,11 +102,11 @@ namespace BusinessCompany
                 isAlreadySelected = true;
             }
             //We deselect all the project and so clear ListEmployees to visually have any project selected
-            foreach(AfficheProject afficheProject in this.list.Controls)
+            foreach(AfficheProject afficheProject in this.pnlList.Controls)
             {
                 afficheProject.getNameProject().BackColor = Color.White;
             }
-            listEmployees.Controls.Clear();
+            pnlListEmployees.Controls.Clear();
 
             //If the project has never selected, we create the employees in the ListEmployees
             if (!isAlreadySelected) {
@@ -126,9 +127,9 @@ namespace BusinessCompany
                     {
                         afficheEmployee.getButtonSelect().Checked = true;
                     }
-                    this.listEmployees.Controls.Add(afficheEmployee);
+                    this.pnlListEmployees.Controls.Add(afficheEmployee);
                 }
-                listEmployees.Size = new Size(300, 300);
+                pnlListEmployees.Size = new Size(300, 300);
             }
             
         }
@@ -178,7 +179,7 @@ namespace BusinessCompany
         }
         private void TimeChange(object sender, EventArgs e)
         {
-            this.CA.Text = String.Format("{0}$", this.company.Money);
+            this.lbCA.Text = String.Format("{0}$", this.company.Money);
         }
 
         private void ProjectRemove(object sender, EventArgs e)
@@ -188,6 +189,7 @@ namespace BusinessCompany
 
         private void storyShow(object sender, EventArgs e)
         {
+            //If we are in this form, we hide it, and show the story
             if (this.Visible)
             {
                 game.timer1.Stop();

@@ -15,12 +15,14 @@ namespace BusinessCompany
         public event EventHandler employeeUpdate;
         public Employee()
         {
-            Level = 1;
-            Salary = random.Next(3, 9) * 10;
-            Experience = 0;
-            firstName = (FirstNames)numName;
-            lastName = (LastNames)numName;
-            getImage(numName);
+
+            //Initialize the parameters
+            this.level = 1;
+            this.salary = random.Next(3, 9) * 10;
+            this.experience = 0;
+            this.firstName = (FirstNames)numName;
+            this.lastName = (LastNames)numName;
+            this.setPortrait(numName);
             numName = (numName + 1) % 13;
         }
         
@@ -55,11 +57,12 @@ namespace BusinessCompany
         public int Experience
         {
             get { return experience; }
+            //We increment the level of the employee depending on his experience
             set { experience = value;
-                if (experience >= 100)
+                if (experience >= 1000)
                 {
-                    experience -= 100;
-                    Level += 1;
+                    experience -= 1000;
+                    level += 1;
                 }
                 if (employeeUpdate != null)
                 {
@@ -73,7 +76,6 @@ namespace BusinessCompany
         public int Salary
         {
             get { return salary; }
-            set { salary = value; }
         }
 
         private Image portrait;
@@ -81,7 +83,6 @@ namespace BusinessCompany
         public Image Portrait
         {
             get { return portrait; }
-            set { portrait = value; }
         }
 
         private int level;
@@ -89,7 +90,6 @@ namespace BusinessCompany
         public int Level
         {
             get { return level; }
-            set { level = value; }
         }
 
         private List<Project> projectAssigned = new List<Project>();
@@ -110,7 +110,7 @@ namespace BusinessCompany
             this.projectAssigned.Remove(project);
         }
 
-        public void getImage(int idPerso)
+        public void setPortrait(int idPerso)
         {
             switch (idPerso)
             { 

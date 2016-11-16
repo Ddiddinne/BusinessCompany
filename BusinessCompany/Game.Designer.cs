@@ -28,99 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.companyName = new System.Windows.Forms.Label();
-            this.employees = new System.Windows.Forms.Button();
-            this.projects = new System.Windows.Forms.Button();
-            this.CA = new System.Windows.Forms.Label();
-            this.btnModifyLivel = new System.Windows.Forms.Button();
+            this.lbCompanyName = new System.Windows.Forms.Label();
+            this.btEmployees = new System.Windows.Forms.Button();
+            this.btProjects = new System.Windows.Forms.Button();
+            this.lbCA = new System.Windows.Forms.Label();
+            this.btModifyLevel = new System.Windows.Forms.Button();
             this.lbDate = new System.Windows.Forms.Label();
-            this.exit = new System.Windows.Forms.Button();
+            this.btExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // companyName
+            // lbCompanyName
             // 
-            this.companyName.AutoSize = true;
-            this.companyName.BackColor = System.Drawing.Color.White;
-            this.companyName.Font = new System.Drawing.Font("Miramonte", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.companyName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.companyName.Location = new System.Drawing.Point(346, 123);
-            this.companyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.companyName.Name = "companyName";
-            this.companyName.Size = new System.Drawing.Size(201, 33);
-            this.companyName.TabIndex = 1;
-            this.companyName.Text = "companyName";
+            this.lbCompanyName.AutoSize = true;
+            this.lbCompanyName.BackColor = System.Drawing.Color.White;
+            this.lbCompanyName.Font = new System.Drawing.Font("Miramonte", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCompanyName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lbCompanyName.Location = new System.Drawing.Point(346, 123);
+            this.lbCompanyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCompanyName.Name = "lbCompanyName";
+            this.lbCompanyName.Size = new System.Drawing.Size(201, 33);
+            this.lbCompanyName.TabIndex = 1;
+            this.lbCompanyName.Text = "companyName";
             // 
-            // employees
+            // btEmployees
             // 
-            this.employees.BackColor = System.Drawing.Color.Transparent;
-            this.employees.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.employees.FlatAppearance.BorderSize = 0;
-            this.employees.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employees.Location = new System.Drawing.Point(352, 269);
-            this.employees.Margin = new System.Windows.Forms.Padding(0);
-            this.employees.Name = "employees";
-            this.employees.Size = new System.Drawing.Size(184, 42);
-            this.employees.TabIndex = 3;
-            this.employees.Text = "Employees";
-            this.employees.UseVisualStyleBackColor = false;
-            this.employees.Click += new System.EventHandler(this.employees_Click);
+            this.btEmployees.BackColor = System.Drawing.Color.Transparent;
+            this.btEmployees.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btEmployees.FlatAppearance.BorderSize = 0;
+            this.btEmployees.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEmployees.Location = new System.Drawing.Point(352, 269);
+            this.btEmployees.Margin = new System.Windows.Forms.Padding(0);
+            this.btEmployees.Name = "btEmployees";
+            this.btEmployees.Size = new System.Drawing.Size(184, 42);
+            this.btEmployees.TabIndex = 3;
+            this.btEmployees.Text = "Employees";
+            this.btEmployees.UseVisualStyleBackColor = false;
+            this.btEmployees.Click += new System.EventHandler(this.employees_Click);
             // 
-            // projects
+            // btProjects
             // 
-            this.projects.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.projects.Location = new System.Drawing.Point(352, 340);
-            this.projects.Name = "projects";
-            this.projects.Size = new System.Drawing.Size(184, 42);
-            this.projects.TabIndex = 4;
-            this.projects.Text = "Projects";
-            this.projects.UseVisualStyleBackColor = true;
-            this.projects.Click += new System.EventHandler(this.projects_Click);
+            this.btProjects.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.btProjects.Location = new System.Drawing.Point(352, 340);
+            this.btProjects.Name = "btProjects";
+            this.btProjects.Size = new System.Drawing.Size(184, 42);
+            this.btProjects.TabIndex = 4;
+            this.btProjects.Text = "Projects";
+            this.btProjects.UseVisualStyleBackColor = true;
+            this.btProjects.Click += new System.EventHandler(this.projects_Click);
             // 
-            // CA
+            // lbCA
             // 
-            this.CA.AutoSize = true;
-            this.CA.BackColor = System.Drawing.Color.Transparent;
-            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.CA.Location = new System.Drawing.Point(33, 24);
-            this.CA.Margin = new System.Windows.Forms.Padding(4);
-            this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(68, 24);
-            this.CA.TabIndex = 2;
-            this.CA.Text = "label1";
+            this.lbCA.AutoSize = true;
+            this.lbCA.BackColor = System.Drawing.Color.Transparent;
+            this.lbCA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
+            this.lbCA.Location = new System.Drawing.Point(33, 24);
+            this.lbCA.Margin = new System.Windows.Forms.Padding(4);
+            this.lbCA.Name = "lbCA";
+            this.lbCA.Size = new System.Drawing.Size(171, 24);
+            this.lbCA.TabIndex = 2;
+            this.lbCA.Text = "Chiffre d\'Affaires";
             // 
-            // btnModifyLivel
+            // btModifyLevel
             // 
-            this.btnModifyLivel.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.btnModifyLivel.Location = new System.Drawing.Point(338, 462);
-            this.btnModifyLivel.Name = "btnModifyLivel";
-            this.btnModifyLivel.Size = new System.Drawing.Size(219, 42);
-            this.btnModifyLivel.TabIndex = 6;
-            this.btnModifyLivel.Text = "Upgrade Company";
-            this.btnModifyLivel.UseVisualStyleBackColor = true;
-            this.btnModifyLivel.Click += new System.EventHandler(this.btnModifyLevel_Click);
+            this.btModifyLevel.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.btModifyLevel.Location = new System.Drawing.Point(328, 462);
+            this.btModifyLevel.Name = "btModifyLevel";
+            this.btModifyLevel.Size = new System.Drawing.Size(219, 42);
+            this.btModifyLevel.TabIndex = 6;
+            this.btModifyLevel.Text = "Upgrade Company";
+            this.btModifyLevel.UseVisualStyleBackColor = true;
+            this.btModifyLevel.Click += new System.EventHandler(this.btnModifyLevel_Click);
             // 
             // lbDate
             // 
             this.lbDate.AutoSize = true;
             this.lbDate.BackColor = System.Drawing.Color.Transparent;
             this.lbDate.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.lbDate.Location = new System.Drawing.Point(715, 24);
+            this.lbDate.Location = new System.Drawing.Point(683, 24);
             this.lbDate.Margin = new System.Windows.Forms.Padding(4);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(55, 24);
             this.lbDate.TabIndex = 7;
             this.lbDate.Text = "Date";
             // 
-            // exit
+            // btExit
             // 
-            this.exit.Font = new System.Drawing.Font("Miramonte", 12F);
-            this.exit.Location = new System.Drawing.Point(352, 510);
-            this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(184, 42);
-            this.exit.TabIndex = 8;
-            this.exit.Text = "Exit";
-            this.exit.UseVisualStyleBackColor = true;
-            this.exit.Click += new System.EventHandler(this.exit_Click);
+            this.btExit.Font = new System.Drawing.Font("Miramonte", 12F);
+            this.btExit.Location = new System.Drawing.Point(352, 510);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(184, 42);
+            this.btExit.TabIndex = 8;
+            this.btExit.Text = "Exit";
+            this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.exit_Click);
             // 
             // Game
             // 
@@ -129,13 +129,13 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.exit);
+            this.Controls.Add(this.btExit);
             this.Controls.Add(this.lbDate);
-            this.Controls.Add(this.btnModifyLivel);
-            this.Controls.Add(this.projects);
-            this.Controls.Add(this.employees);
-            this.Controls.Add(this.CA);
-            this.Controls.Add(this.companyName);
+            this.Controls.Add(this.btModifyLevel);
+            this.Controls.Add(this.btProjects);
+            this.Controls.Add(this.btEmployees);
+            this.Controls.Add(this.lbCA);
+            this.Controls.Add(this.lbCompanyName);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -149,14 +149,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label companyName;
-        private System.Windows.Forms.Button employees;
-        private System.Windows.Forms.Button projects;
+        private System.Windows.Forms.Label lbCompanyName;
+        private System.Windows.Forms.Button btEmployees;
+        private System.Windows.Forms.Button btProjects;
 
-        private System.Windows.Forms.Label CA;
-        private System.Windows.Forms.Button btnModifyLivel;
+        private System.Windows.Forms.Label lbCA;
+        private System.Windows.Forms.Button btModifyLevel;
         private System.Windows.Forms.Label lbDate;
-        private System.Windows.Forms.Button exit;
+        private System.Windows.Forms.Button btExit;
     }
 }
 

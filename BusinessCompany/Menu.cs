@@ -23,24 +23,26 @@ namespace BusinessCompany
 
         private void valid_Click(object sender, EventArgs e)
         {
+            //We check the level of the game selected by the player
             int levelgame=0;
 
-            if (radioButton1.Checked)
+            if (rdBtLevel1.Checked)
             {
                 levelgame = 1;
             }
-            if (radioButton2.Checked)
+            if (rdBtLevel2.Checked)
             {
                 levelgame=2;
             }
-            if (radioButton3.Checked)
+            if (rdBtLevel3.Checked)
             {
                 levelgame=3;
             }
 
-            if (!nameCompany.Text.Equals("") && levelgame != 0)
+            //If there is a name for the company and a level, we can begin
+            if (!inpNameCompany.Text.Equals("") && levelgame != 0)
             {
-                Tuto tuto = new Tuto(nameCompany.Text, levelgame);
+                Tuto tuto = new Tuto(inpNameCompany.Text, levelgame);
                 tuto.Show();
                 this.Hide();
                 

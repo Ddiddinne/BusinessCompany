@@ -28,66 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.back = new System.Windows.Forms.Button();
-            this.addEmployee = new System.Windows.Forms.Button();
-            this.panelEmployees = new System.Windows.Forms.Panel();
-            this.panelFormations = new System.Windows.Forms.Panel();
-            this.CA = new System.Windows.Forms.Label();
+            this.btBack = new System.Windows.Forms.Button();
+            this.btAddEmployee = new System.Windows.Forms.Button();
+            this.pnlEmployees = new System.Windows.Forms.Panel();
+            this.pnlFormations = new System.Windows.Forms.Panel();
+            this.lbCA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // back
+            // btBack
             // 
-            this.back.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.back.Location = new System.Drawing.Point(379, 541);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(99, 44);
-            this.back.TabIndex = 1;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.back_Click);
+            this.btBack.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btBack.Location = new System.Drawing.Point(379, 541);
+            this.btBack.Name = "btBack";
+            this.btBack.Size = new System.Drawing.Size(99, 44);
+            this.btBack.TabIndex = 1;
+            this.btBack.Text = "Back";
+            this.btBack.UseVisualStyleBackColor = true;
+            this.btBack.Click += new System.EventHandler(this.back_Click);
             // 
-            // addEmployee
+            // btAddEmployee
             // 
-            this.addEmployee.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.addEmployee.Location = new System.Drawing.Point(342, 491);
-            this.addEmployee.Name = "addEmployee";
-            this.addEmployee.Size = new System.Drawing.Size(174, 44);
-            this.addEmployee.TabIndex = 2;
-            this.addEmployee.Text = "Add Employee";
-            this.addEmployee.UseVisualStyleBackColor = true;
-            this.addEmployee.Click += new System.EventHandler(this.addEmployee_Click);
+            this.btAddEmployee.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btAddEmployee.Location = new System.Drawing.Point(342, 491);
+            this.btAddEmployee.Name = "btAddEmployee";
+            this.btAddEmployee.Size = new System.Drawing.Size(174, 44);
+            this.btAddEmployee.TabIndex = 2;
+            this.btAddEmployee.Text = "Add Employee";
+            this.btAddEmployee.UseVisualStyleBackColor = true;
+            this.btAddEmployee.Click += new System.EventHandler(this.addEmployee_Click);
             // 
-            // panelEmployees
+            // pnlEmployees
             // 
-            this.panelEmployees.AutoScroll = true;
-            this.panelEmployees.BackColor = System.Drawing.Color.Transparent;
-            this.panelEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelEmployees.Location = new System.Drawing.Point(85, 57);
-            this.panelEmployees.Name = "panelEmployees";
-            this.panelEmployees.Size = new System.Drawing.Size(331, 100);
-            this.panelEmployees.TabIndex = 3;
+            this.pnlEmployees.AutoScroll = true;
+            this.pnlEmployees.BackColor = System.Drawing.Color.Transparent;
+            this.pnlEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlEmployees.Location = new System.Drawing.Point(85, 57);
+            this.pnlEmployees.Name = "pnlEmployees";
+            this.pnlEmployees.Size = new System.Drawing.Size(331, 100);
+            this.pnlEmployees.TabIndex = 3;
             // 
-            // panelFormations
+            // pnlFormations
             // 
-            this.panelFormations.AutoScroll = true;
-            this.panelFormations.BackColor = System.Drawing.Color.Transparent;
-            this.panelFormations.Location = new System.Drawing.Point(472, 57);
-            this.panelFormations.Name = "panelFormations";
-            this.panelFormations.Size = new System.Drawing.Size(301, 100);
-            this.panelFormations.TabIndex = 4;
-            this.panelFormations.Visible = false;
+            this.pnlFormations.AutoScroll = true;
+            this.pnlFormations.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFormations.Location = new System.Drawing.Point(472, 57);
+            this.pnlFormations.Name = "pnlFormations";
+            this.pnlFormations.Size = new System.Drawing.Size(301, 100);
+            this.pnlFormations.TabIndex = 4;
+            this.pnlFormations.Visible = false;
             // 
-            // CA
+            // lbCA
             // 
-            this.CA.AutoSize = true;
-            this.CA.BackColor = System.Drawing.Color.Transparent;
-            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.CA.Location = new System.Drawing.Point(13, 13);
-            this.CA.Margin = new System.Windows.Forms.Padding(4);
-            this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(68, 24);
-            this.CA.TabIndex = 3;
-            this.CA.Text = "label1";
+            this.lbCA.AutoSize = true;
+            this.lbCA.BackColor = System.Drawing.Color.Transparent;
+            this.lbCA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
+            this.lbCA.Location = new System.Drawing.Point(13, 13);
+            this.lbCA.Margin = new System.Windows.Forms.Padding(4);
+            this.lbCA.Name = "lbCA";
+            this.lbCA.Size = new System.Drawing.Size(68, 24);
+            this.lbCA.TabIndex = 3;
+            this.lbCA.Text = "label1";
             // 
             // ListEmployees
             // 
@@ -96,11 +96,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.CA);
-            this.Controls.Add(this.panelFormations);
-            this.Controls.Add(this.panelEmployees);
-            this.Controls.Add(this.addEmployee);
-            this.Controls.Add(this.back);
+            this.Controls.Add(this.lbCA);
+            this.Controls.Add(this.pnlFormations);
+            this.Controls.Add(this.pnlEmployees);
+            this.Controls.Add(this.btAddEmployee);
+            this.Controls.Add(this.btBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListEmployees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -111,10 +111,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button addEmployee;
-        private System.Windows.Forms.Panel panelEmployees;
-        private System.Windows.Forms.Panel panelFormations;
-        private System.Windows.Forms.Label CA;
+        private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.Button btAddEmployee;
+        private System.Windows.Forms.Panel pnlEmployees;
+        private System.Windows.Forms.Panel pnlFormations;
+        private System.Windows.Forms.Label lbCA;
     }
 }

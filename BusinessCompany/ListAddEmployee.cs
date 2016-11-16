@@ -22,7 +22,7 @@ namespace BusinessCompany
             this.BackgroundImage = listEmployees.BackgroundImage;
             int i = 0;
 
-
+            //Draw the list of the candidates
             foreach (Employee employee in listEmployees.ListPerson)
             {
 
@@ -31,9 +31,9 @@ namespace BusinessCompany
                 afficheEmployee.Location = new Point(0, i * 100);
                 i++;
                 afficheEmployee.Show();
-                this.list.Controls.Add(afficheEmployee);
+                this.pnlList.Controls.Add(afficheEmployee);
             }
-            list.Size = new Size(300, 300);
+            pnlList.Size = new Size(300, 300);
 
         }
 
@@ -55,6 +55,7 @@ namespace BusinessCompany
 
         private void storyShow(object sender, EventArgs e)
         {
+            //If we are in this form, we hide it, and show the story
             if (this.Visible)
             {
                 this.listEmployees.game.timer1.Stop();

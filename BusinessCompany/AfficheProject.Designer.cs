@@ -28,64 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.projectName = new System.Windows.Forms.Label();
-            this.timeProject = new System.Windows.Forms.Label();
-            this.timeConcurent = new System.Windows.Forms.Label();
-            this.add = new System.Windows.Forms.Button();
+            this.lbProjectName = new System.Windows.Forms.Label();
+            this.lbTimeProject = new System.Windows.Forms.Label();
+            this.lbTimeConcurent = new System.Windows.Forms.Label();
+            this.btAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.delete = new System.Windows.Forms.Button();
+            this.btDelete = new System.Windows.Forms.Button();
             this.lbLevel = new System.Windows.Forms.Label();
             this.lbLevextTxt = new System.Windows.Forms.Label();
-            this.Employees = new System.Windows.Forms.Button();
+            this.btEmployees = new System.Windows.Forms.Button();
             this.lbMonextTxt = new System.Windows.Forms.Label();
             this.lbMoney = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
-            // projectName
+            // lbProjectName
             // 
-            this.projectName.AutoSize = true;
-            this.projectName.BackColor = System.Drawing.SystemColors.Window;
-            this.projectName.Font = new System.Drawing.Font("Miramonte", 14F);
-            this.projectName.Location = new System.Drawing.Point(176, 1);
-            this.projectName.Name = "projectName";
-            this.projectName.Size = new System.Drawing.Size(119, 24);
-            this.projectName.TabIndex = 2;
-            this.projectName.Text = "projectName";
-            this.projectName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbProjectName.AutoSize = true;
+            this.lbProjectName.BackColor = System.Drawing.SystemColors.Window;
+            this.lbProjectName.Font = new System.Drawing.Font("Miramonte", 14F);
+            this.lbProjectName.Location = new System.Drawing.Point(176, 1);
+            this.lbProjectName.Name = "lbProjectName";
+            this.lbProjectName.Size = new System.Drawing.Size(119, 24);
+            this.lbProjectName.TabIndex = 2;
+            this.lbProjectName.Text = "projectName";
+            this.lbProjectName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // timeProject
+            // lbTimeProject
             // 
-            this.timeProject.AutoSize = true;
-            this.timeProject.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.timeProject.Location = new System.Drawing.Point(238, 108);
-            this.timeProject.Name = "timeProject";
-            this.timeProject.Size = new System.Drawing.Size(45, 18);
-            this.timeProject.TabIndex = 3;
-            this.timeProject.Text = "label1";
+            this.lbTimeProject.AutoSize = true;
+            this.lbTimeProject.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbTimeProject.Location = new System.Drawing.Point(238, 108);
+            this.lbTimeProject.Name = "lbTimeProject";
+            this.lbTimeProject.Size = new System.Drawing.Size(45, 18);
+            this.lbTimeProject.TabIndex = 3;
+            this.lbTimeProject.Text = "label1";
             // 
-            // timeConcurent
+            // lbTimeConcurent
             // 
-            this.timeConcurent.AutoSize = true;
-            this.timeConcurent.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.timeConcurent.Location = new System.Drawing.Point(238, 126);
-            this.timeConcurent.Name = "timeConcurent";
-            this.timeConcurent.Size = new System.Drawing.Size(45, 18);
-            this.timeConcurent.TabIndex = 4;
-            this.timeConcurent.Text = "label1";
+            this.lbTimeConcurent.AutoSize = true;
+            this.lbTimeConcurent.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.lbTimeConcurent.Location = new System.Drawing.Point(238, 126);
+            this.lbTimeConcurent.Name = "lbTimeConcurent";
+            this.lbTimeConcurent.Size = new System.Drawing.Size(45, 18);
+            this.lbTimeConcurent.TabIndex = 4;
+            this.lbTimeConcurent.Text = "label1";
             // 
-            // add
+            // btAdd
             // 
-            this.add.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.add.Location = new System.Drawing.Point(199, 37);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 23);
-            this.add.TabIndex = 5;
-            this.add.Text = "Add";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.add_Click);
+            this.btAdd.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.btAdd.Location = new System.Drawing.Point(199, 37);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(75, 23);
+            this.btAdd.TabIndex = 5;
+            this.btAdd.Text = "Add";
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.add_Click);
             // 
             // label1
             // 
@@ -107,16 +107,16 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Competitor:";
             // 
-            // delete
+            // btDelete
             // 
-            this.delete.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.delete.Location = new System.Drawing.Point(200, 56);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
-            this.delete.TabIndex = 8;
-            this.delete.Text = "Delete";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Visible = false;
+            this.btDelete.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.btDelete.Location = new System.Drawing.Point(200, 56);
+            this.btDelete.Name = "btDelete";
+            this.btDelete.Size = new System.Drawing.Size(75, 23);
+            this.btDelete.TabIndex = 8;
+            this.btDelete.Text = "Delete";
+            this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Visible = false;
             // 
             // lbLevel
             // 
@@ -138,16 +138,16 @@
             this.lbLevextTxt.TabIndex = 10;
             this.lbLevextTxt.Text = "lvl:";
             // 
-            // Employees
+            // btEmployees
             // 
-            this.Employees.Font = new System.Drawing.Font("Miramonte", 10F);
-            this.Employees.Location = new System.Drawing.Point(194, 27);
-            this.Employees.Name = "Employees";
-            this.Employees.Size = new System.Drawing.Size(89, 23);
-            this.Employees.TabIndex = 11;
-            this.Employees.Text = "Employees";
-            this.Employees.UseVisualStyleBackColor = true;
-            this.Employees.Visible = false;
+            this.btEmployees.Font = new System.Drawing.Font("Miramonte", 10F);
+            this.btEmployees.Location = new System.Drawing.Point(194, 27);
+            this.btEmployees.Name = "btEmployees";
+            this.btEmployees.Size = new System.Drawing.Size(89, 23);
+            this.btEmployees.TabIndex = 11;
+            this.btEmployees.Text = "Employees";
+            this.btEmployees.UseVisualStyleBackColor = true;
+            this.btEmployees.Visible = false;
             // 
             // lbMonextTxt
             // 
@@ -188,16 +188,16 @@
             this.ControlBox = false;
             this.Controls.Add(this.lbMonextTxt);
             this.Controls.Add(this.lbMoney);
-            this.Controls.Add(this.Employees);
+            this.Controls.Add(this.btEmployees);
             this.Controls.Add(this.lbLevextTxt);
             this.Controls.Add(this.lbLevel);
-            this.Controls.Add(this.delete);
+            this.Controls.Add(this.btDelete);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.add);
-            this.Controls.Add(this.timeConcurent);
-            this.Controls.Add(this.timeProject);
-            this.Controls.Add(this.projectName);
+            this.Controls.Add(this.btAdd);
+            this.Controls.Add(this.lbTimeConcurent);
+            this.Controls.Add(this.lbTimeProject);
+            this.Controls.Add(this.lbProjectName);
             this.Controls.Add(this.picture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AfficheProject";
@@ -212,16 +212,16 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picture;
-        private System.Windows.Forms.Label projectName;
-        private System.Windows.Forms.Label timeProject;
-        private System.Windows.Forms.Label timeConcurent;
-        private System.Windows.Forms.Button add;
+        private System.Windows.Forms.Label lbProjectName;
+        private System.Windows.Forms.Label lbTimeProject;
+        private System.Windows.Forms.Label lbTimeConcurent;
+        private System.Windows.Forms.Button btAdd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button btDelete;
         private System.Windows.Forms.Label lbLevel;
         private System.Windows.Forms.Label lbLevextTxt;
-        private System.Windows.Forms.Button Employees;
+        private System.Windows.Forms.Button btEmployees;
         private System.Windows.Forms.Label lbMonextTxt;
         private System.Windows.Forms.Label lbMoney;
     }

@@ -26,45 +26,53 @@ namespace BusinessCompany
             this.parent = parent;
             this.employee = employee;
             InitializeComponent();
-            name.Text = String.Format("{0} {1} ", employee.FirstName, employee.LastName);
-            salary.Text = String.Format("{0}$ /month", employee.Salary);
-            level.Text = employee.Level.ToString();
-            xp.Text = String.Format("{0} xp /100", employee.Experience);
+
+            //Initialize the text in the labels
+            this.lbName.Text = String.Format("{0} {1} ", employee.FirstName, employee.LastName);
+            this.lbSalary.Text = String.Format("{0}$ /month", employee.Salary);
+            this.lbLevel.Text = employee.Level.ToString();
+            this.lbXp.Text = String.Format("{0} xp /1000", employee.Experience);
             this.picture.BackgroundImage = employee.Portrait;
-            delete.Hide();
+
+            //Initialize the buttons
             switch (show)
             {
+                //cas0: the person is not an employee yet, we show only the button "Add"
                 case 0:
-                    add.Show(); delete.Hide(); assigned.Hide(); btFormations.Hide();
+                    btAdd.Show(); btFire.Hide(); chkAssigned.Hide(); btForm.Hide();
                     break;
+                //cas1: the person is an employee, you can fire him or form him, so we show "Fire" and "Form" button
                 case 1:
-                    add.Hide(); delete.Show(); assigned.Hide(); btFormations.Show();
+                    btAdd.Hide(); btFire.Show(); chkAssigned.Hide(); btForm.Show();
                     break;
+                //cas2: the person is an employee, you can assigne him to a project, we show the "assigned" check
                 case 2:
-                    add.Hide(); delete.Hide(); assigned.Show(); btFormations.Hide();
+                    btAdd.Hide(); btFire.Hide(); chkAssigned.Show(); btForm.Hide();
                     break;
             }
+
+            //event if the employee has his level updated
             this.employee.employeeUpdate += EmployeeUpdate;
         }
 
         public Button getButtonDelete()
         {
-            return this.delete;
+            return this.btFire;
         }
 
         public CheckBox getButtonSelect()
         {
-            return this.assigned; ;
+            return this.chkAssigned; ;
         }
 
         public Button getButtonFormation()
         {
-            return this.btFormations;
+            return this.btForm;
         }
 
         public Label getLabelName()
         {
-            return this.name;
+            return this.lbName;
         }
 
         private void addEmployee_Click(object sender, EventArgs e)
@@ -77,8 +85,8 @@ namespace BusinessCompany
 
         private void EmployeeUpdate(object sender, EventArgs e)
         {
-            level.Text = employee.Level.ToString();
-            xp.Text = String.Format("{0} xp /100", employee.Experience);
+            lbLevel.Text = employee.Level.ToString();
+            lbXp.Text = String.Format("{0} xp /1000", employee.Experience);
         }
 
     }

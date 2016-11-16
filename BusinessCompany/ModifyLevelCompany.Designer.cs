@@ -30,8 +30,8 @@
         {
             this.lbDefault = new System.Windows.Forms.Label();
             this.lbLevel = new System.Windows.Forms.Label();
-            this.btnApprove = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btApprove = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbDefault
@@ -54,27 +54,27 @@
             this.lbLevel.TabIndex = 1;
             this.lbLevel.Text = "label2";
             // 
-            // btnApprove
+            // btApprove
             // 
-            this.btnApprove.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.btnApprove.Location = new System.Drawing.Point(313, 395);
-            this.btnApprove.Name = "btnApprove";
-            this.btnApprove.Size = new System.Drawing.Size(100, 50);
-            this.btnApprove.TabIndex = 2;
-            this.btnApprove.Text = "Yes";
-            this.btnApprove.UseVisualStyleBackColor = true;
-            this.btnApprove.Click += new System.EventHandler(this.btnApprove_Click);
+            this.btApprove.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btApprove.Location = new System.Drawing.Point(313, 395);
+            this.btApprove.Name = "btApprove";
+            this.btApprove.Size = new System.Drawing.Size(100, 50);
+            this.btApprove.TabIndex = 2;
+            this.btApprove.Text = "Yes";
+            this.btApprove.UseVisualStyleBackColor = true;
+            this.btApprove.Click += new System.EventHandler(this.btnApprove_Click);
             // 
-            // btnCancel
+            // btCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.btnCancel.Location = new System.Drawing.Point(442, 395);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 50);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "No";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btCancel.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btCancel.Location = new System.Drawing.Point(442, 395);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(100, 50);
+            this.btCancel.TabIndex = 3;
+            this.btCancel.Text = "No";
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // ModifyLevelCompany
             // 
@@ -83,8 +83,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnApprove);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.btApprove);
             this.Controls.Add(this.lbLevel);
             this.Controls.Add(this.lbDefault);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -100,7 +100,7 @@
 
         private System.Windows.Forms.Label lbDefault;
         private System.Windows.Forms.Label lbLevel;
-        private System.Windows.Forms.Button btnApprove;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btApprove;
+        private System.Windows.Forms.Button btCancel;
     }
 }

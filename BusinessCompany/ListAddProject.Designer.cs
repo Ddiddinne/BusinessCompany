@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.annuler = new System.Windows.Forms.Button();
-            this.list = new System.Windows.Forms.Panel();
+            this.btBack = new System.Windows.Forms.Button();
+            this.pnList = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // annuler
+            // btBack
             // 
-            this.annuler.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.annuler.Location = new System.Drawing.Point(374, 554);
-            this.annuler.Name = "annuler";
-            this.annuler.Size = new System.Drawing.Size(99, 44);
-            this.annuler.TabIndex = 8;
-            this.annuler.Text = "Back";
-            this.annuler.UseVisualStyleBackColor = true;
-            this.annuler.Click += new System.EventHandler(this.annuler_Click_1);
+            this.btBack.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btBack.Location = new System.Drawing.Point(374, 554);
+            this.btBack.Name = "btBack";
+            this.btBack.Size = new System.Drawing.Size(99, 44);
+            this.btBack.TabIndex = 8;
+            this.btBack.Text = "Back";
+            this.btBack.UseVisualStyleBackColor = true;
+            this.btBack.Click += new System.EventHandler(this.annuler_Click_1);
             // 
-            // list
+            // pnList
             // 
-            this.list.AutoScroll = true;
-            this.list.BackColor = System.Drawing.Color.Transparent;
-            this.list.Location = new System.Drawing.Point(213, 93);
-            this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(290, 100);
-            this.list.TabIndex = 9;
+            this.pnList.AutoScroll = true;
+            this.pnList.BackColor = System.Drawing.Color.Transparent;
+            this.pnList.Location = new System.Drawing.Point(213, 93);
+            this.pnList.Name = "pnList";
+            this.pnList.Size = new System.Drawing.Size(290, 100);
+            this.pnList.TabIndex = 9;
             // 
             // ListAddProject
             // 
@@ -59,8 +59,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.list);
-            this.Controls.Add(this.annuler);
+            this.Controls.Add(this.pnList);
+            this.Controls.Add(this.btBack);
             this.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListAddProject";
@@ -72,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button annuler;
-        private System.Windows.Forms.Panel list;
+        private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.Panel pnList;
     }
 }

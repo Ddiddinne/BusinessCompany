@@ -42,9 +42,9 @@
             this.nameFormation.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameFormation.Location = new System.Drawing.Point(102, 9);
             this.nameFormation.Name = "nameFormation";
-            this.nameFormation.Size = new System.Drawing.Size(125, 19);
+            this.nameFormation.Size = new System.Drawing.Size(143, 19);
             this.nameFormation.TabIndex = 1;
-            this.nameFormation.Text = "nameFormation";
+            this.nameFormation.Text = "lbNameFormation";
             // 
             // lbPrice
             // 
@@ -62,9 +62,9 @@
             this.lbXpEarn.Font = new System.Drawing.Font("Miramonte", 10F);
             this.lbXpEarn.Location = new System.Drawing.Point(203, 38);
             this.lbXpEarn.Name = "lbXpEarn";
-            this.lbXpEarn.Size = new System.Drawing.Size(50, 18);
+            this.lbXpEarn.Size = new System.Drawing.Size(64, 18);
             this.lbXpEarn.TabIndex = 3;
-            this.lbXpEarn.Text = "xpEarn";
+            this.lbXpEarn.Text = "lbXpEarn";
             // 
             // btForm
             // 

@@ -30,10 +30,14 @@ namespace BusinessCompany
         public AfficheFormation(String name, int indice)
         {
             InitializeComponent();
-            nameFormation.Text = name;
             indice++;
+
+            //Initialize the parameters of the formation
             price = indice * 1000;
             xp = indice * 10;
+
+            //Initialize the labels
+            nameFormation.Text = name;
             lbPrice.Text = String.Format("Price: {0}$", price);
             lbXpEarn.Text = String.Format("+{0}xp", xp);
         }

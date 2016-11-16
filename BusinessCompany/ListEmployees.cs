@@ -35,6 +35,7 @@ namespace BusinessCompany
 
         public ListEmployees(Game game)
         {
+            //Initialize the list of the formations' name
             this.formationName.Add("Formation Agile");
             this.formationName.Add("Conception Graphique");
             this.formationName.Add("Java avanced");
@@ -49,7 +50,8 @@ namespace BusinessCompany
         {
             InitializeComponent();
             this.BackgroundImage = company.Picture;
-            this.CA.Text = String.Format("{0}$", this.company.Money);
+            this.lbCA.Text = String.Format("{0}$", this.company.Money);
+            //Show the employees and draw the formations but hided (it will be shown if the player click on "Form")
             DrawListEmployee(this.company.ListEmployee);
             DrawListFormation();
             this.game.timeChange += TimeChange;
@@ -59,6 +61,7 @@ namespace BusinessCompany
         public void DrawListEmployee(List<Employee> listEmployee)
         {
             int i = 0;
+            //Show the employees
             foreach (Employee employee in listEmployee)
             {
                 AfficheEmployee afficheEmployee = new AfficheEmployee(1, employee);
@@ -70,14 +73,15 @@ namespace BusinessCompany
                 btnDelete.Click += new EventHandler(remove);
                 Button btnShowFormations = afficheEmployee.getButtonFormation();
                 btnShowFormations.Click += new EventHandler(showFormations);
-                this.panelEmployees.Controls.Add(afficheEmployee);
+                this.pnlEmployees.Controls.Add(afficheEmployee);
             }
-            panelEmployees.Size = new Size(300, 300);
+            pnlEmployees.Size = new Size(300, 300);
         }
 
         public void DrawListFormation()
         {
             int j = 0;
+            //Draw the list of the formations
             for (int i = 0; i < formationName.Count; i++)
             {
                 AfficheFormation afficheFormation = new AfficheFormation(formationName[i], i);
@@ -87,10 +91,11 @@ namespace BusinessCompany
                 afficheFormation.Show();
                 Button btnForm = afficheFormation.getBtForm();
                 btnForm.Click += new EventHandler(form);
-                this.panelFormations.Controls.Add(afficheFormation);
+                this.pnlFormations.Controls.Add(afficheFormation);
             }
-            panelFormations.Size = new Size(300, 300);
-            panelFormations.Hide();
+            pnlFormations.Size = new Size(300, 300);
+            //It is hidding but it will be shown if the player click on "Form"
+            pnlFormations.Hide();
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -118,7 +123,7 @@ namespace BusinessCompany
 
                 Employee person = new Employee();
                 bool alreadyKnown = false;
-                //verification if the person is already an candidate (we have just 13 persons)
+                //Verification if the person is already a candidate (we have just 13 persons)
                 foreach(Employee employee in listPerson)
                 {
                     if ((person.FirstName == employee.FirstName) && (person.LastName == employee.LastName)){
@@ -126,7 +131,7 @@ namespace BusinessCompany
                     }
                 }
 
-                //verification if the person is already an employee
+                //Verification if the person is already an employee
                 foreach (Employee employee in company.ListEmployee)
                 {
                     if ((person.FirstName == employee.FirstName) && (person.LastName == employee.LastName))
@@ -134,7 +139,7 @@ namespace BusinessCompany
                         alreadyKnown = true;
                     }
                 }
-                //if he is not already known, we can add him in our list
+                //If he is not already known, we can add him in our list
                 if (!alreadyKnown)
                 {
                     listPerson.Add(person);
@@ -163,7 +168,7 @@ namespace BusinessCompany
             }
             this.company.ListEmployee.Remove(employee);
             affiche.Hide();
-            this.panelEmployees.Controls.Remove(affiche);
+            this.pnlEmployees.Controls.Remove(affiche);
             this.refresh();
         }
 
@@ -174,14 +179,14 @@ namespace BusinessCompany
             AfficheEmployee afficheEmployeeSelected = (AfficheEmployee)buttonSelected.Parent;
             if (employeeSelected != afficheEmployeeSelected.Employee)
             {
-                panelFormations.Show();
+                pnlFormations.Show();
                 employeeSelected = afficheEmployeeSelected.Employee;
                 afficheEmployeeSelected.getLabelName().BackColor = Color.Gray;
             }
             else
             {
                 afficheEmployeeSelected.getLabelName().BackColor = Color.White;
-                panelFormations.Hide();
+                pnlFormations.Hide();
                 employeeSelected = null;
             }
 
@@ -189,11 +194,12 @@ namespace BusinessCompany
 
         private void TimeChange(object sender, EventArgs e)
         {
-            this.CA.Text = String.Format("{0}$", this.company.Money);
+            this.lbCA.Text = String.Format("{0}$", this.company.Money);
         }
 
         private void storyShow(object sender, EventArgs e)
         {
+            //If we are in this form, we hide it, and show the story
             if (this.Visible)
             {
                 game.timer1.Stop();

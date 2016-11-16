@@ -28,64 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.list = new System.Windows.Forms.Panel();
-            this.addProject = new System.Windows.Forms.Button();
-            this.back = new System.Windows.Forms.Button();
-            this.listEmployees = new System.Windows.Forms.Panel();
-            this.CA = new System.Windows.Forms.Label();
+            this.pnlList = new System.Windows.Forms.Panel();
+            this.btAddProject = new System.Windows.Forms.Button();
+            this.btBack = new System.Windows.Forms.Button();
+            this.pnlListEmployees = new System.Windows.Forms.Panel();
+            this.lbCA = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // list
+            // pnlList
             // 
-            this.list.AutoScroll = true;
-            this.list.BackColor = System.Drawing.Color.Transparent;
-            this.list.Location = new System.Drawing.Point(59, 68);
-            this.list.Name = "list";
-            this.list.Size = new System.Drawing.Size(334, 100);
-            this.list.TabIndex = 6;
+            this.pnlList.AutoScroll = true;
+            this.pnlList.BackColor = System.Drawing.Color.Transparent;
+            this.pnlList.Location = new System.Drawing.Point(59, 68);
+            this.pnlList.Name = "pnlList";
+            this.pnlList.Size = new System.Drawing.Size(334, 100);
+            this.pnlList.TabIndex = 6;
             // 
-            // addProject
+            // btAddProject
             // 
-            this.addProject.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.addProject.Location = new System.Drawing.Point(352, 495);
-            this.addProject.Name = "addProject";
-            this.addProject.Size = new System.Drawing.Size(133, 44);
-            this.addProject.TabIndex = 5;
-            this.addProject.Text = "Add Project";
-            this.addProject.UseVisualStyleBackColor = true;
-            this.addProject.Click += new System.EventHandler(this.addProject_Click);
+            this.btAddProject.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btAddProject.Location = new System.Drawing.Point(352, 495);
+            this.btAddProject.Name = "btAddProject";
+            this.btAddProject.Size = new System.Drawing.Size(133, 44);
+            this.btAddProject.TabIndex = 5;
+            this.btAddProject.Text = "Add Project";
+            this.btAddProject.UseVisualStyleBackColor = true;
+            this.btAddProject.Click += new System.EventHandler(this.addProject_Click);
             // 
-            // back
+            // btBack
             // 
-            this.back.Font = new System.Drawing.Font("Miramonte", 15F);
-            this.back.Location = new System.Drawing.Point(369, 545);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(99, 44);
-            this.back.TabIndex = 4;
-            this.back.Text = "Back";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.back_Click);
+            this.btBack.Font = new System.Drawing.Font("Miramonte", 15F);
+            this.btBack.Location = new System.Drawing.Point(369, 545);
+            this.btBack.Name = "btBack";
+            this.btBack.Size = new System.Drawing.Size(99, 44);
+            this.btBack.TabIndex = 4;
+            this.btBack.Text = "Back";
+            this.btBack.UseVisualStyleBackColor = true;
+            this.btBack.Click += new System.EventHandler(this.back_Click);
             // 
-            // listEmployees
+            // pnlListEmployees
             // 
-            this.listEmployees.AutoScroll = true;
-            this.listEmployees.BackColor = System.Drawing.Color.Transparent;
-            this.listEmployees.Location = new System.Drawing.Point(466, 68);
-            this.listEmployees.Name = "listEmployees";
-            this.listEmployees.Size = new System.Drawing.Size(305, 100);
-            this.listEmployees.TabIndex = 7;
+            this.pnlListEmployees.AutoScroll = true;
+            this.pnlListEmployees.BackColor = System.Drawing.Color.Transparent;
+            this.pnlListEmployees.Location = new System.Drawing.Point(466, 68);
+            this.pnlListEmployees.Name = "pnlListEmployees";
+            this.pnlListEmployees.Size = new System.Drawing.Size(305, 100);
+            this.pnlListEmployees.TabIndex = 7;
             // 
-            // CA
+            // lbCA
             // 
-            this.CA.AutoSize = true;
-            this.CA.BackColor = System.Drawing.Color.Transparent;
-            this.CA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
-            this.CA.Location = new System.Drawing.Point(13, 13);
-            this.CA.Margin = new System.Windows.Forms.Padding(4);
-            this.CA.Name = "CA";
-            this.CA.Size = new System.Drawing.Size(68, 24);
-            this.CA.TabIndex = 8;
-            this.CA.Text = "label1";
+            this.lbCA.AutoSize = true;
+            this.lbCA.BackColor = System.Drawing.Color.Transparent;
+            this.lbCA.Font = new System.Drawing.Font("Miramonte", 15F, System.Drawing.FontStyle.Bold);
+            this.lbCA.Location = new System.Drawing.Point(13, 13);
+            this.lbCA.Margin = new System.Windows.Forms.Padding(4);
+            this.lbCA.Name = "lbCA";
+            this.lbCA.Size = new System.Drawing.Size(169, 24);
+            this.lbCA.TabIndex = 8;
+            this.lbCA.Text = "Chiffre d\'affaires";
             // 
             // ListProjects
             // 
@@ -94,11 +94,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.CA);
-            this.Controls.Add(this.listEmployees);
-            this.Controls.Add(this.list);
-            this.Controls.Add(this.addProject);
-            this.Controls.Add(this.back);
+            this.Controls.Add(this.lbCA);
+            this.Controls.Add(this.pnlListEmployees);
+            this.Controls.Add(this.pnlList);
+            this.Controls.Add(this.btAddProject);
+            this.Controls.Add(this.btBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ListProjects";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -110,10 +110,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel list;
-        private System.Windows.Forms.Button addProject;
-        private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Panel listEmployees;
-        private System.Windows.Forms.Label CA;
+        private System.Windows.Forms.Panel pnlList;
+        private System.Windows.Forms.Button btAddProject;
+        private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.Panel pnlListEmployees;
+        private System.Windows.Forms.Label lbCA;
     }
 }

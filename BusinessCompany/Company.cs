@@ -18,8 +18,10 @@ namespace BusinessCompany
         }
         public Company(String name, int level)
         {
+
+            //Initialize the parameters
             this.levelGame = level;
-            this.Name = name;
+            this.name = name;
             this.money = 100000 - (level - 1) * 1000;
             LevelCompany = 1;
             this.listEmployee = new List<Employee>();
@@ -32,7 +34,6 @@ namespace BusinessCompany
         public String Name
         {
             get { return name; }
-            set { name = value; }
         }
 
         private List<Employee> listEmployee;
@@ -64,7 +65,6 @@ namespace BusinessCompany
         public int LevelGame
         {
             get { return levelGame; }
-            set { levelGame = value; }
         }
 
         private int levelCompany;
@@ -72,6 +72,7 @@ namespace BusinessCompany
         public int LevelCompany
         {
             get { return levelCompany; }
+            //We change the picture of the company depending on the level of the company
             set { levelCompany = value;
                 switch (value){
                     case 1:

@@ -24,7 +24,7 @@ namespace BusinessCompany
             this.BackgroundImage = listProjects.BackgroundImage;
             int i = 0;
 
-
+            //We draw the projects which are proposed
             foreach (Project project in listProjects.ListProject)
             {
                 AfficheProject afficheProject = new AfficheProject(false, project, this);
@@ -32,9 +32,9 @@ namespace BusinessCompany
                 afficheProject.TopLevel = false;
                 i++;
                 afficheProject.Show();
-                this.list.Controls.Add(afficheProject);
+                this.pnList.Controls.Add(afficheProject);
             }
-            list.Size = new Size(370, 300);
+            pnList.Size = new Size(370, 300);
 
         }
 
@@ -62,6 +62,7 @@ namespace BusinessCompany
 
         private void storyShow(object sender, EventArgs e)
         {
+            //If we are in this form, we hide it, and show the story
             if (this.Visible)
             {
                 this.listProjects.game.timer1.Stop();

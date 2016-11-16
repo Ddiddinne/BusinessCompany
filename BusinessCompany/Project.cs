@@ -15,9 +15,10 @@ namespace BusinessCompany
 
         public Project(int levelCompany)
         {
+            //We Initialize the parameters
             this.employeeAssigned = new List<Employee>();
-            Delay = random.Next(10, 50);
-            DelayCompetition = random.Next(10, 50);
+            this.Delay = random.Next(10, 50);
+            this.DelayCompetition = random.Next(10, 50);
             this.level = random.Next(1,levelCompany+1);
             this.name = (NameProject)num;
             this.price = random.Next(100, 600);
@@ -65,7 +66,6 @@ namespace BusinessCompany
         public int Price
         {
             get { return price; }
-            set { price = value; }
         }
 
         private double delay;
@@ -96,7 +96,6 @@ namespace BusinessCompany
         public Image Picture
         {
             get { return picture; }
-            set { picture = value; }
         }
 
         private int timeToSelect;
@@ -112,7 +111,6 @@ namespace BusinessCompany
         public int Level
         {
             get { return level; }
-            set { level = value; }
         }
 
         private List<Employee> employeeAssigned;

@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ok = new System.Windows.Forms.Button();
+            this.btOk = new System.Windows.Forms.Button();
             this.lbStory = new System.Windows.Forms.Label();
-            this.skipTuto = new System.Windows.Forms.Button();
+            this.btSkipTuto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ok
+            // btOk
             // 
-            this.ok.Font = new System.Drawing.Font("Miramonte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ok.Location = new System.Drawing.Point(520, 492);
-            this.ok.Name = "ok";
-            this.ok.Size = new System.Drawing.Size(108, 36);
-            this.ok.TabIndex = 3;
-            this.ok.Text = "OK";
-            this.ok.UseVisualStyleBackColor = true;
-            this.ok.Click += new System.EventHandler(this.ok_Click);
+            this.btOk.Font = new System.Drawing.Font("Miramonte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOk.Location = new System.Drawing.Point(520, 492);
+            this.btOk.Name = "btOk";
+            this.btOk.Size = new System.Drawing.Size(108, 36);
+            this.btOk.TabIndex = 3;
+            this.btOk.Text = "OK";
+            this.btOk.UseVisualStyleBackColor = true;
+            this.btOk.Click += new System.EventHandler(this.ok_Click);
             // 
             // lbStory
             // 
@@ -55,16 +55,16 @@
             this.lbStory.Text = "Story";
             this.lbStory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // skipTuto
+            // btSkipTuto
             // 
-            this.skipTuto.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skipTuto.Location = new System.Drawing.Point(535, 460);
-            this.skipTuto.Name = "skipTuto";
-            this.skipTuto.Size = new System.Drawing.Size(82, 26);
-            this.skipTuto.TabIndex = 4;
-            this.skipTuto.Text = "Skip Tuto";
-            this.skipTuto.UseVisualStyleBackColor = true;
-            this.skipTuto.Click += new System.EventHandler(this.skipTuto_Click);
+            this.btSkipTuto.Font = new System.Drawing.Font("Miramonte", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSkipTuto.Location = new System.Drawing.Point(535, 460);
+            this.btSkipTuto.Name = "btSkipTuto";
+            this.btSkipTuto.Size = new System.Drawing.Size(82, 26);
+            this.btSkipTuto.TabIndex = 4;
+            this.btSkipTuto.Text = "Skip Tuto";
+            this.btSkipTuto.UseVisualStyleBackColor = true;
+            this.btSkipTuto.Click += new System.EventHandler(this.skipTuto_Click);
             // 
             // Tuto
             // 
@@ -74,8 +74,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.skipTuto);
-            this.Controls.Add(this.ok);
+            this.Controls.Add(this.btSkipTuto);
+            this.Controls.Add(this.btOk);
             this.Controls.Add(this.lbStory);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Tuto";
@@ -87,8 +87,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ok;
+        private System.Windows.Forms.Button btOk;
         private System.Windows.Forms.Label lbStory;
-        private System.Windows.Forms.Button skipTuto;
+        private System.Windows.Forms.Button btSkipTuto;
     }
 }
