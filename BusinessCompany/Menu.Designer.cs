@@ -1,6 +1,6 @@
 ﻿namespace BusinessCompany
 {
-    partial class Option
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.levelchecked.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,9 +80,9 @@
             // valid
             // 
             this.valid.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valid.Location = new System.Drawing.Point(526, 465);
+            this.valid.Location = new System.Drawing.Point(432, 492);
             this.valid.Name = "valid";
-            this.valid.Size = new System.Drawing.Size(86, 33);
+            this.valid.Size = new System.Drawing.Size(113, 56);
             this.valid.TabIndex = 10;
             this.valid.Text = "Validate";
             this.valid.UseVisualStyleBackColor = true;
@@ -91,9 +91,9 @@
             // exit
             // 
             this.exit.Font = new System.Drawing.Font("Miramonte", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit.Location = new System.Drawing.Point(526, 504);
+            this.exit.Location = new System.Drawing.Point(586, 492);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(86, 33);
+            this.exit.Size = new System.Drawing.Size(113, 56);
             this.exit.TabIndex = 12;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
@@ -149,17 +149,17 @@
             this.radioButton1.Text = "easy";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // lbTitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Miramonte", 22F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(353, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(441, 37);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Let\'s go to create our Start up!!";
+            this.lbTitle.Font = new System.Drawing.Font("Miramonte", 22F, System.Drawing.FontStyle.Bold);
+            this.lbTitle.Location = new System.Drawing.Point(356, 42);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(441, 137);
+            this.lbTitle.TabIndex = 14;
+            this.lbTitle.Text = "Let\'s go to create our Start up!!";
+            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Option
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,7 +168,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 662);
             this.ControlBox = false;
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.levelchecked);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.valid);
@@ -176,7 +176,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameCompany);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Option";
+            this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Business Company";
             this.levelchecked.ResumeLayout(false);
@@ -198,6 +198,6 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbTitle;
     }
 }

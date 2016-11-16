@@ -17,12 +17,13 @@ namespace BusinessCompany
         private Company company;
         private List<Project> listProjects;
         private DateTime date = new DateTime(2010, 1, 1);
-        static int i = 10;
+        private int i = 10;
         private int indexStory = 1;
         
         public event EventHandler timeChange;
         public event EventHandler projectRemove;
         public event EventHandler storyGoOn;
+        public event EventHandler loseGame;
 
         public int IndexStory
         {
@@ -69,8 +70,12 @@ namespace BusinessCompany
         private void LostGame()
         {
             timer1.Stop();
-            LostGame lostGame = new LostGame();
+            Menu lostGame = new Menu(true);
             lostGame.Show();
+            if (loseGame != null)
+            {
+                loseGame(this, EventArgs.Empty);
+            }
             this.Close();
         }
         

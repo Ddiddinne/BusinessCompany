@@ -12,7 +12,7 @@ namespace BusinessCompany
 {
     public partial class ListEmployees : Form
     {
-        
+
         public Game game;
         public Company company;
         private List<String> formationName = new List<String>();
@@ -42,6 +42,7 @@ namespace BusinessCompany
             this.formationName.Add("Data Science");
             this.company = game.Company;
             this.game = game;
+            game.loseGame += loseGame;
             init();
         }
         private void init()
@@ -67,7 +68,7 @@ namespace BusinessCompany
                 afficheEmployee.Show();
                 afficheEmployee.Enabled = true;
                 Button btnDelete = afficheEmployee.getButtonDelete();
-                btnDelete.Click+=new EventHandler(remove);
+                btnDelete.Click += new EventHandler(remove);
                 Button btnShowFormations = afficheEmployee.getButtonFormation();
                 btnShowFormations.Click += new EventHandler(showFormations);
                 afficheEmployee.Dock = DockStyle.None;
@@ -99,7 +100,7 @@ namespace BusinessCompany
         private void back_Click(object sender, EventArgs e)
         {
             game.Show();
-            this.Close(); 
+            this.Close();
         }
 
         private void form(object sender, EventArgs e)
@@ -147,21 +148,22 @@ namespace BusinessCompany
 
         private void showFormations(object sender, EventArgs e)
         {
-            
+
             Button buttonSelected = (Button)sender;
             AfficheEmployee afficheEmployeeSelected = (AfficheEmployee)buttonSelected.Parent;
-            if(employeeSelected != afficheEmployeeSelected.Employee)
+            if (employeeSelected != afficheEmployeeSelected.Employee)
             {
                 panelFormations.Show();
                 employeeSelected = afficheEmployeeSelected.Employee;
                 afficheEmployeeSelected.getLabelName().BackColor = Color.Gray;
-            }else
+            }
+            else
             {
                 afficheEmployeeSelected.getLabelName().BackColor = Color.White;
                 panelFormations.Hide();
                 employeeSelected = null;
             }
-            
+
         }
 
         private void TimeChange(object sender, EventArgs e)
@@ -176,8 +178,13 @@ namespace BusinessCompany
                 game.timer1.Stop();
                 this.Hide();
                 AfficheStory story = new AfficheStory(this, company, game.timer1, this.game.IndexStory);
-                this.game.IndexStory ++;
+                this.game.IndexStory++;
             }
         }
-}
+
+        private void loseGame(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

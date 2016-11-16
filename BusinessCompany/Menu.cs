@@ -10,14 +10,18 @@ using System.Windows.Forms;
 
 namespace BusinessCompany
 {
-    public partial class LostGame : Form
+    public partial class Menu : Form
     {
-        public LostGame()
+        public Menu(Boolean lost = false)
         {
             InitializeComponent();
+            if (lost)
+            {
+                lbTitle.Text = "You have lost. \n Would you like to retry?";
+            }
         }
 
-        private void btNewGame_Click(object sender, EventArgs e)
+        private void valid_Click(object sender, EventArgs e)
         {
             int levelgame=0;
 
@@ -33,30 +37,28 @@ namespace BusinessCompany
             {
                 levelgame=3;
             }
-            if (!this.txbNameCompany.Text.Equals("") && levelgame != 0)
+
+            if (!nameCompany.Text.Equals("") && levelgame != 0)
             {
-                Company company = new Company(this.txbNameCompany.Text, levelgame);
-                this.Close();
-                Game game = new Game(company);
-                game.Show();
+                Tuto tuto = new Tuto(nameCompany.Text, levelgame);
+                tuto.Show();
+                this.Hide();
+                
             }
             else
             {
                 Button button = (Button)sender;
                 button.Text = "Name of company?";
             }
+
+
+
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Option option = new Option();
-            option.Show();
-        }
-
-        private void LostGame_Load(object sender, EventArgs e)
-        {
-            Form.ActiveForm.Close();
+            Application.Exit();
         }
     }
 }

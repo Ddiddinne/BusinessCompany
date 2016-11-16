@@ -19,6 +19,7 @@ namespace BusinessCompany
             
             this.listProjects = listProjects;
             this.listProjects.game.storyGoOn += storyShow;
+            this.listProjects.game.loseGame += loseGame;
             InitializeComponent();
             this.BackgroundImage = listProjects.BackgroundImage;
             int i = 0;
@@ -70,6 +71,11 @@ namespace BusinessCompany
                 AfficheStory story = new AfficheStory(this, this.listProjects.company, this.listProjects.game.timer1, this.listProjects.game.IndexStory);
                 this.listProjects.game.IndexStory++;
             }
+        }
+
+        private void loseGame(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

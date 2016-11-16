@@ -21,6 +21,7 @@ namespace BusinessCompany
             this.game.timeChange += TimeChange;
             this.game.projectRemove += ProjectRemove;
             this.game.storyGoOn += storyShow;
+            this.game.loseGame += loseGame;
             init();
         }
 
@@ -198,6 +199,11 @@ namespace BusinessCompany
                 AfficheStory story = new AfficheStory(this, company, game.timer1, this.game.IndexStory);
                 this.game.IndexStory++;
             }
+        }
+
+        private void loseGame(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

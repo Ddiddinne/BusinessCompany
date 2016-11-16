@@ -17,6 +17,7 @@ namespace BusinessCompany
         {
             this.listEmployees = listEmployees;
             this.listEmployees.game.storyGoOn += storyShow;
+            listEmployees.game.loseGame += loseGame;
             InitializeComponent();
             this.BackgroundImage = listEmployees.BackgroundImage;
             int i = 0;
@@ -63,6 +64,11 @@ namespace BusinessCompany
                 AfficheStory story = new AfficheStory(this, this.listEmployees.company, this.listEmployees.game.timer1, this.listEmployees.game.IndexStory);
                 this.listEmployees.game.IndexStory++;
             }
+        }
+
+        private void loseGame(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

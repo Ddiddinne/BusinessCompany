@@ -16,7 +16,7 @@ namespace BusinessCompany
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Option());
+            Application.Run(new Menu());
         }
     }
 }
