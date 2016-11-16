@@ -23,7 +23,7 @@ namespace BusinessCompany
             firstName = (FirstNames)numName;
             lastName = (LastNames)numName;
             getImage(numName);
-            numName = (numName + 1) % 14;
+            numName = (numName + 1) % 13;
             num = (num + 1) % 2;
         }
 

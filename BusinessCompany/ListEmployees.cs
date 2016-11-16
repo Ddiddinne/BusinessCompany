@@ -116,9 +116,34 @@ namespace BusinessCompany
 
         private void addEmployee_Click(object sender, EventArgs e)
         {
-            while (listPerson.Count + company.ListEmployee.Count < game.Company.LevelCompany * 2)
+            int k = 0;
+            while ((listPerson.Count + company.ListEmployee.Count < game.Company.LevelCompany * 2)&&(k<=13))
             {
-                listPerson.Add(new Employee());
+
+                Employee person = new Employee();
+                bool alreadyKnown = false;
+                //verification if the person is already an candidate (we have just 13 persons)
+                foreach(Employee employee in listPerson)
+                {
+                    if ((person.FirstName == employee.FirstName) && (person.LastName == employee.LastName)){
+                        alreadyKnown = true;
+                    }
+                }
+
+                //verification if the person is already an employee
+                foreach (Employee employee in company.ListEmployee)
+                {
+                    if ((person.FirstName == employee.FirstName) && (person.LastName == employee.LastName))
+                    {
+                        alreadyKnown = true;
+                    }
+                }
+                //if he is not already known, we can add him in our list
+                if (!alreadyKnown)
+                {
+                    listPerson.Add(person);
+                }
+              k++;
             }
             ListAddEmployee listAddEmployee = new ListAddEmployee(this);
             this.Hide();
