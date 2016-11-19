@@ -67,7 +67,7 @@ namespace BusinessCompany
 
             //timer start
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 1000* (4-this.company.LevelGame); //(1000 = 1 second)
+            timer1.Interval = 1000* (2-this.company.LevelGame); //(1000 = 1 second)
             timer1.Start();
         }
 
@@ -90,7 +90,7 @@ namespace BusinessCompany
             lbDate.Text = date.ToString("d MMM yyyy", CultureInfo.CreateSpecificCulture("en-US"));
 
             //We decrease the money of the company depending on the level of the company and the salaries
-            int expense = this.company.LevelCompany * 10;
+            int expense = this.company.LevelCompany^2 * 10;
             foreach(Employee employee in company.ListEmployee)
             {
                 expense += employee.Salary / 30;
