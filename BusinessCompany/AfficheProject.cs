@@ -67,13 +67,23 @@ namespace BusinessCompany
         }
         private void TimeDelayChange(object sender, EventArgs e)
         {
-            // we update the Delay of the project each day
-            lbTimeProject.Text = String.Format("{0} days", project.Delay);
-
-            if (lbTimeConcurent != null && project !=null)
+            try
             {
-                lbTimeConcurent.Text = String.Format("{0} days", project.DelayCompetition);
+                if (this != null)
+                {
+                    // we update the Delay of the project each day
+                    if (this.lbTimeConcurent != null && this.project != null && this.lbTimeProject != null)
+                    {
+                        this.lbTimeConcurent.Text = String.Format("{0} days", this.project.DelayCompetition);
+                        this.lbTimeProject.Text = String.Format("{0} days", this.project.Delay);
+                    }
+                }
             }
+            catch (ObjectDisposedException exception)
+            {
+                var test1=exception.ObjectName;
+            }
+
         }
 
     }
